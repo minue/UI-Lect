@@ -1,0 +1,94 @@
+{
+    "namespace": "info_ui",
+  
+    "total": {
+        "type": "panel",
+        "controls": [
+          {"hp@hp": {}},
+          {"mp@mp": {}},
+          {"exp@exp": {}},
+          {"lv@lv": {}}
+        ]
+    },
+    "hp": {
+        "type": "image",
+        "size": [ 100, 12 ],
+        "texture": "('textures/watts/bar/hp' + (($hp * 100) / $max_hp))",
+        "$hp": "($text - ('%.2s' * $text))",
+        "$max_hp": "($text - ('%.10s' * $text))",
+        "offset":[0, -30],
+        "controls": [
+            {
+                "text": {
+                  "type": "label",
+                  "font_scale_factor":0.7,
+                  "font_type": "MinecraftTen",
+                  "anchor_from": "top_middle",
+                  "anchor_to": "top_middle",
+                  "color": "$tool_tip_text",
+                  "layer": 31,
+                  "text": "(((HP: + $hp) + '/') + $max_hp)",
+                  "localize": false
+                }
+            }
+        ]
+    },
+  
+    "mp": {
+        "type": "image",
+        "size": [ 100, 12 ],
+        "texture": "('textures/watts/bar/mp' + (($mp * 100) / $max_mp))",
+        "$mp": "($text - ('%.18s' * $text))",
+        "$max_mp": "($text - ('%.26s' * $text))",
+        "offset":[10, -15],
+        "controls": [
+            {
+                "text": {
+                  "type": "label",
+                  "font_scale_factor":0.7,
+                  "font_type": "MinecraftTen",
+                  "anchor_from": "top_middle",
+                  "anchor_to": "top_middle",
+                  "color": "$tool_tip_text",
+                  "layer": 31,
+                  "text": "(((MP: + $mp) + '/') + $max_mp)",
+                  "localize": false
+                }
+            }
+        ]
+    },
+  
+    "exp": {
+        "type": "image",
+        "size": [ 100, 12 ],
+        "texture": "('textures/watts/bar/exp' + (($exp * 100) / $max_exp))",
+        "$exp": "($text - ('%.34s' * $text))",
+        "$max_exp": "($text - ('%.42s' * $text))",
+        "offset":[20, 0],
+        "controls": [
+            {
+                "text": {
+                  "type": "label",
+                  "font_scale_factor":0.7,
+                  "font_type": "MinecraftTen",
+                  "anchor_from": "top_middle",
+                  "anchor_to": "top_middle",
+                  "color": "$tool_tip_text",
+                  "layer": 31,
+                  "text": "(((EXP: + $exp) + '/') + $max_exp)",
+                  "localize": false
+                }
+            }
+        ]
+    },
+  
+    "lv": {
+        "font_type": "MinecraftTen",
+        "font_scale_factor":0.8,
+        "type": "label",
+        "size": [ 60, 12 ],
+        "text": "('LV: ' + $lv)",
+        "$lv": "($text - ('%.50s' * $text))",
+        "offset":[-30, 0]
+    }
+}
