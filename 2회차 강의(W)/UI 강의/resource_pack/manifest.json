@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Example Test pack",
+        "name": "Test",
+        "uuid": "c1b2aaec-85f6-11ee-b9d1-0242ac120002",
+        "version": [1, 0, 0],
+        "min_engine_version": [ 1, 20, 40 ]
+    },
+    "modules": [
+        {
+            "description": "Example vanilla resource pack",
+            "type": "resources",
+            "uuid": "743f6949-53be-44b6-b326-398005028819",
+            "version": [0, 0, 1]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "b3a3139c-85f6-11ee-b9d1-0242ac120002",
+            "version": [1, 0, 0]
+        }
+    ]
+}

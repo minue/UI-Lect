@@ -1,0 +1,24 @@
+{
+  "namespace": "hud",
+  "hotbar_panel": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      "100%c",
+      22
+    ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "controls": [
+      {
+        "hotbar_elipses_panel_left@hud.hotbar_elipses_panel_left_content": {}
+      },
+      {
+        "hotbar_group@hotbar.hotbar_group": {}
+      },
+      {
+        "hotbar_elipses_panel_right@hud.hotbar_elipses_panel_right_content": {}
+      }
+    ]
+  }
+}

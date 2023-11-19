@@ -1,0 +1,78 @@
+{
+  "namespace": "hud",
+
+  "hotbar_panel": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%c", 22 ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "controls": [
+      { "hotbar_start_cap@hud.hotbar_start_cap": {} },
+      { "hotbar_elipses_panel_left@hud.hotbar_elipses_panel_left_content": {} },
+      { "hotbar_group@hud.hotbar_group": {} },
+      { "hotbar_elipses_panel_right@hud.hotbar_elipses_panel_right_content": {} },
+      { "hotbar_end_cap@hud.hotbar_end_cap": {} }
+    ]
+  },
+  "hotbar_group": {
+    "type": "panel",
+    "size": [ 240, 22 ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "controls": [
+      { "hotbar_g1@hotbar_group1": {} },
+      { "hotbar_g2@hotbar_group2": {} },
+      { "hotbar_g3@hotbar_group3": {} }
+    ]
+  },
+  
+  "hotbar_group1": {
+    "type": "panel",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clips_children": true,
+    "size": [ 96, 22 ],
+    "offset": [-96, 0],
+    "controls": [
+      { "hotbar_ele1@hotbar_ele": {
+        "offset": [62, 0]
+      } }
+    ]
+  },
+  
+  "hotbar_group2": {
+    "type": "panel",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clips_children": true,
+    "size": [ 24, 22 ],
+    "controls": [
+      { "hotbar_ele2@hotbar_ele": {
+        "offset": [2, 0]} }
+    ]
+  },
+  
+  "hotbar_group3": {
+    "type": "panel",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clips_children": true,
+    "size": [ 96, 22 ],
+    "offset": [96, 0],
+    "controls": [
+      { "hotbar_ele3@hotbar_ele": {
+        "offset": [-58, 0]} }
+    ]
+  },
+
+  "hotbar_ele": {
+    "size": [ 216, 22 ],
+    "type": "panel",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "controls": [
+      { "hotbar_grid_ele@hotbar_grid": {"size": [ 216, 22 ]} }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Example Test pack",
+        "name": "Test",
+        "uuid": "b3a3139c-85f6-11ee-b9d1-0242ac120002",
+        "version": [1, 0, 0],
+        "min_engine_version": [ 1, 20, 40 ]
+    },
+    "modules": [
+        {
+            "description": "Example vanilla behavior pack",
+            "type": "data",
+            "uuid": "fa6e90c8-c925-460f-8155-c8a60b753caa",
+            "version": [0, 0, 1]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "c1b2aaec-85f6-11ee-b9d1-0242ac120002",
+            "version": [1, 0, 0]
+        }
+    ]
+}
