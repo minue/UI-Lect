@@ -62,20 +62,41 @@
   },
   
   "hotbar_group3": {
+    "$size|default": [96, 22],
     "type": "panel",
     "anchor_from": "center",
     "anchor_to": "center",
     "clips_children": true,
-    "size": [ 96, 22 ],
-    "offset": [96, 0],
+    "size": "$size",
+    "offset": [96, -22],
+    "variables": [
+      {
+        "requires": "(not $pocket_edition)",
+        "$size": [96, 22]
+      },
+      {
+        "requires": "$pocket_edition",
+        "$size": [96, 22]
+      }
+    ],
     "controls": [
       { "hotbar_ele3@hotbar_ele": {
-        "offset": [-58, 0]} },
+      "anchor_from": "right_middle",
+      "anchor_to": "right_middle",
+        "offset": [0, 0]} },
       
       { "prevent": {
         "type": "input_panel",
         "prevent_touch_input":true,
-        "size": [ "100%", "100%" ]} }
+        "size": [ "100%", "100%" ]} },
+      
+        { "prevent": {
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "type": "input_panel",
+          "prevent_touch_input":true,
+          "size": [ 24, 22 ],
+          "offset": [0, 22]} }
     ]
   },
 
