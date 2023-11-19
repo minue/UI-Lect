@@ -8,11 +8,9 @@
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
     "controls": [
-      { "hotbar_start_cap@hud.hotbar_start_cap": {} },
       { "hotbar_elipses_panel_left@hud.hotbar_elipses_panel_left_content": {} },
       { "hotbar_group@hud.hotbar_group": {} },
-      { "hotbar_elipses_panel_right@hud.hotbar_elipses_panel_right_content": {} },
-      { "hotbar_end_cap@hud.hotbar_end_cap": {} }
+      { "hotbar_elipses_panel_right@hud.hotbar_elipses_panel_right_content": {} }
     ]
   },
   "hotbar_group": {
@@ -33,11 +31,16 @@
     "anchor_to": "center",
     "clips_children": true,
     "size": [ 96, 22 ],
-    "offset": [-96, 0],
+    "offset": [-96, -150],
     "controls": [
       { "hotbar_ele1@hotbar_ele": {
         "offset": [62, 0]
-      } }
+      } },
+      
+      { "prevent": {
+        "type": "input_panel",
+        "prevent_touch_input":true,
+        "size": [ "100%", "100%" ]} }
     ]
   },
   
@@ -49,7 +52,12 @@
     "size": [ 24, 22 ],
     "controls": [
       { "hotbar_ele2@hotbar_ele": {
-        "offset": [2, 0]} }
+        "offset": [2, 0]} },
+      
+      { "prevent": {
+        "type": "input_panel",
+        "prevent_touch_input":true,
+        "size": [ "100%", "100%" ]} }
     ]
   },
   
@@ -62,13 +70,19 @@
     "offset": [96, 0],
     "controls": [
       { "hotbar_ele3@hotbar_ele": {
-        "offset": [-58, 0]} }
+        "offset": [-58, 0]} },
+      
+      { "prevent": {
+        "type": "input_panel",
+        "prevent_touch_input":true,
+        "size": [ "100%", "100%" ]} }
     ]
   },
 
   "hotbar_ele": {
     "size": [ 216, 22 ],
     "type": "panel",
+    "layer": 100,
     "anchor_from": "center",
     "anchor_to": "center",
     "controls": [

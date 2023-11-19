@@ -8,124 +8,212 @@
         ],
         "anchor_from": "center",
         "anchor_to": "center",
-        "controls": [
+        "controls": [            
+            { "prevent": {"type":"input_panel","prevent_touch_input":true,"size": [22,22],"offset": [-24,0]}},
             {
-                "hotbar_g1@hotbar_element": {
+                "hotbar_g1@hotbar_element1": {
                     "$offset": [
-                        96,
+                        "44.44%c + 2px",
                         0
                     ],
                     "offset": [
-                        "-100%c",
-                        "-100% + 200%c"
-                    ],
-                    "$texture": "textures/watts/hotbar_1",
-                    "$selected_image": "textures/watts/select"
-                }
-            },
-            {
-                "hotbar_g2@hotbar_element": {
-                    "$offset": [
-                        72,
-                        0
-                    ],
-                    "offset": [
-                        "100%c",
-                        "-100% + 200%c"
-                    ],
-                    "$texture": "textures/watts/hotbar_2",
-                    "$selected_image": "textures/watts/select"
-                }
-            },
-            {
-                "hotbar_g3@hotbar_element": {
-                    "$offset": [
-                        48,
-                        0
-                    ],
-                    "offset": [
-                        "50% - 100%c",
-                        "50%c"
-                    ],
-                    "$texture": "textures/watts/hotbar_3"
-                }
-            },
-            {
-                "hotbar_g4@hotbar_element": {
-                    "$offset": [
-                        24,
-                        0
-                    ],
-                    "offset": [
-                        "50% - 100%c",
-                        "-50%c"
-                    ],
-                    "$texture": "textures/watts/hotbar_4"
-                }
-            },
-            {
-                "hotbar_g5@hotbar_element": {
-                    "$offset": [
-                        0,
-                        0
-                    ],
-                    "offset": [
-                        "-150%c",
-                        "0"
-                    ],
-                    "$texture": "textures/watts/hotbar_5"
-                }
-            },
-            {
-                "hotbar_g6@hotbar_element": {
-                    "$offset": [
                         -24,
                         0
                     ],
-                    "offset": [
-                        "-50%c",
-                        0
-                    ],
-                    "$texture": "textures/watts/hotbar_6"
+                    "$selected_image": "textures/watts/select"
                 }
             },
+            { "prevent": {"type":"input_panel","prevent_touch_input":true,"size": [22,22],"offset": [0,0]}},
             {
-                "hotbar_g7@hotbar_element": {
+                "hotbar_g2@hotbar_element2": {
                     "$offset": [
-                        -48,
+                        "33.33%c + 2px",
                         0
                     ],
                     "offset": [
-                        "50%c",
+                        0,
                         0
                     ],
-                    "$texture": "textures/watts/hotbar_7"
+                    "$selected_image": "textures/watts/select"
                 }
             },
+            { "prevent": {"type":"input_panel","prevent_touch_input":true,"size": [22,22],"offset": [24,0]}},
             {
-                "hotbar_g8@hotbar_element": {
+                "hotbar_g3@hotbar_element3": {
                     "$offset": [
-                        -72,
+                        "22.22%c + 2px",
                         0
                     ],
                     "offset": [
-                        "-50% + 100%c",
-                        "-50%c"
+                        24,
+                        0
                     ],
-                    "$texture": "textures/watts/hotbar_8"
+                    "$selected_image": "textures/watts/select"
                 }
             },
+            { "prevent": {"type":"input_panel","prevent_touch_input":true,"size": [22,22],"offset": [100,-100]}},
             {
-                "hotbar_g9@hotbar_element": {
+                "hotbar_g4@hotbar_element4": {
                     "$offset": [
-                        -96,
+                        "11.11%c + 2px",
                         0
                     ],
                     "offset": [
-                        "-50% + 100%c",
-                        "50%c"
+                        100,
+                        -100
                     ],
-                    "$texture": "textures/watts/hotbar_9"
+                    "$selected_image": "textures/watts/select"
+                }
+            },
+            { "prevent": {"type":"input_panel","prevent_touch_input":true,"size": [22,22],"offset": [100,-124]}},
+            {
+                "hotbar_g5@hotbar_element5": {
+                    "$offset": [
+                        "2px",
+                        0
+                    ],
+                    "offset": [
+                        100,
+                        -124
+                    ],
+                    "$selected_image": "textures/watts/select"
+                }
+            },
+            { "prevent": {"type":"input_panel","prevent_touch_input":true,"size": [22,22],"offset": [12,-150]}},
+            {
+                "hotbar_g6@hotbar_element6": {
+                    "$offset": [
+                        "-11.11%c + 2px",
+                        0
+                    ],
+                    "offset": [
+                        12,
+                        -150
+                    ],
+                    "$selected_image": "textures/watts/select"
+                }
+            },
+            { "prevent": {"type":"input_panel","prevent_touch_input":true,"size": [22,22],"offset": [-12,-150]}},
+            {
+                "hotbar_g7@hotbar_element7": {
+                    "$offset": [
+                        "-22.22%c + 2px",
+                        0
+                    ],
+                    "offset": [
+                        -12,
+                        -150
+                    ],
+                    "$selected_image": "textures/watts/select"
+                }
+            },
+            { "prevent": {"type":"input_panel","prevent_touch_input":true,"size": [22,22],"offset": [-100,-124]}},
+            {
+                "hotbar_g8@hotbar_element8": {
+                    "$offset": [
+                        "-33.33%c + 2px",
+                        0
+                    ],
+                    "offset": [
+                        -100,
+                        -124
+                    ],
+                    "$selected_image": "textures/watts/select"
+                }
+            },
+            { "prevent": {"type":"input_panel","prevent_touch_input":true,"size": [22,22],"offset": [-100,-100]}},
+            {
+                "hotbar_g9@hotbar_element9": {
+                    "$offset": [
+                        "-44.44%c + 2px",
+                        0
+                    ],
+                    "offset": [
+                        -100,
+                        -100
+                    ],
+                    "$selected_image": "textures/watts/select"
+                }
+            }
+        ]
+    },
+    "hotbar_element1@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele1": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element2@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele2": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element3@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele3": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element4@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele4": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element5@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele5": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element6@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele6": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element7@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele7": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element8@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele8": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element9@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele9": {
+                    "offset": "$offset"
                 }
             }
         ]
@@ -147,6 +235,123 @@
             }
         ]
     },
+    "hotbar_ele1@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid1",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele2@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid2",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele3@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid3",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele4@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid4",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele5@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid5",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele6@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid6",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele7@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid7",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele8@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid8",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele9@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid9",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
     "hotbar_ele": {
         "size": [
             216,
@@ -157,8 +362,8 @@
         "anchor_to": "center",
         "controls": [
             {
-                "hotbar_grid_ele@hud.hotbar_grid": {
-                    "grid_item_template": "hotbar.gui_hotbar_grid_item",
+                "hotbar_grid_ele@hotbar_grid": {
+                    "grid_item_template": "hud.gui_hotbar_grid_item",
                     "size": [
                         216,
                         22
@@ -167,13 +372,57 @@
             }
         ]
     },
-    "gui_hotbar_grid_item@hud.gui_hotbar_grid_item": {
+    "hotbar_renderer@hud.hotbar_renderer": {
         "controls": [
             {
-                "hotbar_slot_selected_image@hotbar_slot_selected_image": {}
+                "hotbar_slot_image@hotbar.hotbar_slot_image": {
+                    "$hotbar_slot_image_size": "$hotbar_renderer_size"
+                }
+            }
+        ]
+    },
+    "hotbar_grid": {
+        "type": "grid",
+        "$hotbar_collection_name|default": "hotbar_items",
+        "grid_item_template": "hotbar_item_grid",
+        "grid_dimension_binding": "#hotbar_grid_dimensions",
+        "collection_name": "$hotbar_collection_name",
+        "bindings": [
+            {
+                "binding_name": "#hotbar_grid_dimensions",
+                "binding_type": "global"
+            }
+        ]
+    },
+    "hotbar_slot_image@hud.hotbar_slot_image": {
+    },
+    "hotbar_item_grid1@hotbar_item_grid": {
+    },
+    "hotbar_item_grid2@hotbar_item_grid": {
+    },
+    "hotbar_item_grid3@hotbar_item_grid": {
+    },
+    "hotbar_item_grid4@hotbar_item_grid": {
+    },
+    "hotbar_item_grid5@hotbar_item_grid": {
+    },
+    "hotbar_item_grid6@hotbar_item_grid": {
+    },
+    "hotbar_item_grid7@hotbar_item_grid": {
+    },
+    "hotbar_item_grid8@hotbar_item_grid": {
+    },
+    "hotbar_item_grid9@hotbar_item_grid": {
+    },
+    "hotbar_item_grid@hud.gui_hotbar_grid_item": {
+        "controls": [
+            {
+                "hotbar_slot_selected_image@hud.hotbar_slot_selected_image": {
+                    "texture": "$selected_image"
+                }
             },
             {
-                "hotbar_renderer@hotbar.hotbar_renderer": {}
+                "hotbar_renderer@hotbar_renderer": {}
             },
             {
                 "hotbar_parent": {
@@ -213,7 +462,7 @@
                             }
                         },
                         {
-                            "hotbar_hint@hud.edu_common.hotbar_hint": {}
+                            "hotbar_hint@edu_common.hotbar_hint": {}
                         },
                         {
                             "item_dura@hud.item_durability": {
@@ -246,29 +495,5 @@
                 "hotbar_slot_button@hud.gui_hotbar_slot_button_prototype": {}
             }
         ]
-    },
-    "hotbar_renderer@hud.hotbar_renderer": {
-        "controls": [
-            {
-                "hotbar_slot_image@hotbar.hotbar_slot_image": {
-                    "$hotbar_slot_image_size": "$hotbar_renderer_size"
-                }
-            }
-        ]
-    },
-    "hotbar_slot_image": {
-        "$hotbar_slot_image_size|default": [
-            20,
-            22
-        ],
-        "texture": "$texture",
-        "type": "image",
-        "offset": [
-            0,
-            0
-        ],
-        "size": "$hotbar_slot_image_size",
-        "layer": 1,
-        "alpha": 0.65
     }
 }
