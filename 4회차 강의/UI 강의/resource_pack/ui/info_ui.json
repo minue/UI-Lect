@@ -58,14 +58,6 @@
             0,
             -30
         ],
-        "variables": [
-            {
-                "requires": "(($text > '~') or ((($text - ('%.10s' * $text)) > '')) or (($text - ('%.2s' * $text)) > '')))",
-                "$visible": false,
-                "$hp": -1,
-                "$max_hp": -1
-            }
-        ],
         "controls": [
             {
                 "text": {
@@ -97,14 +89,6 @@
         "offset": [
             10,
             -15
-        ],
-        "variables": [
-            {
-                "requires": "(($text > '~') or ((($text - ('%.18s' * $text)) > '')) or (($text - ('%.26s' * $text)) > '')))",
-                "$visible": false,
-                "$mp": -1,
-                "$max_mp": -1
-            }
         ],
         "controls": [
             {
@@ -138,14 +122,6 @@
             20,
             0
         ],
-        "variables": [
-            {
-                "requires": "(($text > '~')  or ((($text - ('%.34s' * $text)) > '')) or (($text - ('%.42s' * $text)) > '')))",
-                "$visible": false,
-                "$exp": -1,
-                "$max_exp": -1
-            }
-        ],
         "controls": [
             {
                 "text": {
@@ -175,13 +151,6 @@
             12
         ],
         "text": "('LV: ' + $lv)",
-        "variables": [
-            {
-                "requires": "(($text > '~')  or (($text - ('%.50s' * $text)) > ''))",
-                "$visible": false,
-                "$lv": -1
-            }
-        ],
         "$lv": "($text - ('%.50s' * $text))",
         "offset": [
             -30,
