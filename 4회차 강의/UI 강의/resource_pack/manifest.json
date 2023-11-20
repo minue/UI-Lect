@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "UI TEST(4)",
+        "name": "UI TEST(4)",
+        "uuid": "de9f4e00-8793-11ee-b9d1-0242ac120002",
+        "version": [1, 0, 0],
+        "min_engine_version": [ 1, 20, 40 ]
+    },
+    "modules": [
+        {
+            "description": "UI TEST(4)",
+            "type": "resources",
+            "uuid": "743f6949-53be-44b6-b326-398005028819",
+            "version": [0, 0, 1]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "f3ac197c-8793-11ee-b9d1-0242ac120002",
+            "version": [1, 0, 0]
+        }
+    ]
+}
