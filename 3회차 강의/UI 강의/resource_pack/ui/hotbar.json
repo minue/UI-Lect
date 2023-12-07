@@ -134,7 +134,8 @@
                     ],
                     "$selected_image": "textures/watts/select"
                 }
-            }
+            },
+            { "prevent": {"type":"input_panel","prevent_touch_input":true,"size": [22,22],"offset": [120,0]}}
         ]
     },
     "hotbar_element1@hotbar_element": {
