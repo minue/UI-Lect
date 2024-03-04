@@ -1,0 +1,36 @@
+{
+   "format_version": "1.19.40",
+   "minecraft:item": {
+      "description": {
+         "identifier": "watts:dragon_wing",
+         "category": "equipment"
+      },
+      "components": {
+         "minecraft:render_offsets": {
+            "main_hand": {
+               "first_person": {
+                  "scale": [
+                     0.01875,
+                     0.015625,
+                     0.01875
+                  ]
+               },
+               "third_person": {
+                  "scale": [
+                     0.01875,
+                     0.015625,
+                     0.01875
+                  ]
+               }
+            }
+         },
+         "minecraft:icon": {
+            "texture": "dragon_wing"
+         },
+         "minecraft:display_name": {
+            "value": "dragon_wing"
+         }
+      },
+      "events": {}
+   }
+}

@@ -1,0 +1,31 @@
+watts:black_sword=Black Sword
+watts:dragon_eye=Dragon Eye
+watts:dragon_wing=Dragon Wing
+watts:iron_flower=Iron Flower
+watts:jewel=jewel
+watts:result_sword=Result Sword
+watts:tooth=Dragon's Tooth
+
+black_sword=Black Sword
+dragon_eye=Dragon Eye
+dragon_wing=Dragon Wing
+iron_flower=Iron Flower
+jewel=jewel
+result_sword=Result Sword
+tooth=Dragon's Tooth
+
+watts.item.craft=Making top items
+watts.item.upgrade=Item Upgrade
+
+knockback_wind.1.40=[Knockback 1 effect (probability: 40%)]
+critical.1.20=[Critical effect (probability: 420%)]
+drain.1.4=[Absorption effect (rate: 4%)]
+slow.1.20=[Slow effect (probability: 420%)]
+skil.teleport=[Teleport (skill)]
+
+skill.add=% probability, Add the skill
+
+item.need=Items Needed
+NEI=Not Enough Item
+Nope=No Need Item
+addition=Addition

@@ -1,0 +1,27 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_data": {
+    "black_sword": {
+      "textures": "textures/watts/item/black_sword"
+    },
+    "dragon_eye": {
+      "textures": "textures/watts/item/dragon_eye"
+    },
+    "dragon_wing": {
+      "textures": "textures/watts/item/dragon_wing"
+    },
+    "iron_flower": {
+      "textures": "textures/watts/item/iron_flower"
+    },
+    "jewel": {
+      "textures": "textures/watts/item/jewel"
+    },
+    "result_sword": {
+      "textures": "textures/watts/item/result_sword"
+    },
+    "tooth": {
+      "textures": "textures/watts/item/tooth"
+    }
+  },
+  "texture_name": "atlas.items"
+}

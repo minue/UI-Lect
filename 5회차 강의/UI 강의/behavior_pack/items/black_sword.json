@@ -1,0 +1,38 @@
+{
+   "format_version": "1.19.40",
+   "minecraft:item": {
+      "description": {
+         "identifier": "watts:black_sword",
+         "category": "equipment"
+      },
+      "components": {
+         "minecraft:hand_equipped": true,
+         "minecraft:render_offsets": {
+            "main_hand": {
+               "first_person": {
+                  "scale": [
+                     0.01875,
+                     0.015625,
+                     0.01875
+                  ]
+               },
+               "third_person": {
+                  "scale": [
+                     0.01875,
+                     0.015625,
+                     0.01875
+                  ]
+               }
+            }
+         },
+         "minecraft:icon": {
+            "texture": "black_sword"
+         },
+         "minecraft:display_name": {
+            "value": "black_sword"
+         },
+         "minecraft:damage":10
+      },
+      "events": {}
+   }
+}

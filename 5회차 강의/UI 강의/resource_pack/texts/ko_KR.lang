@@ -1,0 +1,31 @@
+﻿watts:black_sword=검은 검
+watts:dragon_eye=용안
+watts:dragon_wing=용익
+watts:iron_flower=철의 꽃
+watts:jewel=보석
+watts:result_sword=결과 검
+watts:tooth=용의 이빨
+
+black_sword=검은 검
+dragon_eye=용안
+dragon_wing=용익
+iron_flower=철의 꽃
+jewel=보석
+result_sword=결과 검
+tooth=용의 이빨
+
+watts.item.craft=상위아이템 제작
+watts.item.upgrade=아이템 업그레이드
+
+knockback_wind.1.40=[넉백 1 효과(확률: 40%)]
+critical.1.20=[크리티컬 효과(확률: 420%)]
+drain.1.4=[흡수 효과(비율: 4%)]
+slow.1.20=[슬로우 효과(확률: 420%)]
+skil.teleport=[텔레포트(스킬)]
+
+skill.add=% 확률로 해당 스킬 추가
+
+item.need=필수 아이템
+NEI=아아템 부족
+Nope=필요 아이템 없음
+addition=첨가물

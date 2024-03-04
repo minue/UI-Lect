@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "watts:result_sword",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "animations": {
+        "first_person": "animation.sword.first_person"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person": "c.is_first_person"
+          }
+        ]
+      },
+      "textures": {
+        "default": "textures/watts/item/result_sword",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.humanoid.weapon"
+      },
+      "render_controllers": [ "controller.render.item_default" ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "UI TEST(5)",
+        "name": "UI TEST(5)",
+        "uuid": "9f6bd656-8b01-11ee-b9d1-0242ac120002",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            20,
+            40
+        ]
+    },
+    "modules": [
+        {
+            "description": "UI TEST",
+            "type": "data",
+            "uuid": "fa6e90c8-c925-460f-8155-c8a60b753caa",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        },
+        {
+            "type": "script",
+            "language": "javascript",
+            "uuid": "60ae397d-4279-4a60-89a0-4612a75abd33",
+            "entry": "scripts/Main.js",
+            "version": [
+                0,
+                1,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "934c2e2a-8b01-11ee-b9d1-0242ac120002",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        },
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.8.0"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "1.1.0"
+        }
+    ]
+}

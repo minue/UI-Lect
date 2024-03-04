@@ -1,0 +1,739 @@
+{
+    "namespace": "reinforce",
+    "main_screen_content": {
+        "type": "panel",
+        "size": [
+            300,
+            210
+        ],
+        "bindings": [
+            {
+                "binding_name": "#title_text",
+                "binding_type": "global"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "(#title_text = 'watts.ui.reinforce.1')",
+                "target_property_name": "#visible"
+            }
+        ],
+        "controls": [
+            {
+                "reinforce@reinforce.object_panel": {}
+            },
+            {
+                "close_button@common_panel": {}
+            },
+            {
+                "ingredient_panel@ingredient_panel": {}
+            },
+            {
+                "item_panel@item_panel": {}
+            },
+            {
+                "result_panel@result_panel": {}
+            },
+            {
+                "image": {
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "type": "image",
+                    "layer": 10,
+                    "size": [
+                        80,
+                        20
+                    ],
+                    "texture": "textures/watts/ui/reinforce_arrow"
+                }
+            },
+            {
+                "left_arrow": {
+                    "alpha": 0.5,
+                    "offset": [
+                        -20,
+                        -60
+                    ],
+                    "anchor_from": "right_middle",
+                    "anchor_to": "right_middle",
+                    "type": "image",
+                    "layer": 10,
+                    "size": [
+                        80,
+                        80
+                    ],
+                    "texture": "textures/watts/ui/left_arrow",
+                    "controls": [
+                        {
+                            "t1": {
+                                "alpha": 1,
+                                "offset": [
+                                    -10,
+                                    -2
+                                ],
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "type": "label",
+                                "layer": 10,
+                                "color":[0,0,0],
+                                "font_type":"MinecraftTen",
+                                "text": "Add ",
+                                "font_size":"small",
+                                "font_scale_factor": 1.2
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "right_arrow": {
+                    "alpha": 0.5,
+                    "offset": [
+                        20,
+                        60
+                    ],
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "type": "image",
+                    "layer": 10,
+                    "size": [
+                        80,
+                        80
+                    ],
+                    "texture": "textures/watts/ui/right_arrow",
+                    "controls": [
+                        {
+                            "t2": {
+                                "alpha": 1,
+                                "offset": [
+                                    10,
+                                    0
+                                ],
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "type": "label",
+                                "layer": 10,
+                                "color":[0,0,0],
+                                "font_type":"MinecraftTen",
+                                "text": "Base",
+                                "font_size":"small",
+                                "font_scale_factor": 1.2
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "result_panel": {
+        "anchor_from": "center",
+        "clips_children": false,
+        "anchor_to": "center",
+        "type": "panel",
+        "size": [
+            300,
+            200
+        ],
+        "offset": [
+            80,
+            0
+        ],
+        "controls": [
+            {
+                "result_panel_@reinforce.result_panel_": {}
+            }
+        ]
+    },
+    "result_panel_": {
+        "offset": [
+            0,
+            -1950
+        ],
+        "size": [
+            60,
+            4200
+        ],
+        "type": "stack_panel",
+        "orientation": "vertical",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "factory": {
+            "name": "buttons",
+            "control_name": "reinforce.result"
+        },
+        "collection_name": "form_buttons",
+        "bindings": [
+            {
+                "binding_name": "#form_button_length",
+                "binding_name_override": "#collection_length"
+            }
+        ]
+    },
+    "result@dynamic_button": {
+        "$button_offset": [0, 35],
+        "size": [
+            60,
+            300
+        ],
+        "$size|default": [
+            40,
+            40
+        ],
+        "$texture": "textures/watts/ui/final_result",
+        "$texture_size": [
+            60,
+            60
+        ],
+        "$img_size": [
+            40,
+            40
+        ]
+    },
+    "ingredient_panel": {
+        "anchor_from": "center",
+        "clips_children": true,
+        "anchor_to": "top_middle",
+        "type": "panel",
+        "size": [
+            90,
+            100
+        ],
+        "offset": [
+            0,
+            -10
+        ],
+        "controls": [
+            {
+                "ingredient_panel_@reinforce.ingredient_panel_": {}
+            }
+        ]
+    },
+    "ingredient_panel_": {
+        "offset": [
+            0,
+            70
+        ],
+        "grid_dimensions": [
+            3,
+            4
+        ],
+        "maximum_grid_items": 12,
+        "size": [
+            90,
+            160
+        ],
+        "type": "grid",
+        "anchor_from": "bottom_middle",
+        "anchor_to": "bottom_middle",
+        "grid_item_template": "reinforce.ingredient",
+        "collection_name": "form_buttons",
+        "bindings": [
+            {
+                "binding_name": "#form_button_length",
+                "binding_name_override": "#collection_length"
+            }
+        ]
+    },
+    "ingredient":{
+        "type": "panel",
+        "size": [
+            30,
+            50
+        ],
+        "controls": [
+            {"ingredient_@ingredient_":{}},
+            {
+                "img": {
+                    "anchor_from": "bottom_middle",
+                    "anchor_to": "bottom_middle",
+                    "type": "image",
+                    "layer": 0,
+                    "size": [
+                        30,
+                        10
+                    ],
+                    "offset":[0,0],
+                    "texture": "textures/watts/ui/input"
+                }
+            }
+        ]
+    },
+    "ingredient_@dynamic_button": {
+        "$button_font_scale_factor": 0.8,
+        "size": [
+            30,
+            50
+        ],
+        "$size|default": [
+            30,
+            30
+        ],
+        "$texture": "textures/watts/ui/ingredient",
+        "$texture_size": [
+            30,
+            30
+        ],
+        "$img_size": [
+            20,
+            20
+        ]
+    },
+    "item_panel": {
+        "anchor_from": "center",
+        "clips_children": true,
+        "anchor_to": "bottom_middle",
+        "type": "panel",
+        "size": [
+            90,
+            83
+        ],
+        "offset": [
+            0,
+            -10
+        ],
+        "controls": [
+            {
+                "item_panel_@reinforce.item_panel_": {}
+            }
+        ]
+    },
+    "item_panel_": {
+        "offset": [
+            0,
+            -12
+        ],
+        "grid_dimensions": [
+            3,
+            4
+        ],
+        "maximum_grid_items": 12,
+        "size": [
+            90,
+            160
+        ],
+        "type": "grid",
+        "anchor_from": "bottom_middle",
+        "anchor_to": "bottom_middle",
+        "grid_item_template": "reinforce.item",
+        "collection_name": "form_buttons",
+        "bindings": [
+            {
+                "binding_name": "#form_button_length",
+                "binding_name_override": "#collection_length"
+            }
+        ]
+    },
+    
+    "item": {
+        "type": "panel",
+        "size": [
+            30,
+            50
+        ],
+        "controls": [
+            {"item_@item_":{}},
+            {
+                "img": {
+                    "anchor_from": "bottom_middle",
+                    "anchor_to": "bottom_middle",
+                    "type": "image",
+                    "layer": 0,
+                    "size": [
+                        30,
+                        10
+                    ],
+                    "offset":[0,0],
+                    "texture": "textures/watts/ui/input"
+                }
+            }
+        ]
+    },
+    "item_@dynamic_button": {
+        "$button_font_scale_factor": 0.8,
+        "size": [
+            30,
+            50
+        ],
+        "$size|default": [
+            30,
+            30
+        ],
+        "$texture": "textures/watts/ui/item",
+        "$texture_size": [
+            30,
+            30
+        ],
+        "$img_size": [
+            20,
+            20
+        ]
+    },
+    "common_panel@common.common_panel": {
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "controls": [
+            {
+                "image": {
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "type": "image",
+                    "layer": 0,
+                    "size": "$texture_size",
+                    "texture": "$texture",
+                    "$texture|default": "textures/watts/ui/ingredient_ui",
+                    "$texture_size|default": [
+                        "100%",
+                        "100%"
+                    ]
+                }
+            },
+            {
+                "close_button_holder": {
+                    "type": "panel",
+                    "ignored": "(not $show_close_button)",
+                    "layer": 1,
+                    "controls": [
+                        {
+                            "close@close_button": {
+                                "layer": "$close_button_layer",
+                                "offset": "$close_button_offset",
+                                "ignored": "$use_compact_close_button"
+                            }
+                        },
+                        {
+                            "compact_close@compact_close_button": {
+                                "layer": "$close_button_layer",
+                                "offset": "$close_button_offset",
+                                "ignored": "(not $use_compact_close_button)"
+                            }
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_name": "$close_button_visible_binding_name",
+                            "binding_name_override": "#visible"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "compact_close_button@common.close_button": {
+        "size": [
+            21,
+            13
+        ],
+        "$close_button_panel_size|default": [
+            15,
+            7
+        ],
+        "controls": [
+            {
+                "default@common.close_button_panel": {
+                    "$close_button_texture": "textures/watts/ui/exit"
+                }
+            },
+            {
+                "hover@common.close_button_panel": {
+                    "$close_button_texture": "textures/watts/ui/exit"
+                }
+            },
+            {
+                "pressed@common.close_button_panel": {
+                    "$close_button_texture": "textures/watts/ui/exit"
+                }
+            }
+        ]
+    },
+    "close_button@common.close_button": {
+        "controls": [
+            {
+                "default@common.close_button_panel": {
+                    "$close_button_texture": "textures/watts/ui/exit",
+                    "$button_alpha": "$default_button_alpha"
+                }
+            },
+            {
+                "hover@common.close_button_panel": {
+                    "$close_button_texture": "textures/watts/ui/exit"
+                }
+            },
+            {
+                "pressed@common.close_button_panel": {
+                    "$close_button_texture": "textures/watts/ui/exit"
+                }
+            }
+        ]
+    },
+    "object_panel": {
+        "anchor_from": "center",
+        "clips_children": false,
+        "anchor_to": "center",
+        "type": "panel",
+        "size": [
+            300,
+            200
+        ],
+        "offset": [
+            -80,
+            0
+        ],
+        "controls": [
+            {
+                "object_panel_@reinforce.object_panel_": {}
+            }
+        ]
+    },
+    "object_panel_": {
+        "offset": [
+            0,
+            -1650
+        ],
+        "size": [
+            60,
+            4200
+        ],
+        "type": "stack_panel",
+        "orientation": "vertical",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "factory": {
+            "name": "buttons",
+            "control_name": "reinforce.object"
+        },
+        "collection_name": "form_buttons",
+        "bindings": [
+            {
+                "binding_name": "#form_button_length",
+                "binding_name_override": "#collection_length"
+            }
+        ]
+    },
+    "object@dynamic_button": {
+        "size": [
+            60,
+            300
+        ],
+        "$size|default": [
+            40,
+            40
+        ],
+        "$texture": "textures/watts/ui/object",
+        "$texture_size": [
+            60,
+            60
+        ],
+        "$img_size": [
+            40,
+            40
+        ]
+    },
+    "dynamic_button": {
+        "$img_size|default": [
+            "75%",
+            "75%"
+        ],
+        "type": "panel",
+        "size": [
+            60,
+            60
+        ],
+        "$size|default": [
+            40,
+            40
+        ],
+        "controls": [
+            {
+                "image": {
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "type": "image",
+                    "layer": 10,
+                    "size": "$texture_size",
+                    "texture": "$texture",
+                    "$texture|default": "textures/watts/ui/ingredient",
+                    "$texture_size|default": [
+                        "100%",
+                        "100%"
+                    ]
+                }
+            },
+            {
+                "panel_name": {
+                    "type": "panel",
+                    "size": [
+                        "85%",
+                        "85%"
+                    ],
+                    "bindings": [
+                        {
+                            "binding_type": "view",
+                            "source_control_name": "image",
+                            "resolve_sibling_scope": true,
+                            "source_property_name": "(not (#texture = ''))",
+                            "target_property_name": "#visible"
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "image": {
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "type": "image",
+                                "size": "$img_size",
+                                "layer": 12,
+                                "bindings": [
+                                    {
+                                        "binding_name": "#form_button_texture",
+                                        "binding_name_override": "#texture",
+                                        "binding_type": "collection",
+                                        "binding_collection_name": "form_buttons"
+                                    },
+                                    {
+                                        "binding_name": "#form_button_texture_file_system",
+                                        "binding_name_override": "#texture_file_system",
+                                        "binding_type": "collection",
+                                        "binding_collection_name": "form_buttons"
+                                    },
+                                    {
+                                        "binding_type": "view",
+                                        "source_property_name": "(not ((#texture = '') or (#texture = 'loading')))",
+                                        "target_property_name": "#visible"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "progress@progress.progress_loading_bars": {
+                                "size": [
+                                    30,
+                                    4
+                                ],
+                                "offset": [
+                                    -2,
+                                    16
+                                ],
+                                "bindings": [
+                                    {
+                                        "binding_type": "view",
+                                        "source_control_name": "image",
+                                        "resolve_sibling_scope": true,
+                                        "source_property_name": "(#texture = 'loading')",
+                                        "target_property_name": "#visible"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "form_button@reinforce.light_text_button": {
+                    "$pressed_button_name": "button.form_button_click",
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "size": "$size",
+                    "$button_text": "#form_button_text",
+                    "$button_text_binding_type": "collection",
+                    "$button_text_grid_collection_name": "form_buttons",
+                    "$button_text_max_size": [
+                        24,
+                        12
+                    ],
+                    "bindings": [
+                        {
+                            "binding_type": "collection_details",
+                            "binding_collection_name": "form_buttons"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "light_text_button@common_buttons.light_text_button": {
+        "$btn_texture": "textures/watts/ui/blank",
+        "$font_type": "MinecraftTen",
+        "$button_offset|default": [
+            0,
+            19
+        ],
+        "$default_text_color|default": [
+            0,
+            0,
+            0
+        ],
+        "$hover_text_color|default": [
+            0,
+            0,
+            0
+        ],
+        "$pressed_text_color|default": [
+            0,
+            0,
+            0
+        ],
+        "$locked_text_color|default": [
+            0,
+            0,
+            0
+        ],
+        "controls": [
+            {
+                "default@$button_state_panel": {
+                    "$new_ui_button_texture": "$btn_texture",
+                    "$text_color": "$default_text_color",
+                    "$secondary_text_color": "$light_button_secondary_default_text_color",
+                    "$content_alpha": "$default_content_alpha",
+                    "$border_color": "$light_border_default_color",
+                    "$border_layer": 2,
+                    "$default_state": true,
+                    "$button_alpha": "$default_button_alpha",
+                    "layer": 1
+                }
+            },
+            {
+                "hover@$button_state_panel": {
+                    "$new_ui_button_texture": "$btn_texture",
+                    "$text_color": "$hover_text_color",
+                    "$secondary_text_color": "$light_button_secondary_hover_text_color",
+                    "$content_alpha": 1,
+                    "$border_color": "$light_border_hover_color",
+                    "$border_layer": 4,
+                    "$hover_state": true,
+                    "$button_alpha": "$default_hover_alpha",
+                    "layer": 4
+                }
+            },
+            {
+                "pressed@$button_state_panel": {
+                    "$new_ui_button_texture": "$btn_texture",
+                    "$text_color": "$pressed_text_color",
+                    "$secondary_text_color": "$light_button_secondary_pressed_text_color",
+                    "$button_offset|default": "$button_pressed_offset",
+                    "$content_alpha": "$pressed_alpha",
+                    "$border_color": "$light_border_pressed_color",
+                    "$border_layer": 5,
+                    "$pressed_state": true,
+                    "$button_alpha": "$default_pressed_alpha",
+                    "layer": 5
+                }
+            },
+            {
+                "locked@$button_state_panel": {
+                    "$new_ui_button_texture": "$btn_texture",
+                    "$text_color": "$locked_text_color",
+                    "$secondary_text_color": "$light_button_secondary_locked_text_color",
+                    "$content_alpha": "$locked_alpha",
+                    "$border_color": "$light_border_locked_color",
+                    "$button_image": "common_buttons.locked_button_image",
+                    "$border_layer": 1,
+                    "$locked_state": true,
+                    "layer": 1
+                }
+            }
+        ]
+    }
+}

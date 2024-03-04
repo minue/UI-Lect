@@ -1,0 +1,38 @@
+{
+   "format_version": "1.19.40",
+   "minecraft:item": {
+      "description": {
+         "identifier": "watts:result_sword",
+         "category": "equipment"
+      },
+      "components": {
+         "minecraft:hand_equipped": true,
+         "minecraft:render_offsets": {
+            "main_hand": {
+               "first_person": {
+                  "scale": [
+                     0.01875,
+                     0.015625,
+                     0.01875
+                  ]
+               },
+               "third_person": {
+                  "scale": [
+                     0.01875,
+                     0.015625,
+                     0.01875
+                  ]
+               }
+            }
+         },
+         "minecraft:icon": {
+            "texture": "result_sword"
+         },
+         "minecraft:display_name": {
+            "value": "result_sword"
+         },
+         "minecraft:damage": 13
+      },
+      "events": {}
+   }
+}
