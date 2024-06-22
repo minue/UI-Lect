@@ -1,25 +1,35 @@
 import { ActionFormData } from "@minecraft/server-ui";
-import { system, world } from "@minecraft/server";
-import { texture } from "./textureList";
+import { EquipmentSlot, system, world } from "@minecraft/server";
 import { reinforceFunc } from "./Reinforce";
+import { itemEffect } from "./itemEffect";
+import { skillEffect } from "./skill";
 let form = new ActionFormData();
-form.title("watts.ui.reinforce.1")
-    //투입 재료 1~6
-    .button("1", "textures/watts/item/tooth")
-    .button("2", "textures/watts/item/jewel")
-    .button("1", "textures/items/netherite_ingot")
-    .button("1", "textures/items/chorus_fruit")
-    .button("0", "textures/watts/item/blank")
-    .button("0", "textures/watts/item/blank")
-    //추가 재료 1~6
-    .button("0", "textures/watts/item/blank")
-    .button("0", "textures/watts/item/blank")
-    .button("0", "textures/watts/item/blank")
-    .button("0", "textures/watts/item/blank")
-    .button("0", "textures/watts/item/blank")
-    .button("0", "textures/watts/item/blank")
-    .button("", texture.sword.textures[2]) //강화 대상
-    .button("85%%", "textures/watts/item/result_sword"); //강화 결과
+world.afterEvents.itemUse.subscribe((ev) => {
+    if (ev.source.getComponent("minecraft:equippable")
+        .getEquipment(EquipmentSlot.Mainhand) == undefined) {
+        return;
+    }
+    const effect = ev.source.getComponent("minecraft:equippable")
+        .getEquipment(EquipmentSlot.Mainhand)
+        ?.getLore();
+    for (let i = 0; i < effect.length; i++) {
+        if (effect[i].startsWith("skill")) {
+            skillEffect(ev.source, effect[i]);
+        }
+    }
+});
+world.afterEvents.entityHitEntity.subscribe((ev) => {
+    if (ev.damagingEntity.getComponent("minecraft:equippable")
+        .getEquipment(EquipmentSlot.Mainhand) == undefined) {
+        return;
+    }
+    const effect = ev.damagingEntity.getComponent("minecraft:equippable")
+        .getEquipment(EquipmentSlot.Mainhand)
+        ?.getLore();
+    for (let i = 0; i < effect.length; i++) {
+        itemEffect(ev.damagingEntity, ev.hitEntity, effect[i]);
+    }
+});
 world.beforeEvents.itemUseOn.subscribe((ev) => {
     if (ev.block.permutation.matches("watts:test")) {
         system.run(() => {

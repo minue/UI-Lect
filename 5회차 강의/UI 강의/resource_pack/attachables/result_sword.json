@@ -18,11 +18,11 @@
         ]
       },
       "textures": {
-        "default": "textures/watts/item/result_sword",
+        "default": "textures/watts/item/texture_0",
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "geometry": {
-        "default": "geometry.humanoid.weapon"
+        "default": "geometry.result_sword"
       },
       "render_controllers": [ "controller.render.item_default" ]
     }

@@ -6,10 +6,10 @@
       "bones": {
         "rightitem": {
           "position": [ -1.5, 2.5, -2.8 ],
-          "rotation": [ 85, 45, 40.0 ],
-          "scale": 0.4
+          "rotation": [ 85, 45, 40.0 ]
         },
         "sword": {
+          "position": [ 0, 0, 5 ],
           "rotation": [ 0, 0, -30.0 ]
         }
       }
