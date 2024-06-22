@@ -32,7 +32,11 @@
          "minecraft:display_name": {
             "value": "result_sword"
          },
-         "minecraft:damage": 13
+         "minecraft:damage": 13,
+         "minecraft:cooldown":{
+            "category" : "result_sword",
+            "duration" : 2
+        }
       },
       "events": {}
    }

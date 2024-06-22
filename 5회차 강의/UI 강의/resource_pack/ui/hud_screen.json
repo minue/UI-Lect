@@ -1,0 +1,12 @@
+{
+  "namespace": "hud",
+  "root_panel/hud_actionbar_text_area": {
+    "type": "panel",
+    "factory": {
+      "name": "hud_actionbar_text_factory",
+      "control_ids": {
+        "hud_actionbar_text": "control_root@info_ui.control_root"
+      }
+    }
+  }
+}

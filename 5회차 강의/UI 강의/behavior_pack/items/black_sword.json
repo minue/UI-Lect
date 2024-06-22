@@ -32,7 +32,11 @@
          "minecraft:display_name": {
             "value": "black_sword"
          },
-         "minecraft:damage":10
+         "minecraft:damage":10,
+         "minecraft:cooldown":{
+            "category" : "black_sword",
+            "duration" : 4
+        }
       },
       "events": {}
    }

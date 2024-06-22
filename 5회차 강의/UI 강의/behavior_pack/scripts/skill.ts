@@ -1,4 +1,4 @@
-import { Entity } from "@minecraft/server";
+import { Entity, ItemCooldownComponent, ItemStack, Player } from "@minecraft/server";
 
 function teleport(player: Entity, power: number){
     let targetLocation = player.location
@@ -57,13 +57,18 @@ function gale(player: Entity, power: number){
     }
 }
 
-export function skillEffect(player: Entity, lore: string){
+export function skillEffect(player: Player, item: ItemStack,lore: string){
 
     const content = lore.split(".")
+    const cooldown =  item.getComponent("minecraft:cooldown") as ItemCooldownComponent
     let func = (attacker: Entity, power: number) => {}
     const mana = parseInt(content[3])
     const cool = parseInt(content[4])
     const power = parseInt(content[5])
+
+    if(cooldown.getCooldownTicksRemaining(player)){
+        return;
+    }
 
     switch (content[2]) {
         case "teleport":
@@ -78,6 +83,6 @@ export function skillEffect(player: Entity, lore: string){
         default:
             break;
     }
-    func(player,power)
-
+    func(player,power);
+    cooldown.startCooldown(player)
 }

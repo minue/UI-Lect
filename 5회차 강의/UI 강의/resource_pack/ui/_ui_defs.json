@@ -1,5 +1,6 @@
 {
   "ui_defs": [
-    "ui/reinforce.json"
+    "ui/reinforce.json",
+    "ui/info_ui.json"
   ]
 }

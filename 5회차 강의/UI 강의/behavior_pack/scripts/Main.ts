@@ -13,13 +13,14 @@ world.afterEvents.itemUse.subscribe((ev) => {
         return
     }
 
-    const effect = (ev.source.getComponent("minecraft:equippable") as EntityEquippableComponent)
-    .getEquipment(EquipmentSlot.Mainhand)
-    ?.getLore()
+    const item = (ev.source.getComponent("minecraft:equippable") as EntityEquippableComponent)
+    .getEquipment(EquipmentSlot.Mainhand)!
+
+    const effect = item?.getLore()
 
     for(let i = 0 ; i < effect!.length ; i++){
         if(effect![i].startsWith("skill")){
-            skillEffect(ev.source, effect![i])
+            skillEffect(ev.source, item, effect![i])
         }
     }
 })
