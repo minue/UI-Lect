@@ -74,7 +74,7 @@ export const ReinforceItem: Record<string, Array<IReinforceItem>> = {
                 [ "watts:dragon_wing", [ "knockback_wind.1.40", 30 ], "textures/watts/item/dragon_wing" ],
                 [ "watts:jewel", [ "critical.20.20", 10 ], "textures/watts/item/jewel" ],
                 [ "minecraft:string", [ "slow.1.200", 20 ], "textures/items/string" ],
-                [ "minecraft:ender_pearl", [ "skil.tleleport", 5 ], "textures/item/ender_pearl" ],
+                [ "minecraft:ender_pearl", [ "skill.tleleport", 5 ], "textures/item/ender_pearl" ],
             ]
         },
     ],
@@ -103,7 +103,7 @@ export const ReinforceItem: Record<string, Array<IReinforceItem>> = {
                 [ "watts:jewel", [ "critical.26.40", 20 ], "textures/watts/item/jewel" ],
                 [ "watts:tooth", [ "drain.100.1", 40 ], "textures/watts/item/tooth" ],
                 [ "minecraft:string", [ "slow.1.200", 20 ], "textures/items/string" ],
-                [ "minecraft:ender_pearl", [ "skil.move.teleport.25.100.100", 5 ], "textures/items/ender_pearl" ],
+                [ "minecraft:ender_pearl", [ "skill.move.teleport.25.100.100", 5 ], "textures/items/ender_pearl" ],
             ]
         },
         {
@@ -123,7 +123,7 @@ export const ReinforceItem: Record<string, Array<IReinforceItem>> = {
                 [ "watts:dragon_wing", [ "knockback_wind.1.40", 30 ], "textures/watts/item/dragon_wing" ],
                 [ "watts:jewel", [ "critical.20.20", 10 ], "textures/watts/item/jewel" ],
                 [ "minecraft:string", [ "slow.1.200", 20 ], "textures/items/string" ],
-                [ "minecraft:ender_pearl", [ "skil.move.teleport.25.100.100", 5 ], "textures/items/ender_pearl" ],
+                [ "minecraft:ender_pearl", [ "skill.move.teleport.25.100.100", 5 ], "textures/items/ender_pearl" ],
             ]
         }
     ],

@@ -15,7 +15,13 @@
           "texture": "reinforce",
           "render_method": "opaque"
         }
+      },
+      "minecraft:on_interact": {
+        "event": "t"
       }
+    },
+    "events": {
+      "t": {}
     }
   }
 }

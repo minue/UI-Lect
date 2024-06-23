@@ -4,8 +4,6 @@ import { reinforceFunc } from "./Reinforce";
 import { itemEffect } from "./itemEffect";
 import { skillEffect } from "./skill";
 
-let form = new ActionFormData();
-
 world.afterEvents.itemUse.subscribe((ev) => {
 
     if((ev.source.getComponent("minecraft:equippable") as EntityEquippableComponent)

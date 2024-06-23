@@ -6,6 +6,7 @@
          "category": "equipment"
       },
       "components": {
+         "minecraft:use_duration": 999999.0,
          "minecraft:hand_equipped": true,
          "minecraft:render_offsets": {
             "main_hand": {
@@ -32,12 +33,14 @@
          "minecraft:display_name": {
             "value": "black_sword"
          },
-         "minecraft:damage":10,
-         "minecraft:cooldown":{
-            "category" : "black_sword",
-            "duration" : 4
-        }
-      },
-      "events": {}
+         "minecraft:damage": 10,
+         "minecraft:cooldown": {
+            "category": "black_sword",
+            "duration": 4
+         },
+         "minecraft:durability": {
+            "max_durability": 360
+         }
+      }
    }
 }

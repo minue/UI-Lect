@@ -36,8 +36,10 @@
          "minecraft:cooldown":{
             "category" : "result_sword",
             "duration" : 2
+        },
+        "minecraft:durability": {
+           "max_durability": 720
         }
-      },
-      "events": {}
+      }
    }
 }

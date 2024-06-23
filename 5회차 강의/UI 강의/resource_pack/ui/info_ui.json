@@ -15,13 +15,16 @@
         "$show_ui|default": "hud.hud_actionbar_text",
         "variables": [
             {
-                "requires": "($text > '~')",
+                "requires": "($text > 'h')",
                 "$show_ui": "info_ui.total"
             }
         ],
         "controls": [
             {
                 "show_ui@$show_ui": {}
+            },
+            {
+                "text@text": {}
             }
         ]
     },
@@ -197,5 +200,22 @@
             -30,
             0
         ]
+    },
+    "text@hud.hud_actionbar_text": {
+        "controls": [
+            {
+                "actionbar_message@actionbar_message": {}
+            }
+        ]
+    },
+    "actionbar_message": {
+        "type": "label",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "color": "$tool_tip_text",
+        "layer": 31,
+        "text": "('§z' + ($text - ('%.58s' * $text)))",
+        "localize": false,
+        "alpha": "@hud.anim_actionbar_text_alpha_out"
     }
 }
