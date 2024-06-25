@@ -1,26 +1,42 @@
 import { ActionFormData } from "@minecraft/server-ui";
-import { EntityEquippableComponent, EquipmentSlot, system, world } from "@minecraft/server";
+import { EntityEquippableComponent, EquipmentSlot, ItemCooldownComponent, Player, system, world } from "@minecraft/server";
 import { reinforceFunc } from "./Reinforce";
 import { itemEffect } from "./itemEffect";
 import { skillEffect } from "./skill";
 
 world.afterEvents.itemUse.subscribe((ev) => {
 
+    const item = (ev.source.getComponent("minecraft:equippable") as EntityEquippableComponent)
+    .getEquipment(EquipmentSlot.Mainhand)!
+    
+    const cooldown =  item.getComponent("minecraft:cooldown") as ItemCooldownComponent
+
     if((ev.source.getComponent("minecraft:equippable") as EntityEquippableComponent)
         .getEquipment(EquipmentSlot.Mainhand) == undefined) {
         return
     }
 
-    const item = (ev.source.getComponent("minecraft:equippable") as EntityEquippableComponent)
-    .getEquipment(EquipmentSlot.Mainhand)!
-
     const effect = item?.getLore()
+
+    let hasSkill: boolean = false
+
+    for(let i = 0; i < effect.length; i++){
+        if(effect[i].startsWith("skill")){
+            hasSkill = true
+            break
+        }
+    }
+
+    if(cooldown.getCooldownTicksRemaining(ev.source)){
+        return;
+    }
 
     for(let i = 0 ; i < effect!.length ; i++){
         if(effect![i].startsWith("skill")){
             skillEffect(ev.source, item, effect![i])
         }
     }
+    cooldown.startCooldown(ev.source)
 })
 
 world.afterEvents.entityHitEntity.subscribe((ev) => {
@@ -48,7 +64,7 @@ world.beforeEvents.itemUseOn.subscribe((ev) => {
 
             ev.source.addTag("watts.in_ui")
 
-            reinforceFunc(ev.source, ev.itemStack.typeId)
+            reinforceFunc(ev.source, ev.itemStack)
 
         })
 

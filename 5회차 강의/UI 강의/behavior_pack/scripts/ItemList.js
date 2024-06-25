@@ -2,6 +2,7 @@ export function makeTable() {
     const table = {
         need: [],
         add: [],
+        change: [],
         enough: false
     };
     for (let i = 0; i < 6; i++) {
@@ -38,9 +39,10 @@ export const ReinforceItem = {
             add: [
                 ["watts:dragon_wing", ["knockback_wind.1.40", 30], "textures/watts/item/dragon_wing"],
                 ["watts:jewel", ["critical.20.20", 10], "textures/watts/item/jewel"],
-                ["minecraft:string", ["slow.1.200", 20], "textures/items/string"],
-                ["minecraft:ender_pearl", ["skill.tleleport", 5], "textures/item/ender_pearl"],
-            ]
+                ["minecraft:string", ["slow.1.20", 20], "textures/items/string"],
+                ["minecraft:ender_pearl", ["skill.tleleport", 5], "textures/items/ender_pearl"],
+            ],
+            change: {}
         },
     ],
     "watts:black_sword": [
@@ -67,9 +69,10 @@ export const ReinforceItem = {
                 ["watts:dragon_wing", ["knockback_wind.1.40", 40], "textures/watts/item/dragon_wing"],
                 ["watts:jewel", ["critical.26.40", 20], "textures/watts/item/jewel"],
                 ["watts:tooth", ["drain.100.1", 40], "textures/watts/item/tooth"],
-                ["minecraft:string", ["slow.1.200", 20], "textures/items/string"],
+                ["minecraft:string", ["slow.1.20", 20], "textures/items/string"],
                 ["minecraft:ender_pearl", ["skill.move.teleport.25.100.100", 5], "textures/items/ender_pearl"],
-            ]
+            ],
+            change: { "critical.20.20": "critical.26.40" }
         },
         {
             itemName: "watts:black_sword",
@@ -85,9 +88,10 @@ export const ReinforceItem = {
             add: [
                 ["watts:dragon_wing", ["knockback_wind.1.40", 30], "textures/watts/item/dragon_wing"],
                 ["watts:jewel", ["critical.20.20", 10], "textures/watts/item/jewel"],
-                ["minecraft:string", ["slow.1.200", 20], "textures/items/string"],
+                ["minecraft:string", ["slow.1.20", 20], "textures/items/string"],
                 ["minecraft:ender_pearl", ["skill.move.teleport.25.100.100", 5], "textures/items/ender_pearl"],
-            ]
+            ],
+            change: {}
         }
     ],
     "watts:result_sword": [
@@ -106,11 +110,12 @@ export const ReinforceItem = {
                 ["watts:dragon_wing", ["knockback_wind.1.40", 40], "textures/watts/item/dragon_wing"],
                 ["watts:jewel", ["critical.26.40", 20], "textures/watts/item/jewel"],
                 ["watts:tooth", ["drain.100.1", 40], "textures/watts/item/tooth"],
-                ["minecraft:string", ["slow.1.200", 20], "textures/items/string"],
+                ["minecraft:string", ["slow.1.20", 20], "textures/items/string"],
                 ["minecraft:ender_pearl", ["skill.move.teleport.25.100.100", 5], "textures/items/ender_pearl"],
                 ["minecraft:gunpowder", ["skill.move.dash.15.60.5", 5], "textures/items/gunpowder"],
                 ["minecraft:feather", ["skill.sp1.gale.50.200.6", 5], "textures/items/feather"],
-            ]
+            ],
+            change: {}
         }
     ]
 };

@@ -16,7 +16,13 @@ function drain(attacker, ent, power) {
     health.setCurrentValue(health.currentValue + 1);
 }
 function slow(attacker, ent, power) {
-    ent.addEffect("slowness", power, { amplifier: power - 1 });
+    switch (power) {
+        case 1:
+            ent.addEffect("slowness", 200, { amplifier: 0, showParticles: true });
+            break;
+        default:
+            break;
+    }
 }
 export function itemEffect(attacker, ent, lore) {
     const content = lore.split(".");
@@ -40,6 +46,9 @@ export function itemEffect(attacker, ent, lore) {
     }
     if (!randAttackEffect(percent)) {
         return;
+    }
+    if (attacker.typeId == "minecraft:player") {
+        attacker.sendMessage({ translate: `${content[0]}` });
     }
     func(attacker, ent, parseInt(content[1]));
 }

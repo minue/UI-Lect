@@ -1,4 +1,4 @@
-import { Entity, EntityComponentTypes, EntityDamageCause, EntityHealthComponent } from "@minecraft/server";
+import { Entity, EntityComponentTypes, EntityDamageCause, EntityHealthComponent, Player } from "@minecraft/server";
 import { randAttackEffect } from "./Util";
 
 function knockback(attacker: Entity, ent: Entity, power: number){
@@ -23,7 +23,13 @@ function drain(attacker: Entity, ent: Entity, power: number){
 }
 
 function slow(attacker: Entity, ent: Entity, power: number){
-    ent.addEffect("slowness", power, { amplifier: power -1 })
+    switch (power) {
+        case 1:
+            ent.addEffect("slowness", 200, { amplifier: 0, showParticles: true })
+            break;
+        default:
+            break;
+    }
 }
 
 export function itemEffect(attacker: Entity, ent: Entity, lore: string){
@@ -50,6 +56,10 @@ export function itemEffect(attacker: Entity, ent: Entity, lore: string){
 
     if(!randAttackEffect(percent)){
         return
+    }
+
+    if(attacker.typeId == "minecraft:player") {
+        (attacker as Player).sendMessage({ translate: `${content[0]}` })
     }
 
     func(attacker, ent, parseInt(content[1]))

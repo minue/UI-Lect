@@ -20,10 +20,16 @@ watts.item.craft=상위아이템 제작
 watts.item.upgrade=아이템 업그레이드
 watts.normal.reinforce.add=추가 아이템
 
-knockback_wind=[넉백 효과]
-critical=[크리티컬 효과]
-drain=[흡수 효과]
-slow.1.200=[슬로우 효과1(10초)]
+knockback_wind=[넉백]
+critical=[크리티컬]
+drain=[흡수]
+slow=[슬로우]
+
+knockback_wind.1.40=[넉백 효과1(40%)]
+critical.20.20=[크리티컬(20/20%)]
+critical.26.40=[크리티컬(26/40%)]
+drain.100.1=[흡수 효과(1)]
+slow.1.20=[슬로우 효과1(10초)]
 skill.move.teleport.25.100.100=[텔레포트1(스킬/5/25)]
 skill.move.dash.15.60.5=[대시1(스킬/5/25)]
 skill.sp1.gale.50.200.6=[강풍1(스킬/10/50)]

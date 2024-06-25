@@ -46,14 +46,8 @@ function gale(player, power) {
 }
 export function skillEffect(player, item, lore) {
     const content = lore.split(".");
-    const cooldown = item.getComponent("minecraft:cooldown");
     let func = (attacker, power) => { };
-    const mana = parseInt(content[3]);
-    const cool = parseInt(content[4]);
     const power = parseInt(content[5]);
-    if (cooldown.getCooldownTicksRemaining(player)) {
-        return;
-    }
     switch (content[2]) {
         case "teleport":
             func = teleport;
@@ -68,5 +62,4 @@ export function skillEffect(player, item, lore) {
             break;
     }
     func(player, power);
-    cooldown.startCooldown(player);
 }

@@ -10,6 +10,7 @@ export interface IReinforceItem {
     plus: any[][],
     need: any[][]
     add: any[][],
+    change: object
 }
 
 export interface IItemTable {
@@ -23,7 +24,8 @@ export interface IItemTable {
 
 export interface IReinforceTable {
     need: IItemTable[]
-    add: IItemTable[],
+    add: IItemTable[]
+    change: object
     enough: boolean
 }
 
@@ -32,11 +34,12 @@ export function makeTable(): IReinforceTable {
     const table: IReinforceTable = {
         need: [],
         add: [],
+        change: [],
         enough: false
     }
 
-    for(let i = 0 ; i < 6 ; i++){
-        table.add.push({           
+    for (let i = 0; i < 6; i++) {
+        table.add.push({
             item: null,
             count: 0,
             need: false,
@@ -45,7 +48,7 @@ export function makeTable(): IReinforceTable {
             texture: null
         })
     }
-    
+
 
     return table;
 }
@@ -63,19 +66,20 @@ export const ReinforceItem: Record<string, Array<IReinforceItem>> = {
             resultTexture: "textures/watts/item/black_sword",
             resultItemName: "watts:black_sword",
             need: [
-                [ "minecraft:iron_ingot", 1, "textures/items/iron_ingot" ],
-                [ "minecraft:netherite_ingot", 3, "textures/items/netherite_ingot" ],
-                [ "minecraft:popped_chorus_fruit", 2, "textures/items/chorus_fruit_popped" ],
+                ["minecraft:iron_ingot", 1, "textures/items/iron_ingot"],
+                ["minecraft:netherite_ingot", 3, "textures/items/netherite_ingot"],
+                ["minecraft:popped_chorus_fruit", 2, "textures/items/chorus_fruit_popped"],
             ],
             plus: [
-                [ "watts:iron_flower", 30, "textures/watts/item/iron_flower" ]
+                ["watts:iron_flower", 30, "textures/watts/item/iron_flower"]
             ],
             add: [
-                [ "watts:dragon_wing", [ "knockback_wind.1.40", 30 ], "textures/watts/item/dragon_wing" ],
-                [ "watts:jewel", [ "critical.20.20", 10 ], "textures/watts/item/jewel" ],
-                [ "minecraft:string", [ "slow.1.200", 20 ], "textures/items/string" ],
-                [ "minecraft:ender_pearl", [ "skill.tleleport", 5 ], "textures/item/ender_pearl" ],
-            ]
+                ["watts:dragon_wing", ["knockback_wind.1.40", 30], "textures/watts/item/dragon_wing"],
+                ["watts:jewel", ["critical.20.20", 10], "textures/watts/item/jewel"],
+                ["minecraft:string", ["slow.1.20", 20], "textures/items/string"],
+                ["minecraft:ender_pearl", ["skill.tleleport", 5], "textures/items/ender_pearl"],
+            ],
+            change: {}
         },
     ],
     "watts:black_sword": [
@@ -89,22 +93,23 @@ export const ReinforceItem: Record<string, Array<IReinforceItem>> = {
             resultTexture: "textures/watts/item/result_sword",
             resultItemName: "watts:result_sword",
             need: [
-                [ "minecraft:iron_ingot", 1, "textures/items/iron_ingot" ],
-                [ "minecraft:netherite_ingot", 3, "textures/items/netherite_ingot" ],
-                [ "minecraft:popped_chorus_fruit", 5, "textures/items/chorus_fruit_popped" ],
-                [ "watts:jewel", 1, "textures/watts/item/jewel"],
+                ["minecraft:iron_ingot", 1, "textures/items/iron_ingot"],
+                ["minecraft:netherite_ingot", 3, "textures/items/netherite_ingot"],
+                ["minecraft:popped_chorus_fruit", 5, "textures/items/chorus_fruit_popped"],
+                ["watts:jewel", 1, "textures/watts/item/jewel"],
             ],
             plus: [
-                [ "watts:iron_flower", 3, "textures/watts/item/iron_flower" ],
-                [ "watts:dragon_eye", 100, "textures/watts/item/dragon_eye" ]
+                ["watts:iron_flower", 3, "textures/watts/item/iron_flower"],
+                ["watts:dragon_eye", 100, "textures/watts/item/dragon_eye"]
             ],
             add: [
-                [ "watts:dragon_wing", [ "knockback_wind.1.40", 40 ], "textures/watts/item/dragon_wing" ],
-                [ "watts:jewel", [ "critical.26.40", 20 ], "textures/watts/item/jewel" ],
-                [ "watts:tooth", [ "drain.100.1", 40 ], "textures/watts/item/tooth" ],
-                [ "minecraft:string", [ "slow.1.200", 20 ], "textures/items/string" ],
-                [ "minecraft:ender_pearl", [ "skill.move.teleport.25.100.100", 5 ], "textures/items/ender_pearl" ],
-            ]
+                ["watts:dragon_wing", ["knockback_wind.1.40", 40], "textures/watts/item/dragon_wing"],
+                ["watts:jewel", ["critical.26.40", 20], "textures/watts/item/jewel"],
+                ["watts:tooth", ["drain.100.1", 40], "textures/watts/item/tooth"],
+                ["minecraft:string", ["slow.1.20", 20], "textures/items/string"],
+                ["minecraft:ender_pearl", ["skill.move.teleport.25.100.100", 5], "textures/items/ender_pearl"],
+            ],
+            change: {"critical.20.20": "critical.26.40"}
         },
         {
             itemName: "watts:black_sword",
@@ -120,14 +125,15 @@ export const ReinforceItem: Record<string, Array<IReinforceItem>> = {
             plus: [
             ],
             add: [
-                [ "watts:dragon_wing", [ "knockback_wind.1.40", 30 ], "textures/watts/item/dragon_wing" ],
-                [ "watts:jewel", [ "critical.20.20", 10 ], "textures/watts/item/jewel" ],
-                [ "minecraft:string", [ "slow.1.200", 20 ], "textures/items/string" ],
-                [ "minecraft:ender_pearl", [ "skill.move.teleport.25.100.100", 5 ], "textures/items/ender_pearl" ],
-            ]
+                ["watts:dragon_wing", ["knockback_wind.1.40", 30], "textures/watts/item/dragon_wing"],
+                ["watts:jewel", ["critical.20.20", 10], "textures/watts/item/jewel"],
+                ["minecraft:string", ["slow.1.20", 20], "textures/items/string"],
+                ["minecraft:ender_pearl", ["skill.move.teleport.25.100.100", 5], "textures/items/ender_pearl"],
+            ],
+            change: {}
         }
     ],
-    "watts:result_sword":[
+    "watts:result_sword": [
         {
             itemName: "watts:result_sword",
             text: "watts.item.upgrade",
@@ -142,14 +148,15 @@ export const ReinforceItem: Record<string, Array<IReinforceItem>> = {
             plus: [
             ],
             add: [
-                [ "watts:dragon_wing", [ "knockback_wind.1.40", 40 ], "textures/watts/item/dragon_wing" ],
-                [ "watts:jewel", [ "critical.26.40", 20 ], "textures/watts/item/jewel" ],
-                [ "watts:tooth", [ "drain.100.1", 40 ], "textures/watts/item/tooth" ],
-                [ "minecraft:string", [ "slow.1.200", 20 ], "textures/items/string" ],
-                [ "minecraft:ender_pearl", [ "skill.move.teleport.25.100.100", 5 ], "textures/items/ender_pearl" ],
-                [ "minecraft:gunpowder", [ "skill.move.dash.15.60.5", 5 ], "textures/items/gunpowder" ],
-                [ "minecraft:feather", [ "skill.sp1.gale.50.200.6", 5 ], "textures/items/feather" ],
-            ]
+                ["watts:dragon_wing", ["knockback_wind.1.40", 40], "textures/watts/item/dragon_wing"],
+                ["watts:jewel", ["critical.26.40", 20], "textures/watts/item/jewel"],
+                ["watts:tooth", ["drain.100.1", 40], "textures/watts/item/tooth"],
+                ["minecraft:string", ["slow.1.20", 20], "textures/items/string"],
+                ["minecraft:ender_pearl", ["skill.move.teleport.25.100.100", 5], "textures/items/ender_pearl"],
+                ["minecraft:gunpowder", ["skill.move.dash.15.60.5", 5], "textures/items/gunpowder"],
+                ["minecraft:feather", ["skill.sp1.gale.50.200.6", 5], "textures/items/feather"],
+            ],
+            change: {}
         }
     ]
 }

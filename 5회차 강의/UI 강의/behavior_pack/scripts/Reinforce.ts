@@ -1,4 +1,4 @@
-import { EntityEquippableComponent, EntityInventoryComponent, EquipmentSlot, ItemStack, Player } from "@minecraft/server";
+import { EntityEquippableComponent, EntityInventoryComponent, EquipmentSlot, ItemComponentTypes, ItemDurabilityComponent, ItemStack, Player } from "@minecraft/server";
 import { IReinforceItem, IReinforceTable, ReinforceItem, makeTable } from "./ItemList";
 import { ActionFormData, ActionFormResponse, MessageFormData, MessageFormResponse, ModalFormData, ModalFormResponse } from "@minecraft/server-ui";
 import { checkItem, checkItemNum } from "./checkInven";
@@ -16,7 +16,7 @@ function makeChooseForm(itemList: IReinforceItem[]) {
     return form
 }
 
-function itemGridForm(player: Player, itemList: IReinforceItem) {
+function itemGridForm(player: Player, itemList: IReinforceItem, item: ItemStack) {
     const form = new MessageFormData();
 
     const table = makeTable();
@@ -31,6 +31,8 @@ function itemGridForm(player: Player, itemList: IReinforceItem) {
     if (itemList.need.length == 0) {
         text += `-%Nope\n`
     }
+
+    table.change = itemList.change
 
     for (let i = 0; i < itemList.need.length; i++) {
         itemName = itemList.need[i][0].split(":")[1]
@@ -103,12 +105,12 @@ function itemGridForm(player: Player, itemList: IReinforceItem) {
 
     form.show(player).then((res: MessageFormResponse) => {
         if (res.selection == 0) {
-            reinforceWindow(player, itemList, table)
+            reinforceWindow(player, item, itemList, table)
         }
     })
 }
 
-function reinforceItem(player: Player, itemName: string, resultItemName: string, data: IReinforceTable, per: number) {
+function reinforceItem(player: Player, item: ItemStack, resultItemName: string, data: IReinforceTable, per: number) {
 
     const effect: object = {};
 
@@ -152,9 +154,27 @@ function reinforceItem(player: Player, itemName: string, resultItemName: string,
 
     const inven = player.getComponent("minecraft:inventory") as EntityInventoryComponent
 
-    const item = new ItemStack(resultItemName)
+    const resultItem = new ItemStack(resultItemName)
+    const durabilityComponent = resultItem.getComponent(ItemComponentTypes.Durability) as ItemDurabilityComponent
+    const resultDurability = durabilityComponent.maxDurability
+    console.log(`${resultDurability}`)
+    const damage = (item.getComponent(ItemComponentTypes.Durability) as ItemDurabilityComponent).damage
+    console.log(`${damage}`)
+    const durability = (item.getComponent(ItemComponentTypes.Durability) as ItemDurabilityComponent).maxDurability
+    console.log(`${durability}`)
+    const resultDamage = Math.floor((resultDurability / durability) * damage)
+    console.log(`${resultDamage}`)
+
+    durabilityComponent.damage = resultDamage
 
     const effectKey = Object.keys(effect)
+
+    for (let i = 0; i < resultEffect.length; i++) {
+        if (Object.keys(data.change).indexOf(resultEffect[i]) > -1) {
+            effectKey.push(data.change[resultEffect[i]])
+            effect[data.change[resultEffect[i]]] = 100
+        }
+    }
 
     for (let i = 0; i < effectKey.length; i++) {
         if (!randReinforce(effect[effectKey[i]])) {
@@ -167,10 +187,15 @@ function reinforceItem(player: Player, itemName: string, resultItemName: string,
         resultEffect.push(effectKey[i])
     }
 
-    player.sendMessage({ translate: 'reinforce.success' })
-    item.setLore(resultEffect)
 
-    inven.container?.addItem(item)
+    player.sendMessage({ translate: 'reinforce.success' })
+    if (resultEffect.length == 0) {
+        inven.container?.addItem(resultItem)
+        return;
+    }
+    resultItem.setLore(resultEffect)
+
+    inven.container?.addItem(resultItem)
 }
 
 function removeDuplicate(effectKey: string, resultEffect: string[]) {
@@ -197,7 +222,7 @@ function removeDuplicate(effectKey: string, resultEffect: string[]) {
     }
 }
 
-export function reinforceWindow(player: Player, itemList: IReinforceItem, data: IReinforceTable) {
+export function reinforceWindow(player: Player, item: ItemStack, itemList: IReinforceItem, data: IReinforceTable) {
     const form = new ActionFormData();
 
     let canCraft = true
@@ -251,18 +276,18 @@ export function reinforceWindow(player: Player, itemList: IReinforceItem, data: 
             return
         }
         if (res.selection < 6 || res.selection == 12) {
-            reinforceWindow(player, itemList, data)
+            reinforceWindow(player, item, itemList, data)
         }
         if (5 < res.selection && res.selection < 12) {
-            additionalitems(player, itemList, data, res.selection - 6)
+            additionalitems(player, itemList, data, res.selection - 6, item)
         }
         if (res.selection == 13) {
-            reinforceItem(player, itemList.itemName, itemList.resultItemName, data, percent)
+            reinforceItem(player, item, itemList.resultItemName, data, percent)
         }
     })
 }
 
-function additionalitems(player: Player, itemList: IReinforceItem, data: IReinforceTable, index: number) {
+function additionalitems(player: Player, itemList: IReinforceItem, data: IReinforceTable, index: number, item: ItemStack) {
     const form = new ActionFormData();
     let itemNum;
     let cancel = false
@@ -284,7 +309,7 @@ function additionalitems(player: Player, itemList: IReinforceItem, data: IReinfo
 
     form.show(player).then((res: ActionFormResponse) => {
         if (res.selection == null) {
-            reinforceWindow(player, itemList, data)
+            reinforceWindow(player, item, itemList, data)
             return
         } else if (res.selection < itemList.add.length) {
             const sel = res.selection
@@ -293,7 +318,7 @@ function additionalitems(player: Player, itemList: IReinforceItem, data: IReinfo
             numForm.slider("COUNT", 0, 20, 1)
             numForm.show(player).then((ans) => {
                 if (ans.formValues == null) {
-                    reinforceWindow(player, itemList, data)
+                    reinforceWindow(player, item, itemList, data)
                     return
                 }
                 if (ans.formValues[0] == 0) {
@@ -305,7 +330,7 @@ function additionalitems(player: Player, itemList: IReinforceItem, data: IReinfo
                         percent: 0,
                         texture: null
                     }
-                    reinforceWindow(player, itemList, data)
+                    reinforceWindow(player, item, itemList, data)
                     return
                 }
                 if (NEIfunc(player, itemList, data, itemList.add[sel][0], c)) {
@@ -321,17 +346,17 @@ function additionalitems(player: Player, itemList: IReinforceItem, data: IReinfo
                     percent: 0,
                     texture: itemList.add[sel][2]
                 }
-                reinforceWindow(player, itemList, data)
+                reinforceWindow(player, item, itemList, data)
 
             })
         } else {
-            const sel = res.selection - itemList.add.length[0]
+            const sel = res.selection - itemList.add.length
             let c = data.add[sel] == undefined ? 0 : data.add[sel].count
             const numForm = new ModalFormData();
             numForm.slider("COUNT", 0, 20, 1)
             numForm.show(player).then((ans) => {
                 if (ans.formValues == null) {
-                    reinforceWindow(player, itemList, data)
+                    reinforceWindow(player, item, itemList, data)
                     return
                 }
                 if (ans.formValues[0] == 0) {
@@ -343,14 +368,13 @@ function additionalitems(player: Player, itemList: IReinforceItem, data: IReinfo
                         percent: 0,
                         texture: null
                     }
-                    reinforceWindow(player, itemList, data)
+                    reinforceWindow(player, item, itemList, data)
                     return
                 }
                 if (NEIfunc(player, itemList, data, itemList.plus[sel][0], c)) {
                     cancel = true
                     return;
                 }
-                console.warn(JSON.stringify(ans.formValues))
                 data.add[index] = {
                     item: itemList.plus[sel][0],
                     count: ans.formValues![0] as number,
@@ -359,7 +383,7 @@ function additionalitems(player: Player, itemList: IReinforceItem, data: IReinfo
                     percent: itemList.plus[sel][1],
                     texture: itemList.plus[sel][2]
                 }
-                reinforceWindow(player, itemList, data)
+                reinforceWindow(player, item, itemList, data)
             })
         }
         if (cancel) {
@@ -368,13 +392,13 @@ function additionalitems(player: Player, itemList: IReinforceItem, data: IReinfo
     })
 }
 
-export function reinforceFunc(player: Player, holdItem: string) {
-    if (Object.keys(ReinforceItem).includes(holdItem)) {
-        makeChooseForm(ReinforceItem[holdItem]).show(player).then((res: ActionFormResponse) => {
+export function reinforceFunc(player: Player, holdItem: ItemStack) {
+    if (Object.keys(ReinforceItem).includes(holdItem.typeId)) {
+        makeChooseForm(ReinforceItem[holdItem.typeId]).show(player).then((res: ActionFormResponse) => {
             if (res.selection == null) {
                 return
             }
-            itemGridForm(player, ReinforceItem[holdItem][res.selection])
+            itemGridForm(player, ReinforceItem[holdItem.typeId][res.selection], holdItem)
         })
     }
 }
