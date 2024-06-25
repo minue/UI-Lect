@@ -157,13 +157,9 @@ function reinforceItem(player: Player, item: ItemStack, resultItemName: string, 
     const resultItem = new ItemStack(resultItemName)
     const durabilityComponent = resultItem.getComponent(ItemComponentTypes.Durability) as ItemDurabilityComponent
     const resultDurability = durabilityComponent.maxDurability
-    console.log(`${resultDurability}`)
     const damage = (item.getComponent(ItemComponentTypes.Durability) as ItemDurabilityComponent).damage
-    console.log(`${damage}`)
     const durability = (item.getComponent(ItemComponentTypes.Durability) as ItemDurabilityComponent).maxDurability
-    console.log(`${durability}`)
     const resultDamage = Math.floor((resultDurability / durability) * damage)
-    console.log(`${resultDamage}`)
 
     durabilityComponent.damage = resultDamage
 
@@ -333,7 +329,7 @@ function additionalitems(player: Player, itemList: IReinforceItem, data: IReinfo
                     reinforceWindow(player, item, itemList, data)
                     return
                 }
-                if (NEIfunc(player, itemList, data, itemList.add[sel][0], c)) {
+                if (NEIfunc(player, itemList, data, itemList.add[sel][0], ans.formValues[0] as number, item)) {
                     cancel = true
                     return;
                 }
@@ -371,7 +367,7 @@ function additionalitems(player: Player, itemList: IReinforceItem, data: IReinfo
                     reinforceWindow(player, item, itemList, data)
                     return
                 }
-                if (NEIfunc(player, itemList, data, itemList.plus[sel][0], c)) {
+                if (NEIfunc(player, itemList, data, itemList.plus[sel][0], ans.formValues[0] as number, item)) {
                     cancel = true
                     return;
                 }

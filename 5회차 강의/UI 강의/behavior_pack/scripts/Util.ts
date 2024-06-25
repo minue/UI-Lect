@@ -1,4 +1,4 @@
-import { Player } from "@minecraft/server";
+import { ItemStack, Player } from "@minecraft/server";
 import { IReinforceItem, IReinforceTable } from "./ItemList";
 import { checkItemNum } from "./checkInven";
 import { MessageFormData } from "@minecraft/server-ui";
@@ -25,7 +25,8 @@ export function checkAddingredient(item: string, data: IReinforceTable): number{
     return num + reduce
 }
 
-export function NEIfunc(player: Player, itemList: IReinforceItem, data: IReinforceTable, item: string, c: number){
+export function NEIfunc(player: Player, itemList: IReinforceItem, data: IReinforceTable, item: string, c: number, hold: ItemStack){
+    console.warn(`${checkItemNum(player, item)} ${checkAddingredient(item, data) + c}`)
     if(checkItemNum(player, item) < checkAddingredient(item, data) + c){
         new MessageFormData()
         .title("NEI")
@@ -37,7 +38,7 @@ export function NEIfunc(player: Player, itemList: IReinforceItem, data: IReinfor
             if(formData.selection == null || formData.selection == 1){
                 return
             }
-            reinforceWindow(player, itemList, data)
+            reinforceWindow(player, hold, itemList, data)
         })
         return true
     }

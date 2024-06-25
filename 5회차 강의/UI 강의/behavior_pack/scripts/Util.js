@@ -19,7 +19,8 @@ export function checkAddingredient(item, data) {
     }
     return num + reduce;
 }
-export function NEIfunc(player, itemList, data, item, c) {
+export function NEIfunc(player, itemList, data, item, c, hold) {
+    console.warn(`${checkItemNum(player, item)} ${checkAddingredient(item, data) + c}`);
     if (checkItemNum(player, item) < checkAddingredient(item, data) + c) {
         new MessageFormData()
             .title("NEI")
@@ -31,7 +32,7 @@ export function NEIfunc(player, itemList, data, item, c) {
             if (formData.selection == null || formData.selection == 1) {
                 return;
             }
-            reinforceWindow(player, itemList, data);
+            reinforceWindow(player, hold, itemList, data);
         });
         return true;
     }
