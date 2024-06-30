@@ -24,7 +24,9 @@
                 "show_ui@$show_ui": {}
             },
             {
-                "text@text": {}
+                "text@text": {
+                    "ignored": "(not ($text > 'h'))"
+                }
             }
         ]
     },
