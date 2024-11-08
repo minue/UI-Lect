@@ -1,0 +1,36 @@
+{
+  "namespace": "hud",
+	"root_panel": {
+		"type": "panel",
+		"$xp_control_offset|default": [ 0, -13 ],
+		"modifications": [
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+				"image@test.image1": {}
+				}
+			},
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+				"image@test.image2": {}
+				}
+			}
+    ]
+  },
+	"hud_title_text/title_frame/title": {
+		"modifications": [
+			{
+				"array_name": "bindings",
+				"operation": "insert_back",
+				"value": {
+				"binding_type": "view",
+				"source_property_name": "(not ((#text = 'test1') or (#text = 'test2')))",
+				"target_property_name": "#visible"
+				}
+			}
+		]
+	}
+}

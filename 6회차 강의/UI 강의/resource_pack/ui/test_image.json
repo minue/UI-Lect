@@ -1,0 +1,49 @@
+{
+    "namespace": "test",
+    "image1": {
+        "type": "image",
+        "offset": [
+            "0%",
+            "0%"
+        ],
+        "layer": 11,
+        "bindings": [
+            {
+                "binding_name": "#hud_title_text_string"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "(#hud_title_text_string = 'test1')",
+                "target_property_name": "#visible"
+            }
+        ],
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "texture": "textures/watts/test1"
+    },
+    "image2": {
+        "type": "image",
+        "offset": [
+            "0%",
+            "0%"
+        ],
+        "layer": 11,
+        "bindings": [
+            {
+                "binding_name": "#hud_title_text_string"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "(#hud_title_text_string = 'test2')",
+                "target_property_name": "#visible"
+            }
+        ],
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "texture": "textures/watts/test2"
+    }
+}
