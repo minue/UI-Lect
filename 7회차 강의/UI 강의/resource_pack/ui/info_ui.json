@@ -1,0 +1,137 @@
+{
+    "namespace": "info_ui",
+    "total": {
+        "type": "panel",
+        "$text": "$actionbar_text",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "size": [
+            100,
+            100
+        ],
+        "controls": [
+            {
+                "hp@hp": {}
+            },
+            {
+                "mp@mp": {}
+            },
+            {
+                "exp@exp": {}
+            },
+            {
+                "lv@lv": {}
+            }
+        ]
+    },
+    "hp": {
+        "type": "image",
+        "size": [
+            100,
+            100
+        ],
+        "texture": "('textures/watts/bar/hp' + (($hp * 135) / $max_hp))",
+        "$hp": "($text - ('%.2s' * $text))",
+        "$max_hp": "($text - ('%.10s' * $text))",
+        "controls": [
+            {
+                "text": {
+                    "offset": [
+                        20,
+                        80
+                    ],
+                    "type": "label",
+                    "font_scale_factor": 0.7,
+                    "font_type": "MinecraftTen",
+                    "shadow": true,
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "color": "$tool_tip_text",
+                    "layer": 31,
+                    "text": "(((HP: + $hp) + '/') + $max_hp)",
+                    "localize": false
+                }
+            }
+        ]
+    },
+    "mp": {
+        "type": "image",
+        "size": [
+            100,
+            100
+        ],
+        "texture": "('textures/watts/bar/mp' + (($mp * 135) / $max_mp))",
+        "$mp": "($text - ('%.18s' * $text))",
+        "$max_mp": "($text - ('%.26s' * $text))",
+        "controls": [
+            {
+                "text": {
+                    "offset": [
+                        -20,
+                        80
+                    ],
+                    "type": "label",
+                    "font_scale_factor": 0.7,
+                    "font_type": "MinecraftTen",
+                    "shadow": true,
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "color": "$tool_tip_text",
+                    "layer": 31,
+                    "text": "(((MP: + $mp) + '/') + $max_mp)",
+                    "localize": false
+                }
+            }
+        ]
+    },
+    "exp": {
+        "type": "image",
+        "size": [
+            50,
+            6
+        ],
+        "texture": "('textures/watts/bar/exp' + (($exp * 100) / $max_exp))",
+        "$exp": "($text - ('%.34s' * $text))",
+        "$max_exp": "($text - ('%.42s' * $text))",
+        "offset": [
+            0,
+            18
+        ],
+        "controls": [
+            {
+                "text": {
+                    "type": "label",
+                    "offset": [
+                        "-100%c",
+                        "-100%c"
+                    ],
+                    "font_scale_factor": 0.7,
+                    "font_type": "MinecraftTen",
+                    "shadow": true,
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "color": "$tool_tip_text",
+                    "layer": 31,
+                    "text": "(((EXP: + $exp) + '/') + $max_exp)",
+                    "localize": false
+                }
+            }
+        ]
+    },
+    "lv": {
+        "font_type": "MinecraftTen",
+        "font_scale_factor": 0.8,
+        "shadow": true,
+        "type": "label",
+        "size": [
+            60,
+            12
+        ],
+        "text": "('LV: ' + $lv)",
+        "$lv": "($text - ('%.50s' * $text))",
+        "offset": [
+            20,
+            10
+        ]
+    }
+}

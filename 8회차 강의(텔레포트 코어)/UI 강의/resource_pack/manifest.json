@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Teleport Core Addon",
+        "name": "TP Core[R]",
+        "uuid": "73d53a8e-b1f8-45e1-95e1-665e9d7c6dc9",
+        "version": [1, 0, 0],
+        "min_engine_version": [ 1, 20, 40 ]
+    },
+    "modules": [
+        {
+            "description": "TP Core[R]",
+            "type": "resources",
+            "uuid": "743f6949-53be-44b6-b326-398005028819",
+            "version": [0, 0, 1]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "ee0be54a-5195-4e24-8134-cd191f077361",
+            "version": [1, 0, 0]
+        }
+    ]
+}

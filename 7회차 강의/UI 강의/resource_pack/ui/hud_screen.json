@@ -1,0 +1,114 @@
+{
+  "namespace": "hud",
+  "hud_content": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "inv@inv.inv": {}
+          }
+        ]
+      }
+    ]
+  },
+  "hud_actionbar_text": {
+    "type": "image",
+    "size": [ "100%c + 12px", "100%c + 5px" ],
+    "offset": [ 0, "50%-68px" ],
+    "texture": "textures/ui/hud_tip_text_background",
+    "alpha": "@hud.anim_actionbar_text_background_alpha_out",
+    "visible": "($actionbar_text > 'hp')",
+    "controls": [
+      {
+        "actionbar_message": {
+          "type": "label",
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "color": "$tool_tip_text",
+          "layer": 31,
+          "text": "$actionbar_text",
+          "localize": false,
+          "alpha": "@hud.anim_actionbar_text_alpha_out"
+        }
+      }
+    ]
+  },
+
+  "hotbar_panel": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      180,
+      33
+    ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "controls": [
+      {
+        "hotbar_panel_@hud.hotbar_panel_": {
+        }
+      }
+    ]
+  },
+  "hotbar_panel_": {
+    "type": "panel",
+    "size": [
+      0,
+      0
+    ]
+  },
+  
+  "gui_hotbar_grid_item_@hud.gui_hotbar_grid_item": {
+    "size": [
+      100,
+      66
+    ],
+    "$hotbar_slot_selected_texture": "textures/ui/selected_hotbar_slot_0"
+  },
+  "gui_hotbar_grid_item_1@hud.gui_hotbar_grid_item_": {
+    "$hotbar_slot_selected_texture": "textures/ui/selected_hotbar_slot_0"
+  },
+  "gui_hotbar_grid_item_2@hud.gui_hotbar_grid_item_": {
+    "$hotbar_slot_selected_texture": "textures/ui/selected_hotbar_slot_1"
+  },
+  "gui_hotbar_grid_item_3@hud.gui_hotbar_grid_item_": {
+    "$hotbar_slot_selected_texture": "textures/ui/selected_hotbar_slot_2"
+  },
+  "gui_hotbar_grid_item_4@hud.gui_hotbar_grid_item_": {
+    "$hotbar_slot_selected_texture": "textures/ui/selected_hotbar_slot_3"
+  },
+  "gui_hotbar_grid_item_5@hud.gui_hotbar_grid_item_": {
+    "$hotbar_slot_selected_texture": "textures/ui/selected_hotbar_slot_4"
+  },
+  "gui_hotbar_grid_item_6@hud.gui_hotbar_grid_item_": {
+    "$hotbar_slot_selected_texture": "textures/ui/selected_hotbar_slot_5"
+  },
+  "gui_hotbar_grid_item_7@hud.gui_hotbar_grid_item_": {
+    "$hotbar_slot_selected_texture": "textures/ui/selected_hotbar_slot_6"
+  },
+  "gui_hotbar_grid_item_8@hud.gui_hotbar_grid_item_": {
+    "$hotbar_slot_selected_texture": "textures/ui/selected_hotbar_slot_7"
+  },
+  "gui_hotbar_grid_item_9@hud.gui_hotbar_grid_item_": {
+    "$hotbar_slot_selected_texture": "textures/ui/selected_hotbar_slot_8"
+  },
+  "gui_hotbar_grid_item/hotbar_slot_selected_image": {
+    "texture": "$hotbar_slot_selected_texture"
+  },
+  "hotbar_slot_selected_image": {
+    "texture": "textures/ui/selected_hotbar_slot",
+    "size": [
+      60,
+      60
+    ]
+  },
+  "hotbar_renderer_1@hotbar_renderer": {},
+  "hotbar_slot_image": {
+    "size": [
+      55,
+      55
+    ]
+  }
+}

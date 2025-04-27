@@ -1,0 +1,8605 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.number0",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num0",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num0",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num0",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num0",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num0",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num0",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number1",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num1",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num1",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num1",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num1",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num1",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num1",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number2",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num2",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num2",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num2",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num2",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num2",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num2",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number3",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num3",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num3",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num3",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num3",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num3",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num3",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number4",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num4",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num4",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num4",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num4",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num4",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num4",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number5",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num5",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num5",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num5",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num5",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num5",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num5",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number6",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num6",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num6",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num6",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num6",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num6",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num6",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number7",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num7",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num7",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num7",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num7",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num7",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num7",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number8",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num8",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num8",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num8",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num8",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num8",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num8",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number9",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num9",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num9",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num9",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num9",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num9",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num9",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number10",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num10",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num10",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num10",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num10",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num10",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num10",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number11",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num11",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num11",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num11",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num11",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num11",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num11",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number12",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num12",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num12",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num12",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num12",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num12",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num12",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number13",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num13",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num13",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num13",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num13",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num13",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num13",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number14",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num14",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num14",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num14",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num14",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num14",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num14",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number15",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num15",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num15",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num15",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num15",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num15",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num15",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number16",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num16",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num16",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num16",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num16",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num16",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num16",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number17",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num17",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num17",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num17",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num17",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num17",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num17",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number18",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num18",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num18",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num18",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num18",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num18",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num18",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number19",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num19",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num19",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num19",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num19",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num19",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num19",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number20",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num20",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num20",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num20",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num20",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num20",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num20",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number21",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num21",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num21",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num21",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num21",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num21",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num21",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number22",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num22",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num22",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num22",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num22",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num22",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num22",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number23",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num23",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num23",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num23",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num23",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num23",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num23",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number24",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num24",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num24",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num24",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num24",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num24",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num24",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number25",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num25",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num25",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num25",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num25",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num25",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num25",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number26",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num26",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num26",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num26",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num26",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num26",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num26",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number27",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num27",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num27",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num27",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num27",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num27",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num27",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number28",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num28",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num28",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num28",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num28",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num28",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num28",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number29",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num29",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num29",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num29",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num29",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num29",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num29",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number30",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num30",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num30",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num30",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num30",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num30",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num30",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number31",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num31",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num31",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num31",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num31",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num31",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num31",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number32",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num32",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num32",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num32",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num32",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num32",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num32",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number33",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num33",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num33",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num33",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num33",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num33",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num33",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number34",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num34",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num34",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num34",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num34",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num34",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num34",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number35",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num35",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num35",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num35",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num35",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num35",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num35",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number36",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num36",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num36",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num36",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num36",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num36",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num36",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number37",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num37",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num37",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num37",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num37",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num37",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num37",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number38",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num38",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num38",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num38",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num38",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num38",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num38",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number39",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num39",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num39",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num39",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num39",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num39",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num39",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number40",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num40",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num40",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num40",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num40",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num40",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num40",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number41",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num41",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num41",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num41",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num41",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num41",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num41",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number42",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num42",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num42",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num42",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num42",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num42",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num42",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number43",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num43",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num43",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num43",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num43",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num43",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num43",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number44",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num44",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num44",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num44",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num44",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num44",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num44",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number45",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num45",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num45",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num45",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num45",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num45",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num45",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number46",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num46",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num46",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num46",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num46",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num46",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num46",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number47",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num47",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num47",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num47",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num47",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num47",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num47",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number48",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num48",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num48",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num48",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num48",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num48",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num48",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number49",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num49",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num49",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num49",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num49",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num49",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num49",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number50",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num50",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num50",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num50",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num50",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num50",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num50",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number51",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num51",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num51",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num51",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num51",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num51",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num51",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number52",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num52",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num52",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num52",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num52",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num52",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num52",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number53",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num53",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num53",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num53",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num53",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num53",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num53",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number54",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num54",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num54",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num54",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num54",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num54",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num54",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number55",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num55",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num55",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num55",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num55",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num55",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num55",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number56",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num56",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num56",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num56",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num56",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num56",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num56",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number57",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num57",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num57",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num57",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num57",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num57",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num57",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number58",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num58",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num58",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num58",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num58",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num58",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num58",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number59",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num59",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num59",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num59",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num59",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num59",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num59",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number60",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num60",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num60",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num60",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num60",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num60",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num60",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number61",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num61",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num61",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num61",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num61",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num61",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num61",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number62",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num62",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num62",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num62",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num62",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num62",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num62",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number63",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num63",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num63",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num63",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num63",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num63",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num63",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number64",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num64",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num64",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num64",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num64",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num64",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num64",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number65",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num65",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num65",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num65",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num65",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num65",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num65",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number66",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num66",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num66",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num66",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num66",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num66",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num66",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number67",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num67",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num67",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num67",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num67",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num67",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num67",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number68",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num68",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num68",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num68",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num68",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num68",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num68",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number69",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num69",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num69",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num69",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num69",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num69",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num69",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number70",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num70",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num70",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num70",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num70",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num70",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num70",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number71",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num71",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num71",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num71",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num71",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num71",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num71",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number72",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num72",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num72",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num72",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num72",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num72",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num72",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number73",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num73",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num73",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num73",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num73",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num73",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num73",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number74",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num74",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num74",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num74",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num74",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num74",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num74",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number75",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num75",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num75",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num75",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num75",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num75",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num75",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number76",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num76",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num76",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num76",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num76",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num76",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num76",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number77",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num77",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num77",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num77",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num77",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num77",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num77",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number78",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num78",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num78",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num78",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num78",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num78",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num78",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number79",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num79",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num79",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num79",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num79",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num79",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num79",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number80",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num80",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num80",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num80",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num80",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num80",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num80",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number81",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num81",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num81",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num81",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num81",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num81",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num81",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number82",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num82",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num82",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num82",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num82",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num82",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num82",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number83",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num83",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num83",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num83",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num83",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num83",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num83",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number84",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num84",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num84",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num84",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num84",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num84",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num84",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number85",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num85",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num85",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num85",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num85",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num85",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num85",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number86",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num86",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num86",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num86",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num86",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num86",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num86",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number87",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num87",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num87",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num87",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num87",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num87",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num87",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number88",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num88",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num88",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num88",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num88",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num88",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num88",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number89",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num89",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num89",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num89",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num89",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num89",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num89",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number90",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num90",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num90",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num90",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num90",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num90",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num90",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number91",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num91",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num91",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num91",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num91",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num91",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num91",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number92",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num92",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num92",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num92",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num92",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num92",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num92",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number93",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num93",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num93",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num93",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num93",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num93",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num93",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number94",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num94",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num94",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num94",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num94",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num94",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num94",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number95",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num95",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num95",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num95",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num95",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num95",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num95",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number96",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num96",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num96",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num96",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num96",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num96",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num96",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number97",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num97",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num97",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num97",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num97",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num97",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num97",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number98",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num98",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num98",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num98",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num98",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num98",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num98",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.number99",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "number",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "number1",
+					"parent": "number",
+					"pivot": [0, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num99",
+							"position": [-8, -2, -8]
+						}
+					]
+				},
+				{
+					"name": "number2",
+					"parent": "number",
+					"pivot": [0, 9, 0],
+					"texture_meshes": [
+						{
+							"texture": "num99",
+							"position": [-8, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number3",
+					"parent": "number",
+					"pivot": [-8, 3, -9],
+					"rotation": [90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num99",
+							"position": [-8, -1, -10]
+						}
+					]
+				},
+				{
+					"name": "number4",
+					"parent": "number",
+					"pivot": [0, 9, -1],
+					"rotation": [-90, 0, 0],
+					"texture_meshes": [
+						{
+							"texture": "num99",
+							"position": [-8, -11, -10]
+						}
+					]
+				},
+				{
+					"name": "number5",
+					"parent": "number",
+					"pivot": [-1, 9, 0],
+					"rotation": [0, 0, 90],
+					"texture_meshes": [
+						{
+							"texture": "num99",
+							"position": [-10, -11, -8]
+						}
+					]
+				},
+				{
+					"name": "number6",
+					"parent": "number",
+					"pivot": [1, 9, 0],
+					"rotation": [0, 0, -90],
+					"texture_meshes": [
+						{
+							"texture": "num99",
+							"position": [-6, -11, -8]
+						}
+					]
+				}
+			]
+		}
+	]
+}

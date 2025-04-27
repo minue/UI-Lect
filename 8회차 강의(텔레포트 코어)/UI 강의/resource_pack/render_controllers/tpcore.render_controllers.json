@@ -1,0 +1,172 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.tpcore_top1": {
+            "geometry": "Geometry.top1",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.top1"
+            ]
+        },
+        "controller.render.tpcore_top2": {
+            "geometry": "Geometry.top2",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.top2"
+            ]
+        },
+        "controller.render.tpcore_top3": {
+            "geometry": "Geometry.top3",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.top3"
+            ]
+        },
+        "controller.render.tpcore_top4": {
+            "geometry": "Geometry.top4",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.top4"
+            ]
+        },
+        "controller.render.tpcore_top5": {
+            "geometry": "Geometry.top5",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.top5"
+            ]
+        },
+        "controller.render.tpcore_top6": {
+            "geometry": "Geometry.top6",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.top6"
+            ]
+        },
+        "controller.render.tpcore_top7": {
+            "geometry": "Geometry.top7",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.top7"
+            ]
+        },
+        "controller.render.tpcore_floor1": {
+            "geometry": "Geometry.floor1",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.floor1"
+            ]
+        },
+        "controller.render.tpcore_floor2": {
+            "geometry": "Geometry.floor2",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.floor2"
+            ]
+        },
+        "controller.render.tpcore_floor3": {
+            "geometry": "Geometry.floor3",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.floor3"
+            ]
+        },
+        "controller.render.tpcore_floor4": {
+            "geometry": "Geometry.floor4",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.floor4"
+            ]
+        },
+        "controller.render.tpcore_floor5": {
+            "geometry": "Geometry.floor5",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.floor5"
+            ]
+        },
+        "controller.render.tpcore_floor6": {
+            "geometry": "Geometry.floor6",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.floor6"
+            ]
+        },
+        "controller.render.tpcore_middle1": {
+            "geometry": "Geometry.middle1",
+            "materials": [
+                {
+                    "*": "Material.enchanted"
+                }
+            ],
+            "textures": [
+                "Texture.middle1",
+                "Texture.enchanted"
+            ]
+        },
+        "controller.render.tpcore_middle2": {
+            "geometry": "Geometry.middle2",
+            "materials": [
+                {
+                    "*": "Material.enchanted"
+                }
+            ],
+            "textures": [
+                "Texture.middle2",
+                "Texture.enchanted"
+            ]
+        }
+    }
+}

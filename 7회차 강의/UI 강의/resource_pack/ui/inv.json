@@ -1,0 +1,433 @@
+{
+  "namespace": "inv",
+  "hotbar_grid1@hud.hotbar_grid": {
+    "grid_item_template": "hud.gui_hotbar_grid_item_1"
+  },
+  "hotbar_grid2@hud.hotbar_grid": {
+    "grid_item_template": "hud.gui_hotbar_grid_item_2"
+  },
+  "hotbar_grid3@hud.hotbar_grid": {
+    "grid_item_template": "hud.gui_hotbar_grid_item_3"
+  },
+  "hotbar_grid4@hud.hotbar_grid": {
+    "grid_item_template": "hud.gui_hotbar_grid_item_4"
+  },
+  "hotbar_grid5@hud.hotbar_grid": {
+    "grid_item_template": "hud.gui_hotbar_grid_item_5"
+  },
+  "hotbar_grid6@hud.hotbar_grid": {
+    "grid_item_template": "hud.gui_hotbar_grid_item_6"
+  },
+  "hotbar_grid7@hud.hotbar_grid": {
+    "grid_item_template": "hud.gui_hotbar_grid_item_7"
+  },
+  "hotbar_grid8@hud.hotbar_grid": {
+    "grid_item_template": "hud.gui_hotbar_grid_item_8"
+  },
+  "hotbar_grid9@hud.hotbar_grid": {
+    "grid_item_template": "hud.gui_hotbar_grid_item_9"
+  },
+  "inv": {
+    "type": "panel",
+    "offset": [
+      30,
+      -50
+    ],
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "controls": [
+      {
+        "prevent1": {
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [
+            "-20%",
+            "-10% -70px"
+          ],
+          "type": "button",
+          "size": [
+            60,
+            60
+          ],
+          "prevent_touch_input": true
+        }
+      },
+      {
+        "inv1@inv.inv1": {
+          "offset": [
+            "-20%",
+            "-10% -70px"
+          ],
+          "$offset": [
+            400,
+            0
+          ]
+        }
+      },
+      {
+        "prevent2": {
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [
+            "-20% + 44.995px",
+            "-10% - 53.623px"
+          ],
+          "type": "button",
+          "size": [
+            60,
+            60
+          ],
+          "prevent_touch_input": true
+        }
+      },
+      {
+        "inv2@inv.inv2": {
+          "offset": [
+            "-20% + 44.995px",
+            "-10% - 53.623px"
+          ],
+          "$offset": [
+            300,
+            0
+          ]
+        }
+      },
+      {
+        "prevent3": {
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [
+            "-20% + 68.937px",
+            "-10% - 12.155px"
+          ],
+          "type": "button",
+          "size": [
+            60,
+            60
+          ],
+          "prevent_touch_input": true
+        }
+      },
+      {
+        "inv3@inv.inv3": {
+          "offset": [
+            "-20% + 68.937px",
+            "-10% - 12.155px"
+          ],
+          "$offset": [
+            200,
+            0
+          ]
+        }
+      },
+      {
+        "prevent4": {
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [
+            "-20% + 60.622px",
+            "-10% + 35.000px"
+          ],
+          "type": "button",
+          "size": [
+            60,
+            60
+          ],
+          "prevent_touch_input": true
+        }
+      },
+      {
+        "inv4@inv.inv4": {
+          "offset": [
+            "-20% + 60.622px",
+            "-10% + 35.000px"
+          ],
+          "$offset": [
+            100,
+            0
+          ]
+        }
+      },
+      {
+        "prevent5": {
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [
+            "-20% + 23.941px",
+            "-10% + 65.778px"
+          ],
+          "type": "button",
+          "size": [
+            60,
+            60
+          ],
+          "prevent_touch_input": true
+        }
+      },
+      {
+        "inv5@inv.inv5": {
+          "offset": [
+            "-20% + 23.941px",
+            "-10% + 65.778px"
+          ],
+          "$offset": [
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "prevent6": {
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [
+            "-20% - 23.941px",
+            "-10% + 65.778px"
+          ],
+          "type": "button",
+          "size": [
+            60,
+            60
+          ],
+          "prevent_touch_input": true
+        }
+      },
+      {
+        "inv6@inv.inv6": {
+          "offset": [
+            "-20% - 23.941px",
+            "-10% + 65.778px"
+          ],
+          "$offset": [
+            -100,
+            0
+          ]
+        }
+      },
+      {
+        "prevent7": {
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [
+            "-20% - 60.622px",
+            "-10% + 35.000px"
+          ],
+          "type": "button",
+          "size": [
+            60,
+            60
+          ],
+          "prevent_touch_input": true
+        }
+      },
+      {
+        "inv7@inv.inv7": {
+          "offset": [
+            "-20% - 60.622px",
+            "-10% + 35.000px"
+          ],
+          "$offset": [
+            -200,
+            0
+          ]
+        }
+      },
+      {
+        "prevent8": {
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [
+            "-20% - 68.937px",
+            "-10% - 12.155px"
+          ],
+          "type": "button",
+          "size": [
+            60,
+            60
+          ],
+          "prevent_touch_input": true
+        }
+      },
+      {
+        "inv8@inv.inv8": {
+          "offset": [
+            "-20% - 68.937px",
+            "-10% - 12.155px"
+          ],
+          "$offset": [
+            -300,
+            0
+          ]
+        }
+      },
+      {
+        "prevent9": {
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [
+            "-20% - 44.995px",
+            "-10% - 53.623px"
+          ],
+          "type": "button",
+          "size": [
+            60,
+            60
+          ],
+          "prevent_touch_input": true
+        }
+      },
+      {
+        "inv9@inv.inv9": {
+          "offset": [
+            "-20% - 44.995px",
+            "-10% - 53.623px"
+          ],
+          "$offset": [
+            -400,
+            0
+          ]
+        }
+      },
+      {
+        "prevent10": {
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [
+            "-20% - 20px",
+            "-10% - 20px"
+          ],
+          "type": "button",
+          "size": [
+            20,
+            20
+          ],
+          "prevent_touch_input": true,
+          "controls": [
+            {
+              "hotbar_elipses_panel_right@hud.hotbar_elipses_button": {
+                "size": [
+                  20,
+                  20
+                ],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "info_ui": {
+          "type": "panel",
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [
+            "-20% + 20px",
+            "-10% + 17.5px"
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "factory": {
+            "name": "hud_actionbar_text_factory",
+            "control_ids": {
+              "hud_actionbar_text": "total@info_ui.total"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "inv1": {
+    "type": "panel",
+    "size": [
+      60,
+      66
+    ],
+    "anchor_from": "bottom_right",
+    "anchor_to": "bottom_right",
+    "clips_children": true,
+    "controls": [
+      {
+        "inv_panel@inv.hotbar_grid1": {
+          "offset": "$offset"
+        }
+      }
+    ]
+  },
+  "inv2@inv1": {
+    "controls": [
+      {
+        "inv_panel@inv.hotbar_grid2": {
+          "offset": "$offset"
+        }
+      }
+    ]
+  },
+  "inv3@inv1": {
+    "controls": [
+      {
+        "inv_panel@inv.hotbar_grid3": {
+          "offset": "$offset"
+        }
+      }
+    ]
+  },
+  "inv4@inv1": {
+    "controls": [
+      {
+        "inv_panel@inv.hotbar_grid4": {
+          "offset": "$offset"
+        }
+      }
+    ]
+  },
+  "inv5@inv1": {
+    "controls": [
+      {
+        "inv_panel@inv.hotbar_grid5": {
+          "offset": "$offset"
+        }
+      }
+    ]
+  },
+  "inv6@inv1": {
+    "controls": [
+      {
+        "inv_panel@inv.hotbar_grid6": {
+          "offset": "$offset"
+        }
+      }
+    ]
+  },
+  "inv7@inv1": {
+    "controls": [
+      {
+        "inv_panel@inv.hotbar_grid7": {
+          "offset": "$offset"
+        }
+      }
+    ]
+  },
+  "inv8@inv1": {
+    "controls": [
+      {
+        "inv_panel@inv.hotbar_grid8": {
+          "offset": "$offset"
+        }
+      }
+    ]
+  },
+  "inv9@inv1": {
+    "controls": [
+      {
+        "inv_panel@inv.hotbar_grid9": {
+          "offset": "$offset"
+        }
+      }
+    ]
+  }
+}

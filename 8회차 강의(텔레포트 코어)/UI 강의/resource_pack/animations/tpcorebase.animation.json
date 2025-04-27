@@ -1,0 +1,47 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.tpcorebase.always": {
+			"loop": true,
+			"animation_length": 6,
+			"bones": {
+				"bottom": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"6.0": [0, 360, 0]
+					}
+				},
+				"top": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"6.0": [0, 360, 0]
+					}
+				},
+				"side1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"6.0": [0, -360, 0]
+					}
+				},
+				"side2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"6.0": [0, 360, 0]
+					}
+				},
+				"side3": {
+					"rotation": {
+						"0.0": [0, 0, 360],
+						"6.0": [0, 0, 0]
+					}
+				},
+				"side4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"6.0": [0, 0, -360]
+					}
+				}
+			}
+		}
+	}
+}

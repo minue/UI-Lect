@@ -1,0 +1,6 @@
+{
+    "ui_defs": [
+        "ui/inv.json",
+        "ui/info_ui.json"
+    ]
+}

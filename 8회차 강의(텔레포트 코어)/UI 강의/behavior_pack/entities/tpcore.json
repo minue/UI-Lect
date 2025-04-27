@@ -1,0 +1,33 @@
+{
+    "format_version": "1.19.80",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "watts:tpcore",
+        "is_spawnable": true,
+        "is_summonable": true,
+        "is_experimental": false
+      },
+  
+      "component_groups": {
+      },
+  
+      "components": {
+        "minecraft:collision_box": {
+          "width": 1.4,
+          "height": 2
+        },
+        "minecraft:physics": {
+        },
+        "minecraft:variant": {
+          "value": 9
+        },
+        "minecraft:pushable": {
+          "is_pushable": false,
+          "is_pushable_by_piston": false
+        }
+      },
+  
+      "events": {
+      }
+    }
+  }

@@ -1,9 +1,9 @@
 {
     "format_version": 2,
     "header": {
-        "description": "UI TEST(7)",
-        "name": "UI TEST(7)",
-        "uuid": "a4cba029-b2ce-4a9c-83e3-ec07e035a8fe",
+        "description": "Teleport Core Addon",
+        "name": "TP Core[B]",
+        "uuid": "ee0be54a-5195-4e24-8134-cd191f077361",
         "version": [
             1,
             0,
@@ -17,7 +17,7 @@
     },
     "modules": [
         {
-            "description": "UI TEST",
+            "description": "TP Core[B]",
             "type": "data",
             "uuid": "fa6e90c8-c925-460f-8155-c8a60b753caa",
             "version": [
@@ -40,7 +40,7 @@
     ],
     "dependencies": [
         {
-            "uuid": "de71f8d9-5d08-44b3-93ba-1a3765d8cff1",
+            "uuid": "73d53a8e-b1f8-45e1-95e1-665e9d7c6dc9",
             "version": [
                 1,
                 0,
@@ -49,7 +49,7 @@
         },
         {
             "module_name": "@minecraft/server",
-            "version": "1.16.0-beta"
+            "version": "1.16.0"
         },
         {
             "module_name": "@minecraft/server-ui",

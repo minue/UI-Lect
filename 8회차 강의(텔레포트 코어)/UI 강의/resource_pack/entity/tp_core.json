@@ -1,0 +1,536 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "watts:tpcore",
+      "materials": {
+        "default": "entity_alphablend",
+        "enchanted": "armor_enchanted"
+      },
+      "textures": {
+        "default": "textures/watts/cube",
+        "enchanted": "textures/misc/enchanted_actor_glint",
+        "num0": "textures/watts/num/num0",
+        "num1": "textures/watts/num/num1",
+        "num2": "textures/watts/num/num2",
+        "num3": "textures/watts/num/num3",
+        "num4": "textures/watts/num/num4",
+        "num5": "textures/watts/num/num5",
+        "num6": "textures/watts/num/num6",
+        "num7": "textures/watts/num/num7",
+        "num8": "textures/watts/num/num8",
+        "num9": "textures/watts/num/num9",
+        "num10": "textures/watts/num/num10",
+        "num11": "textures/watts/num/num11",
+        "num12": "textures/watts/num/num12",
+        "num13": "textures/watts/num/num13",
+        "num14": "textures/watts/num/num14",
+        "num15": "textures/watts/num/num15",
+        "num16": "textures/watts/num/num16",
+        "num17": "textures/watts/num/num17",
+        "num18": "textures/watts/num/num18",
+        "num19": "textures/watts/num/num19",
+        "num20": "textures/watts/num/num20",
+        "num21": "textures/watts/num/num21",
+        "num22": "textures/watts/num/num22",
+        "num23": "textures/watts/num/num23",
+        "num24": "textures/watts/num/num24",
+        "num25": "textures/watts/num/num25",
+        "num26": "textures/watts/num/num26",
+        "num27": "textures/watts/num/num27",
+        "num28": "textures/watts/num/num28",
+        "num29": "textures/watts/num/num29",
+        "num30": "textures/watts/num/num30",
+        "num31": "textures/watts/num/num31",
+        "num32": "textures/watts/num/num32",
+        "num33": "textures/watts/num/num33",
+        "num34": "textures/watts/num/num34",
+        "num35": "textures/watts/num/num35",
+        "num36": "textures/watts/num/num36",
+        "num37": "textures/watts/num/num37",
+        "num38": "textures/watts/num/num38",
+        "num39": "textures/watts/num/num39",
+        "num40": "textures/watts/num/num40",
+        "num41": "textures/watts/num/num41",
+        "num42": "textures/watts/num/num42",
+        "num43": "textures/watts/num/num43",
+        "num44": "textures/watts/num/num44",
+        "num45": "textures/watts/num/num45",
+        "num46": "textures/watts/num/num46",
+        "num47": "textures/watts/num/num47",
+        "num48": "textures/watts/num/num48",
+        "num49": "textures/watts/num/num49",
+        "num50": "textures/watts/num/num50",
+        "num51": "textures/watts/num/num51",
+        "num52": "textures/watts/num/num52",
+        "num53": "textures/watts/num/num53",
+        "num54": "textures/watts/num/num54",
+        "num55": "textures/watts/num/num55",
+        "num56": "textures/watts/num/num56",
+        "num57": "textures/watts/num/num57",
+        "num58": "textures/watts/num/num58",
+        "num59": "textures/watts/num/num59",
+        "num60": "textures/watts/num/num60",
+        "num61": "textures/watts/num/num61",
+        "num62": "textures/watts/num/num62",
+        "num63": "textures/watts/num/num63",
+        "num64": "textures/watts/num/num64",
+        "num65": "textures/watts/num/num65",
+        "num66": "textures/watts/num/num66",
+        "num67": "textures/watts/num/num67",
+        "num68": "textures/watts/num/num68",
+        "num69": "textures/watts/num/num69",
+        "num70": "textures/watts/num/num70",
+        "num71": "textures/watts/num/num71",
+        "num72": "textures/watts/num/num72",
+        "num73": "textures/watts/num/num73",
+        "num74": "textures/watts/num/num74",
+        "num75": "textures/watts/num/num75",
+        "num76": "textures/watts/num/num76",
+        "num77": "textures/watts/num/num77",
+        "num78": "textures/watts/num/num78",
+        "num79": "textures/watts/num/num79",
+        "num80": "textures/watts/num/num80",
+        "num81": "textures/watts/num/num81",
+        "num82": "textures/watts/num/num82",
+        "num83": "textures/watts/num/num83",
+        "num84": "textures/watts/num/num84",
+        "num85": "textures/watts/num/num85",
+        "num86": "textures/watts/num/num86",
+        "num87": "textures/watts/num/num87",
+        "num88": "textures/watts/num/num88",
+        "num89": "textures/watts/num/num89",
+        "num90": "textures/watts/num/num90",
+        "num91": "textures/watts/num/num91",
+        "num92": "textures/watts/num/num92",
+        "num93": "textures/watts/num/num93",
+        "num94": "textures/watts/num/num94",
+        "num95": "textures/watts/num/num95",
+        "num96": "textures/watts/num/num96",
+        "num97": "textures/watts/num/num97",
+        "num98": "textures/watts/num/num98",
+        "num99": "textures/watts/num/num99"
+      },
+      "geometry": {
+        "default": "geometry.tpcorebase",
+        "num0": "geometry.number0",
+        "num1": "geometry.number1",
+        "num2": "geometry.number2",
+        "num3": "geometry.number3",
+        "num4": "geometry.number4",
+        "num5": "geometry.number5",
+        "num6": "geometry.number6",
+        "num7": "geometry.number7",
+        "num8": "geometry.number8",
+        "num9": "geometry.number9",
+        "num10": "geometry.number10",
+        "num11": "geometry.number11",
+        "num12": "geometry.number12",
+        "num13": "geometry.number13",
+        "num14": "geometry.number14",
+        "num15": "geometry.number15",
+        "num16": "geometry.number16",
+        "num17": "geometry.number17",
+        "num18": "geometry.number18",
+        "num19": "geometry.number19",
+        "num20": "geometry.number20",
+        "num21": "geometry.number21",
+        "num22": "geometry.number22",
+        "num23": "geometry.number23",
+        "num24": "geometry.number24",
+        "num25": "geometry.number25",
+        "num26": "geometry.number26",
+        "num27": "geometry.number27",
+        "num28": "geometry.number28",
+        "num29": "geometry.number29",
+        "num30": "geometry.number30",
+        "num31": "geometry.number31",
+        "num32": "geometry.number32",
+        "num33": "geometry.number33",
+        "num34": "geometry.number34",
+        "num35": "geometry.number35",
+        "num36": "geometry.number36",
+        "num37": "geometry.number37",
+        "num38": "geometry.number38",
+        "num39": "geometry.number39",
+        "num40": "geometry.number40",
+        "num41": "geometry.number41",
+        "num42": "geometry.number42",
+        "num43": "geometry.number43",
+        "num44": "geometry.number44",
+        "num45": "geometry.number45",
+        "num46": "geometry.number46",
+        "num47": "geometry.number47",
+        "num48": "geometry.number48",
+        "num49": "geometry.number49",
+        "num50": "geometry.number50",
+        "num51": "geometry.number51",
+        "num52": "geometry.number52",
+        "num53": "geometry.number53",
+        "num54": "geometry.number54",
+        "num55": "geometry.number55",
+        "num56": "geometry.number56",
+        "num57": "geometry.number57",
+        "num58": "geometry.number58",
+        "num59": "geometry.number59",
+        "num60": "geometry.number60",
+        "num61": "geometry.number61",
+        "num62": "geometry.number62",
+        "num63": "geometry.number63",
+        "num64": "geometry.number64",
+        "num65": "geometry.number65",
+        "num66": "geometry.number66",
+        "num67": "geometry.number67",
+        "num68": "geometry.number68",
+        "num69": "geometry.number69",
+        "num70": "geometry.number70",
+        "num71": "geometry.number71",
+        "num72": "geometry.number72",
+        "num73": "geometry.number73",
+        "num74": "geometry.number74",
+        "num75": "geometry.number75",
+        "num76": "geometry.number76",
+        "num77": "geometry.number77",
+        "num78": "geometry.number78",
+        "num79": "geometry.number79",
+        "num80": "geometry.number80",
+        "num81": "geometry.number81",
+        "num82": "geometry.number82",
+        "num83": "geometry.number83",
+        "num84": "geometry.number84",
+        "num85": "geometry.number85",
+        "num86": "geometry.number86",
+        "num87": "geometry.number87",
+        "num88": "geometry.number88",
+        "num89": "geometry.number89",
+        "num90": "geometry.number90",
+        "num91": "geometry.number91",
+        "num92": "geometry.number92",
+        "num93": "geometry.number93",
+        "num94": "geometry.number94",
+        "num95": "geometry.number95",
+        "num96": "geometry.number96",
+        "num97": "geometry.number97",
+        "num98": "geometry.number98",
+        "num99": "geometry.number99"
+      },
+      "render_controllers": [
+        "controller.render.default",
+        {
+          "controller.render.num0": "query.variant == 0"
+        },
+        {
+          "controller.render.num1": "query.variant == 1"
+        },
+        {
+          "controller.render.num2": "query.variant == 2"
+        },
+        {
+          "controller.render.num3": "query.variant == 3"
+        },
+        {
+          "controller.render.num4": "query.variant == 4"
+        },
+        {
+          "controller.render.num5": "query.variant == 5"
+        },
+        {
+          "controller.render.num6": "query.variant == 6"
+        },
+        {
+          "controller.render.num7": "query.variant == 7"
+        },
+        {
+          "controller.render.num8": "query.variant == 8"
+        },
+        {
+          "controller.render.num9": "query.variant == 9"
+        },
+        {
+          "controller.render.num10": "query.variant == 10"
+        },
+        {
+          "controller.render.num11": "query.variant == 11"
+        },
+        {
+          "controller.render.num12": "query.variant == 12"
+        },
+        {
+          "controller.render.num13": "query.variant == 13"
+        },
+        {
+          "controller.render.num14": "query.variant == 14"
+        },
+        {
+          "controller.render.num15": "query.variant == 15"
+        },
+        {
+          "controller.render.num16": "query.variant == 16"
+        },
+        {
+          "controller.render.num17": "query.variant == 17"
+        },
+        {
+          "controller.render.num18": "query.variant == 18"
+        },
+        {
+          "controller.render.num19": "query.variant == 19"
+        },
+        {
+          "controller.render.num20": "query.variant == 20"
+        },
+        {
+          "controller.render.num21": "query.variant == 21"
+        },
+        {
+          "controller.render.num22": "query.variant == 22"
+        },
+        {
+          "controller.render.num23": "query.variant == 23"
+        },
+        {
+          "controller.render.num24": "query.variant == 24"
+        },
+        {
+          "controller.render.num25": "query.variant == 25"
+        },
+        {
+          "controller.render.num26": "query.variant == 26"
+        },
+        {
+          "controller.render.num27": "query.variant == 27"
+        },
+        {
+          "controller.render.num28": "query.variant == 28"
+        },
+        {
+          "controller.render.num29": "query.variant == 29"
+        },
+        {
+          "controller.render.num30": "query.variant == 30"
+        },
+        {
+          "controller.render.num31": "query.variant == 31"
+        },
+        {
+          "controller.render.num32": "query.variant == 32"
+        },
+        {
+          "controller.render.num33": "query.variant == 33"
+        },
+        {
+          "controller.render.num34": "query.variant == 34"
+        },
+        {
+          "controller.render.num35": "query.variant == 35"
+        },
+        {
+          "controller.render.num36": "query.variant == 36"
+        },
+        {
+          "controller.render.num37": "query.variant == 37"
+        },
+        {
+          "controller.render.num38": "query.variant == 38"
+        },
+        {
+          "controller.render.num39": "query.variant == 39"
+        },
+        {
+          "controller.render.num40": "query.variant == 40"
+        },
+        {
+          "controller.render.num41": "query.variant == 41"
+        },
+        {
+          "controller.render.num42": "query.variant == 42"
+        },
+        {
+          "controller.render.num43": "query.variant == 43"
+        },
+        {
+          "controller.render.num44": "query.variant == 44"
+        },
+        {
+          "controller.render.num45": "query.variant == 45"
+        },
+        {
+          "controller.render.num46": "query.variant == 46"
+        },
+        {
+          "controller.render.num47": "query.variant == 47"
+        },
+        {
+          "controller.render.num48": "query.variant == 48"
+        },
+        {
+          "controller.render.num49": "query.variant == 49"
+        },
+        {
+          "controller.render.num50": "query.variant == 50"
+        },
+        {
+          "controller.render.num51": "query.variant == 51"
+        },
+        {
+          "controller.render.num52": "query.variant == 52"
+        },
+        {
+          "controller.render.num53": "query.variant == 53"
+        },
+        {
+          "controller.render.num54": "query.variant == 54"
+        },
+        {
+          "controller.render.num55": "query.variant == 55"
+        },
+        {
+          "controller.render.num56": "query.variant == 56"
+        },
+        {
+          "controller.render.num57": "query.variant == 57"
+        },
+        {
+          "controller.render.num58": "query.variant == 58"
+        },
+        {
+          "controller.render.num59": "query.variant == 59"
+        },
+        {
+          "controller.render.num60": "query.variant == 60"
+        },
+        {
+          "controller.render.num61": "query.variant == 61"
+        },
+        {
+          "controller.render.num62": "query.variant == 62"
+        },
+        {
+          "controller.render.num63": "query.variant == 63"
+        },
+        {
+          "controller.render.num64": "query.variant == 64"
+        },
+        {
+          "controller.render.num65": "query.variant == 65"
+        },
+        {
+          "controller.render.num66": "query.variant == 66"
+        },
+        {
+          "controller.render.num67": "query.variant == 67"
+        },
+        {
+          "controller.render.num68": "query.variant == 68"
+        },
+        {
+          "controller.render.num69": "query.variant == 69"
+        },
+        {
+          "controller.render.num70": "query.variant == 70"
+        },
+        {
+          "controller.render.num71": "query.variant == 71"
+        },
+        {
+          "controller.render.num72": "query.variant == 72"
+        },
+        {
+          "controller.render.num73": "query.variant == 73"
+        },
+        {
+          "controller.render.num74": "query.variant == 74"
+        },
+        {
+          "controller.render.num75": "query.variant == 75"
+        },
+        {
+          "controller.render.num76": "query.variant == 76"
+        },
+        {
+          "controller.render.num77": "query.variant == 77"
+        },
+        {
+          "controller.render.num78": "query.variant == 78"
+        },
+        {
+          "controller.render.num79": "query.variant == 79"
+        },
+        {
+          "controller.render.num80": "query.variant == 80"
+        },
+        {
+          "controller.render.num81": "query.variant == 81"
+        },
+        {
+          "controller.render.num82": "query.variant == 82"
+        },
+        {
+          "controller.render.num83": "query.variant == 83"
+        },
+        {
+          "controller.render.num84": "query.variant == 84"
+        },
+        {
+          "controller.render.num85": "query.variant == 85"
+        },
+        {
+          "controller.render.num86": "query.variant == 86"
+        },
+        {
+          "controller.render.num87": "query.variant == 87"
+        },
+        {
+          "controller.render.num88": "query.variant == 88"
+        },
+        {
+          "controller.render.num89": "query.variant == 89"
+        },
+        {
+          "controller.render.num90": "query.variant == 90"
+        },
+        {
+          "controller.render.num91": "query.variant == 91"
+        },
+        {
+          "controller.render.num92": "query.variant == 92"
+        },
+        {
+          "controller.render.num93": "query.variant == 93"
+        },
+        {
+          "controller.render.num94": "query.variant == 94"
+        },
+        {
+          "controller.render.num95": "query.variant == 95"
+        },
+        {
+          "controller.render.num96": "query.variant == 96"
+        },
+        {
+          "controller.render.num97": "query.variant == 97"
+        },
+        {
+          "controller.render.num98": "query.variant == 98"
+        },
+        {
+          "controller.render.num99": "query.variant == 99"
+        }
+      ],
+      "scripts": {
+        "animate": [
+          "always1",
+          "always2"
+        ]
+      },
+      "animations": {
+        "always1": "animation.num.always",
+        "always2": "animation.tpcorebase.always"
+      },
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 52
+      }
+    }
+  }
+}
