@@ -1,0 +1,36 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "dimension_sword": {
+            "textures": "textures/watts/items/dimension_sword"
+        },
+        "dimension_knife": {
+            "textures": "textures/watts/items/dimension_knife"
+        },
+        "remote1": {
+            "textures": "textures/watts/items/remote1"
+        },
+        "remote2": {
+            "textures": "textures/watts/items/remote2"
+        },
+        "remote3": {
+            "textures": "textures/watts/items/remote3"
+        },
+        "space_ingot": {
+            "textures": "textures/watts/items/space_ingot"
+        },
+        "space_jam": {
+            "textures": "textures/watts/items/space_jam"
+        },
+        "gear": {
+            "textures": "textures/items/gear"
+        },
+        "antenna": {
+            "textures": "textures/items/antenna"
+        },
+        "machine_part": {
+            "textures": "textures/items/machine_part"
+        }
+    }
+}

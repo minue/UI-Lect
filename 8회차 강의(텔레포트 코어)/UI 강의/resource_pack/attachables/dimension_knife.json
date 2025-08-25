@@ -1,0 +1,35 @@
+
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "watts:dimension_knife",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/watts/attachable/dimension_knife",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.dimension_knife"
+      },
+      "animations": {
+        "first_person": "animation.first_person.right_arm",
+        "attachable":"animation.attachable.right_arm",
+        "dimension_knife":"animation.attachable.right_arm.dimension_knife"
+      },
+      "scripts": {
+        "animate": [
+            "attachable",
+            "dimension_knife",
+            {
+                "first_person": "c.is_first_person"
+            }
+        ]
+      },
+      "render_controllers": [ "controller.render.item_default" ]
+    }
+  }
+}

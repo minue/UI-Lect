@@ -1,0 +1,30 @@
+{
+    "format_version": "1.19.80",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "watts:electric_spider_alt",
+        "is_spawnable": true,
+        "is_summonable": true,
+        "is_experimental": false
+      },
+  
+      "component_groups": {
+      },
+  
+      "components": {
+        "minecraft:collision_box": {
+          "width": 0.5,
+          "height": 0.7
+        },
+        "minecraft:physics": {
+        },
+        "minecraft:pushable": {
+          "is_pushable": true,
+          "is_pushable_by_piston": true
+        }
+      },
+  
+      "events": {
+      }
+    }
+  }

@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "empty",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "watts:antenna",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "watts:machine_part",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "watts:gear",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

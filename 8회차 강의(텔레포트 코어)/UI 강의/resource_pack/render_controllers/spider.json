@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10",
+  "render_controllers": {
+    "controller.render.spider_main": {
+      "geometry": "Geometry.spider_main",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.spider_main" ]
+    },
+    "controller.render.spider_head": {
+      "geometry": "Geometry.spider_head",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.spider_head" ]
+    },
+    "controller.render.spider_leg_up": {
+      "geometry": "Geometry.spider_leg_up",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.spider_leg_up" ]
+    },
+    "controller.render.spider_leg_under": {
+      "geometry": "Geometry.spider_leg_under",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.spider_leg_under" ]
+    },
+    "controller.render.spider_foot": {
+      "geometry": "Geometry.spider_foot",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.spider_foot" ]
+    }
+  }
+}

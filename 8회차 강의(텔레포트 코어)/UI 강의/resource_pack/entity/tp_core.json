@@ -4,12 +4,12 @@
     "description": {
       "identifier": "watts:tpcore",
       "materials": {
-        "default": "entity_alphablend",
+        "default": "entity_alphatest",
+        "entity_alphatest": "entity_alphatest",
         "enchanted": "armor_enchanted"
       },
       "textures": {
         "default": "textures/watts/cube",
-        "enchanted": "textures/misc/enchanted_actor_glint",
         "num0": "textures/watts/num/num0",
         "num1": "textures/watts/num/num1",
         "num2": "textures/watts/num/num2",

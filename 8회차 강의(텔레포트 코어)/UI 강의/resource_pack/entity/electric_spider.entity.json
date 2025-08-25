@@ -1,0 +1,44 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "watts:electric_spider",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "spider_main": "textures/entity/spider/n/body",
+        "spider_head": "textures/entity/spider/n/head",
+        "spider_foot": "textures/entity/spider/n/foot",
+        "spider_leg_under": "textures/entity/spider/n/leg_under",
+        "spider_leg_up": "textures/entity/spider/n/leg_up"
+      },
+      "geometry": {
+        "spider_main": "geometry.spider.main",
+        "spider_head": "geometry.spider.head",
+        "spider_foot": "geometry.spider.foot",
+        "spider_leg_under": "geometry.spider.leg_under",
+        "spider_leg_up": "geometry.spider.leg_up"
+      },
+      "animations": {
+        "walk1": "animation.electric_spider.walk1"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.electric_spider.walk1"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.spider_main",
+        "controller.render.spider_head",
+        "controller.render.spider_leg_up",
+        "controller.render.spider_leg_under",
+        "controller.render.spider_foot"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg_spider"
+      }
+    }
+  }
+}

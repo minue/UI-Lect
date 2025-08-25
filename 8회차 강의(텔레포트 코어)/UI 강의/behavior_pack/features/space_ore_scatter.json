@@ -1,0 +1,27 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:scatter_feature": {
+		"description": {
+			"identifier": "watts:space_ore_scatter"
+		},
+		"iterations": 1,
+		"coordinate_eval_order": "zyx",
+		"x": {
+			"distribution": "uniform",
+			"extent": [
+				0,
+				16
+			]
+		},
+		"y": {
+			"distribution": "uniform",
+			"extent": [
+				0,
+				16
+			]
+		},
+		"z": 0,
+		"project_input_to_floor": false,
+		"places_feature": "watts:space_ore_feature"
+	}
+}

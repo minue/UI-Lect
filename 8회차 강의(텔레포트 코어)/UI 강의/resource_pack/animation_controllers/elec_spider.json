@@ -1,0 +1,17 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.electric_spider.walk1" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+						{
+							"walk1" : "query.modified_move_speed"
+						}
+          			]
+				}
+			}
+		}
+	}
+}
