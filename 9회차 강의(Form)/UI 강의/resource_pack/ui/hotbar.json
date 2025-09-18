@@ -1,0 +1,620 @@
+{
+    "namespace": "hotbar",
+    "hotbar_group": {
+        "type": "panel",
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "controls": [
+            {
+                "prevent": {
+                    "type": "input_panel",
+                    "prevent_touch_input": true,
+                    "size": [
+                        22,
+                        22
+                    ],
+                    "offset": [
+                        -24,
+                        "20%"
+                    ]
+                }
+            },
+            {
+                "hotbar_g1@hotbar_element1": {
+                    "$offset": [
+                        "44.44%c + 2px",
+                        0
+                    ],
+                    "offset": [
+                        -24,
+                        "20%"
+                    ],
+                    "$selected_image": "textures/ui/selected_hotbar_slot"
+                }
+            },
+            {
+                "prevent": {
+                    "type": "input_panel",
+                    "prevent_touch_input": true,
+                    "size": [
+                        22,
+                        22
+                    ],
+                    "offset": [
+                        0,
+                        "20%"
+                    ]
+                }
+            },
+            {
+                "hotbar_g2@hotbar_element2": {
+                    "$offset": [
+                        "33.33%c + 2px",
+                        0
+                    ],
+                    "offset": [
+                        0,
+                        "20%"
+                    ],
+                    "$selected_image": "textures/ui/selected_hotbar_slot"
+                }
+            },
+            {
+                "prevent": {
+                    "type": "input_panel",
+                    "prevent_touch_input": true,
+                    "size": [
+                        22,
+                        22
+                    ],
+                    "offset": [
+                        24,
+                        0
+                    ]
+                }
+            },
+            {
+                "hotbar_g3@hotbar_element3": {
+                    "$offset": [
+                        "22.22%c + 2px",
+                        0
+                    ],
+                    "offset": [
+                        24,
+                        0
+                    ],
+                    "$selected_image": "textures/ui/selected_hotbar_slot"
+                }
+            },
+            {
+                "prevent": {
+                    "type": "input_panel",
+                    "prevent_touch_input": true,
+                    "size": [
+                        22,
+                        22
+                    ],
+                    "offset": [
+                        100,
+                        "22px"
+                    ]
+                }
+            },
+            {
+                "hotbar_g4@hotbar_element4": {
+                    "$offset": [
+                        "11.11%c + 2px",
+                        0
+                    ],
+                    "offset": [
+                        100,
+                        "22px"
+                    ],
+                    "$selected_image": "textures/ui/selected_hotbar_slot"
+                }
+            },
+            {
+                "prevent": {
+                    "type": "input_panel",
+                    "prevent_touch_input": true,
+                    "size": [
+                        22,
+                        22
+                    ],
+                    "offset": [
+                        100,
+                        "-22px"
+                    ]
+                }
+            },
+            {
+                "hotbar_g5@hotbar_element5": {
+                    "$offset": [
+                        "2px",
+                        0
+                    ],
+                    "offset": [
+                        100,
+                        "-22px"
+                    ],
+                    "$selected_image": "textures/ui/selected_hotbar_slot"
+                }
+            },
+            {
+                "prevent": {
+                    "type": "input_panel",
+                    "prevent_touch_input": true,
+                    "size": [
+                        22,
+                        22
+                    ],
+                    "offset": [
+                        12,
+                        "-20%"
+                    ]
+                }
+            },
+            {
+                "hotbar_g6@hotbar_element6": {
+                    "$offset": [
+                        "-11.11%c + 2px",
+                        0
+                    ],
+                    "offset": [
+                        12,
+                        "-20%"
+                    ],
+                    "$selected_image": "textures/ui/selected_hotbar_slot"
+                }
+            },
+            {
+                "prevent": {
+                    "type": "input_panel",
+                    "prevent_touch_input": true,
+                    "size": [
+                        22,
+                        22
+                    ],
+                    "offset": [
+                        -40,
+                        "-35%"
+                    ]
+                }
+            },
+            {
+                "hotbar_g7@hotbar_element7": {
+                    "$offset": [
+                        "-22.22%c + 2px",
+                        0
+                    ],
+                    "offset": [
+                        -40,
+                        "-35%"
+                    ],
+                    "$selected_image": "textures/ui/selected_hotbar_slot"
+                }
+            },
+            {
+                "prevent": {
+                    "type": "input_panel",
+                    "prevent_touch_input": true,
+                    "size": [
+                        22,
+                        22
+                    ],
+                    "offset": [
+                        -100,
+                        "-20%"
+                    ]
+                }
+            },
+            {
+                "hotbar_g8@hotbar_element8": {
+                    "$offset": [
+                        "-33.33%c + 2px",
+                        0
+                    ],
+                    "offset": [
+                        -100,
+                        "-20%"
+                    ],
+                    "$selected_image": "textures/ui/selected_hotbar_slot"
+                }
+            },
+            {
+                "prevent": {
+                    "type": "input_panel",
+                    "prevent_touch_input": true,
+                    "size": [
+                        22,
+                        22
+                    ],
+                    "offset": [
+                        -10,
+                        "-20%"
+                    ]
+                }
+            },
+            {
+                "hotbar_g9@hotbar_element9": {
+                    "$offset": [
+                        "-44.44%c + 2px",
+                        0
+                    ],
+                    "offset": [
+                        -10,
+                        "-20%"
+                    ],
+                    "$selected_image": "textures/ui/selected_hotbar_slot"
+                }
+            },
+            {
+                "prevent": {
+                    "type": "input_panel",
+                    "prevent_touch_input": true,
+                    "size": [
+                        22,
+                        22
+                    ],
+                    "offset": [
+                        120,
+                        0
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_element1@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele1": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element2@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele2": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element3@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele3": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element4@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele4": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element5@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele5": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element6@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele6": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element7@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele7": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element8@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele8": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element9@hotbar_element": {
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele9": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_element": {
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "clips_children": true,
+        "size": [
+            24,
+            22
+        ],
+        "controls": [
+            {
+                "hotbar_ele1@hotbar_ele": {
+                    "offset": "$offset"
+                }
+            }
+        ]
+    },
+    "hotbar_ele1@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid1",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele2@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid2",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele3@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid3",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele4@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid4",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele5@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid5",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele6@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid6",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele7@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid7",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele8@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid8",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele9@hotbar_ele": {
+        "controls": [
+            {
+                "hotbar_grid_ele@hud.hotbar_grid": {
+                    "grid_item_template": "hotbar.hotbar_item_grid9",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_ele": {
+        "size": [
+            216,
+            22
+        ],
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "controls": [
+            {
+                "hotbar_grid_ele@hotbar_grid": {
+                    "grid_item_template": "hud.gui_hotbar_grid_item",
+                    "size": [
+                        216,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    "hotbar_renderer@hud.hotbar_renderer": {
+        "controls": [
+            {
+                "hotbar_slot_image@hotbar.hotbar_slot_image": {
+                    "$hotbar_slot_image_size": "$hotbar_renderer_size"
+                }
+            }
+        ]
+    },
+    "hotbar_grid": {
+        "type": "grid",
+        "$hotbar_collection_name|default": "hotbar_items",
+        "grid_item_template": "hotbar_item_grid",
+        "grid_dimension_binding": "#hotbar_grid_dimensions",
+        "collection_name": "$hotbar_collection_name",
+        "bindings": [
+            {
+                "binding_name": "#hotbar_grid_dimensions",
+                "binding_type": "global"
+            }
+        ]
+    },
+    "hotbar_slot_image@hud.hotbar_slot_image": {},
+    "hotbar_item_grid1@hotbar_item_grid": {},
+    "hotbar_item_grid2@hotbar_item_grid": {},
+    "hotbar_item_grid3@hotbar_item_grid": {},
+    "hotbar_item_grid4@hotbar_item_grid": {},
+    "hotbar_item_grid5@hotbar_item_grid": {},
+    "hotbar_item_grid6@hotbar_item_grid": {},
+    "hotbar_item_grid7@hotbar_item_grid": {},
+    "hotbar_item_grid8@hotbar_item_grid": {},
+    "hotbar_item_grid9@hotbar_item_grid": {},
+    "hotbar_item_grid@hud.gui_hotbar_grid_item": {
+        "controls": [
+            {
+                "hotbar_slot_selected_image@hud.hotbar_slot_selected_image": {
+                    "texture": "$selected_image"
+                }
+            },
+            {
+                "hotbar_renderer@hotbar_renderer": {}
+            },
+            {
+                "hotbar_parent": {
+                    "type": "panel",
+                    "size": [
+                        18,
+                        18
+                    ],
+                    "controls": [
+                        {
+                            "item_icon@hud.hotbar_hud_item_icon": {
+                                "layer": 3,
+                                "size": [
+                                    16,
+                                    16
+                                ]
+                            }
+                        },
+                        {
+                            "item_count@common.stack_count_label": {
+                                "layer": 4,
+                                "$item_collection_name": "$hotbar_collection_name",
+                                "$stack_count_collection_name": "$hotbar_collection_name",
+                                "bindings": [
+                                    {
+                                        "binding_name": "#inventory_stack_count",
+                                        "binding_type": "collection",
+                                        "binding_collection_name": "$stack_count_collection_name"
+                                    },
+                                    {
+                                        "binding_name": "#stack_count_visible",
+                                        "binding_name_override": "#visible",
+                                        "binding_type": "collection",
+                                        "binding_collection_name": "$stack_count_collection_name"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "hotbar_hint@edu_common.hotbar_hint": {}
+                        },
+                        {
+                            "item_dura@hud.item_durability": {
+                                "layer": 5
+                            }
+                        },
+                        {
+                            "item_store@hud.item_storage": {
+                                "layer": 5
+                            }
+                        },
+                        {
+                            "container_item_lock_overlay@hud.container_item_lock_overlay": {
+                                "layer": 6,
+                                "size": [
+                                    16,
+                                    16
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "cooldown_renderer@hud.cooldown_renderer": {
+                    "layer": 10
+                }
+            },
+            {
+                "hotbar_slot_button@hud.gui_hotbar_slot_button_prototype": {}
+            }
+        ]
+    }
+}
