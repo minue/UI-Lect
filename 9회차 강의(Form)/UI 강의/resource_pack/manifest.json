@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Hello Form Addon",
+        "name": "Hello Form[R]",
+        "uuid": "72e8c75c-7025-4704-be40-93315224a013",
+        "version": [1, 0, 0],
+        "min_engine_version": [ 1, 20, 40 ]
+    },
+    "modules": [
+        {
+            "description": "TP Core[R]",
+            "type": "resources",
+            "uuid": "743f6949-53be-44b6-b326-398005028819",
+            "version": [0, 0, 1]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "d3dba99a-2aa3-4893-8fbc-ab3ee63db12b",
+            "version": [1, 0, 0]
+        }
+    ]
+}

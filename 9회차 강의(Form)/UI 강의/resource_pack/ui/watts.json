@@ -1,0 +1,30 @@
+{
+  "namespace": "watts",
+  "new_ui_binding_button_label":{
+    "type": "label",
+    "layer": 2,
+    "text": "세상아 안녕",
+    "color": "$text_color",
+    "$font_type|default": "default",
+    "font_type": "$font_type",
+    "font_size": "$button_font_size",
+    "$button_font_scale_factor|default": 1.0,
+    "font_scale_factor": "$button_font_scale_factor",
+    "$button_font_size|default": "normal",
+    "$new_ui_label_offset|default": "$button_offset",
+    "offset": "$new_ui_label_offset",
+    "$anchor|default": "center",
+    "anchor_from": "$anchor",
+    "anchor_to": "$anchor",
+    "shadow": false,
+    "$button_text_size|default": [ "default", "default" ],
+    "size": "$button_text_size",
+    "$button_text_max_size|default": [ "100%", 10 ],
+    "max_size": "$button_text_max_size",
+    "$text_alignment|default": "center",
+    "text_alignment": "$text_alignment",
+    "$tts_section_header|default": "",
+    "tts_section_header": "$tts_section_header",
+    "$button_text_collection_prefix|default": ""
+  }
+}

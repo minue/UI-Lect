@@ -1,0 +1,59 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Hello Form Addon",
+        "name": "Hello Form[B]",
+        "uuid": "d3dba99a-2aa3-4893-8fbc-ab3ee63db12b",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            20,
+            40
+        ]
+    },
+    "modules": [
+        {
+            "description": "TP Core[B]",
+            "type": "data",
+            "uuid": "fa6e90c8-c925-460f-8155-c8a60b753caa",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        },
+        {
+            "type": "script",
+            "language": "javascript",
+            "uuid": "60ae397d-4279-4a60-89a0-4612a75abd33",
+            "entry": "scripts/Main.js",
+            "version": [
+                0,
+                1,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "72e8c75c-7025-4704-be40-93315224a013",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        },
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.2.0-beta"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "2.1.0-beta"
+        }
+    ]
+}
