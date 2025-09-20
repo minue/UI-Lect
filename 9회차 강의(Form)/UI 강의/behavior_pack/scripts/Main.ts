@@ -1,8 +1,65 @@
 import { system, world } from "@minecraft/server";
-import { ActionFormData } from "@minecraft/server-ui";
+import { ModalFormData } from "@minecraft/server-ui";
 
 world.afterEvents.itemUse.subscribe((event) => {
     if(event.itemStack.typeId == "minecraft:stick"){
-        new ActionFormData().title("Hello World").button("Hello World").show(event.source);
+        new ModalFormData()
+        .title("watts.shop.15.40")
+        .submitButton("구매")
+        .slider("apple", 0, 64)
+        .label("textures/items/apple")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/amethyst_shard")
+        .slider("amethyst_shard", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .slider("bamboo", 0, 64)
+        .label("textures/items/bamboo")
+        .show(event.source);
+    }
+    if(event.itemStack.typeId == "minecraft:blaze_rod"){
+        new ModalFormData()
+        .title("test")
+        .label("Hello World")
+        .show(event.source);
     }
 })

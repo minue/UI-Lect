@@ -1,0 +1,54 @@
+{
+    "namespace": "server_form",
+    "main_screen_content": {
+        "size": [
+            "100%",
+            "100%"
+        ]
+    },
+    "main_screen_content/server_form_factory": {
+        "type": "factory",
+        "control_ids": {
+            "long_form": "@server_form.long_form",
+            "custom_form": "@server_form.custom_form1"
+        }
+    },
+    "custom_form1": {
+        "type": "panel",
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "controls": [
+            {
+                "shop@watts.shop": {
+                    "bindings": [
+                        {
+                            "binding_name": "#title_text"
+                        },
+                        {
+                            "binding_type": "view",
+                            "source_property_name": "(#title_text > 'watts.shop')",
+                            "target_property_name": "#visible"
+                        }
+                    ]
+                }
+            },
+            {
+                "custom_form@custom_form": {
+                    "visible": "#visible",
+                    "bindings": [
+                        {
+                            "binding_name": "#title_text"
+                        },
+                        {
+                            "binding_type": "view",
+                            "source_property_name": "(not (#title_text > 'watts.shop'))",
+                            "target_property_name": "#visible"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

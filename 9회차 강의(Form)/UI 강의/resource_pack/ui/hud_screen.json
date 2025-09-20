@@ -48,7 +48,11 @@
         ],
         "anchor_from": "center",
         "anchor_to": "center",
-        "controls":[]
+        "controls": [
+            {
+                "hotbar_elipses_panel_right@hud.hotbar_elipses_panel_right_content": {}
+            }
+        ]
     },
     "root_panel": {
         "modifications": [

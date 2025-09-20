@@ -1,5 +1,10 @@
 {
     "ui_defs": [
-        "ui/hotbar.json"
+        "ui/hotbar.json",
+        "ui/item_list.json",
+        "ui/watts.json",
+        "ui/receipt.json",
+        "ui/empty_ui.json",
+        "ui/custom_ui.json"
     ]
 }

@@ -1,0 +1,63 @@
+{
+    "namespace": "receipt",
+    "receipt@common.scrolling_panel": {
+        "anchor_to": "top_right",
+        "anchor_from": "top_right",
+        "$show_background": false,
+        "size": [
+            "25%",
+            "90%"
+        ],
+        "$scrolling_content": "receipt.content",
+        "$scroll_size": [
+            5,
+            "100% - 4px"
+        ],
+        "$scrolling_pane_size": [
+            "100% - 4px",
+            "100% - 2px"
+        ],
+        "$scrolling_pane_offset": [
+            2,
+            0
+        ],
+        "$scroll_bar_right_padding_size": [
+            0,
+            0
+        ]
+    },
+    "content": {
+        "type": "stack_panel",
+        "size": [
+            "100%",
+            "100%c"
+        ],
+        "offset": [
+            0,
+            0
+        ],
+        "orientation": "vertical",
+        "anchor_from": "top_right",
+        "anchor_to": "top_right",
+        "factory": {
+            "name": "buttons",
+            "control_ids": {
+                "label": "@empty_ui.custom_label",
+                "toggle": "@server_form.custom_toggle",
+                "slider": "@custom_ui.test",
+                "step_slider": "@server_form.custom_step_slider",
+                "dropdown": "@server_form.custom_dropdown",
+                "input": "@server_form.custom_input",
+                "header": "@server_form.custom_header",
+                "divider": "@server_form.option_group_section_divider"
+            }
+        },
+        "collection_name": "custom_form",
+        "bindings": [
+            {
+                "binding_name": "#custom_form_length",
+                "binding_name_override": "#collection_length"
+            }
+        ]
+    }
+}
