@@ -49,10 +49,11 @@
     },
     "test@option_generic_core_num": {
         "type": "label",
-        "size": [
+        "$size|default": [
             "100%",
             "10px"
         ],
+        "size": "$size",
         "$option_label": "#custom_slider_text",
         "$slider_name": "custom_slider",
         "$slider_value_binding_name": "#custom_slider_value",
@@ -102,7 +103,7 @@
         "$option_tooltip_icon|default": "textures/ui/infobulb",
         "controls": [
             {
-                "option_generic_core@settings_common.option_generic_core": {}
+                "option_generic_core@option_generic_core": {}
             }
         ]
     },
@@ -185,9 +186,22 @@
                                             "controls": [
                                                 {
                                                     "option_label@settings_common.option_generic_core_label": {
+                                                        "text": "#text",
                                                         "$option_generic_core_label_size": [
                                                             "100%",
                                                             "10px"
+                                                        ],
+                                                        "bindings": [
+                                                            {
+                                                                "binding_name": "#custom_slider_text",
+                                                                "binding_type": "collection",
+                                                                "binding_collection_name": "custom_form"
+                                                            },
+                                                            {
+                                                                "binding_type": "view",
+                                                                "source_property_name": "((#custom_slider_text - ('%.7s' * #custom_slider_text))  + ' (개)')",
+                                                                "target_property_name": "#text"
+                                                            }
                                                         ]
                                                     }
                                                 }
@@ -197,6 +211,362 @@
                                 ]
                             }
                         }
+                    ]
+                }
+            }
+        ]
+    },
+    "option_generic_core": {
+        "$allow_data_binding|default": true,
+        "$option_label|default": "",
+        "$show_option_label|default": true,
+        "$label_bindings|default": [],
+        "$one_line_layout|default": false,
+        "$has_option_description|default": false,
+        "$option_description|default": "",
+        "$option_enabled_binding_type|default": "global",
+        "$option_label_alignment|default": "left",
+        "$option_tooltip_binding_type|default": "none",
+        "$option_tooltip_collection_name|default": "",
+        "$option_tooltip_popup_visible_binding|default": false,
+        "$option_tooltip_text_binding_name|default": "",
+        "$option_tooltip_visible_binding_name|default": "#default_visibility",
+        "$option_tooltip_icon|default": "textures/ui/infobulb",
+        "$label_offset|default": [
+            0,
+            0
+        ],
+        "type": "stack_panel",
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "enabled": "$enabled",
+        "variables": [
+            {
+                "requires": "(not $enabled or not $option_enabled_binding_name)",
+                "$option_enabled_binding_type": "none",
+                "$option_enabled_binding_name": "#not_data_bound"
+            }
+        ],
+        "bindings": [
+            {
+                "binding_type": "$option_enabled_binding_type",
+                "binding_name": "$option_enabled_binding_name",
+                "binding_name_override": "#enabled"
+            }
+        ],
+        "controls": [
+            {
+                "two_line_layout": {
+                    "ignored": "($one_line_layout)",
+                    "type": "stack_panel",
+                    "orientation": "vertical",
+                    "size": [
+                        "100%",
+                        "100%c"
+                    ],
+                    "controls": [
+                        {
+                            "option_label_panel": {
+                                "type": "panel",
+                                "size": [
+                                    "100%",
+                                    "12%x"
+                                ],
+                                "controls": [
+                                    {
+                                        "option_label_subpanel_01": {
+                                            "bindings": [
+                                                {
+                                                    "binding_name": "($option_tooltip_text_binding_name = '')",
+                                                    "binding_type": "$option_tooltip_binding_type",
+                                                    "binding_collection_name": "$option_tooltip_collection_name",
+                                                    "binding_name_override": "#visible"
+                                                }
+                                            ],
+                                            "type": "panel",
+                                            "size": [
+                                                "100%",
+                                                "12%x"
+                                            ],
+                                            "controls": [
+                                                {
+                                                    "option_label@settings_common.option_generic_core_label": {
+                                                        "text": "#text",
+                                                        "$option_generic_core_label_size": [
+                                                            "100%",
+                                                            "default"
+                                                        ],
+                                                        "anchor_from": "bottom_left",
+                                                        "anchor_to": "bottom_left",
+                                                        "bindings": [
+                                                            {
+                                                                "binding_name": "#custom_slider_text",
+                                                                "binding_type": "collection",
+                                                                "binding_collection_name": "custom_form"
+                                                            },
+                                                            {
+                                                                "binding_type": "view",
+                                                                "source_property_name": "(#custom_slider_text - ('%.7s' * #custom_slider_text))",
+                                                                "target_property_name": "#text"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "des@settings_common.option_generic_core_label": {
+                                                        "text": "#des",
+                                                        "$option_generic_core_label_size": [
+                                                            "100%",
+                                                            "10%x"
+                                                        ],
+                                                        "offset":[0,0],
+                                                        "anchor_from": "top_left",
+                                                        "anchor_to": "top_left",
+                                                        "bindings": [
+                                                            {
+                                                                "binding_name": "#custom_slider_text",
+                                                                "binding_type": "collection",
+                                                                "binding_collection_name": "custom_form"
+                                                            },
+                                                            {
+                                                                "binding_type": "view",
+                                                                "source_property_name": "('description' + (('%.7s' * #custom_slider_text) - 'd'))",
+                                                                "target_property_name": "#des"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "option_label_subpanel_02": {
+                                            "ignored": "($option_tooltip_text_binding_name = '')",
+                                            "bindings": [
+                                                {
+                                                    "binding_name": "(not ($option_tooltip_text_binding_name = ''))",
+                                                    "binding_type": "$option_tooltip_binding_type",
+                                                    "binding_collection_name": "$option_tooltip_collection_name",
+                                                    "binding_name_override": "#visible"
+                                                }
+                                            ],
+                                            "type": "panel",
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left",
+                                            "size": [
+                                                "100% - 28px",
+                                                "100%c"
+                                            ],
+                                            "controls": [
+                                                {
+                                                    "option_label@settings_common.option_generic_core_label": {
+                                                        "$option_generic_core_label_size": [
+                                                            "100%",
+                                                            "default"
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "option_tooltip@settings_common.option_generic_tooltip": {
+                                            "ignored": "($option_tooltip_text_binding_name = '')",
+                                            "$tooltip_button_binding_type": "$option_tooltip_binding_type",
+                                            "$tooltip_button_collection_name": "$option_tooltip_collection_name",
+                                            "$tooltip_text_binding_name": "$option_tooltip_text_binding_name",
+                                            "$tooltip_area": "$option_tooltip_area",
+                                            "$tooltip_visible_binding_name": "$option_tooltip_visible_binding_name",
+                                            "$tooltip_icon": "$option_tooltip_icon"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "spacer": {
+                                "type": "panel",
+                                "visible": "$show_option_label",
+                                "size": [
+                                    0,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "option_descriptive_text_0": {
+                                "ignored": "(not $has_option_description)",
+                                "type": "label",
+                                "text_alignment": "$option_label_alignment",
+                                "size": [
+                                    "90%",
+                                    "default"
+                                ],
+                                "min_size": [
+                                    0,
+                                    0
+                                ],
+                                "color": "$option_description_text_color",
+                                "text": "$option_description",
+                                "visible": "$show_option_label",
+                                "anchor_from": "bottom_left",
+                                "anchor_to": "bottom_left",
+                                "locked_alpha": 0.5
+                            }
+                        },
+                        {
+                            "spacer2": {
+                                "type": "panel",
+                                "visible": "$show_option_label",
+                                "size": [
+                                    0,
+                                    1
+                                ]
+                            }
+                        },
+                        {
+                            "$control_name@$control_name": {
+                                "anchor_from": "top_left",
+                                "anchor_to": "top_left"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "one_line_layout": {
+                    "ignored": "(not $one_line_layout)",
+                    "type": "panel",
+                    "$line_size|default": [
+                        "100%",
+                        "100%c - 16px + 2px"
+                    ],
+                    "$line_min_size|default": [
+                        "100%",
+                        "16px"
+                    ],
+                    "size": "$line_size",
+                    "min_size": "$line_min_size",
+                    "$label_size|default": [
+                        "100% - 34px",
+                        "default"
+                    ],
+                    "$label_offset|default": [
+                        34,
+                        3
+                    ],
+                    "controls": [
+                        {
+                            "option_label_subpanel_01": {
+                                "bindings": [
+                                    {
+                                        "binding_name": "($option_tooltip_text_binding_name = '')",
+                                        "binding_type": "$option_tooltip_binding_type",
+                                        "binding_collection_name": "$option_tooltip_collection_name",
+                                        "binding_name_override": "#visible"
+                                    }
+                                ],
+                                "type": "panel",
+                                "size": [
+                                    "100%",
+                                    "100%c"
+                                ],
+                                "anchor_from": "top_left",
+                                "anchor_to": "top_left",
+                                "controls": [
+                                    {
+                                        "$control_name@$control_name": {
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left"
+                                        }
+                                    },
+                                    {
+                                        "option_label@settings_common.option_generic_core_label": {
+                                            "$option_generic_core_label_size": "$label_size",
+                                            "$option_generic_core_label_anchor_from": "top_left",
+                                            "$option_generic_core_label_anchor_to": "top_left"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "option_label_subpanel_02": {
+                                "ignored": "($option_tooltip_text_binding_name = '')",
+                                "bindings": [
+                                    {
+                                        "binding_name": "(not ($option_tooltip_text_binding_name = ''))",
+                                        "binding_type": "$option_tooltip_binding_type",
+                                        "binding_collection_name": "$option_tooltip_collection_name",
+                                        "binding_name_override": "#visible"
+                                    }
+                                ],
+                                "type": "panel",
+                                "anchor_from": "top_left",
+                                "anchor_to": "top_left",
+                                "size": [
+                                    "100% - 28px",
+                                    "100%c"
+                                ],
+                                "controls": [
+                                    {
+                                        "$control_name@$control_name": {
+                                            "anchor_from": "top_left",
+                                            "anchor_to": "top_left"
+                                        }
+                                    },
+                                    {
+                                        "option_label@settings_common.option_generic_core_label": {
+                                            "$option_generic_core_label_size": "$label_size",
+                                            "$option_generic_core_label_anchor_from": "top_left",
+                                            "$option_generic_core_label_anchor_to": "top_left"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "option_descriptive_text": {
+                                "ignored": "(not $has_option_description)",
+                                "type": "label",
+                                "text_alignment": "$option_label_alignment",
+                                "size": "$label_size",
+                                "offset": "$label_offset",
+                                "min_size": [
+                                    0,
+                                    0
+                                ],
+                                "color": "$option_description_text_color",
+                                "text": "$option_description",
+                                "visible": "$show_option_label",
+                                "anchor_from": "bottom_left",
+                                "anchor_to": "bottom_left",
+                                "locked_alpha": 0.5
+                            }
+                        },
+                        {
+                            "option_tooltip@settings_common.option_generic_tooltip": {
+                                "ignored": "($option_tooltip_text_binding_name = '')",
+                                "$tooltip_button_binding_type": "$option_tooltip_binding_type",
+                                "$tooltip_button_collection_name": "$option_tooltip_collection_name",
+                                "$tooltip_text_binding_name": "$option_tooltip_text_binding_name",
+                                "$tooltip_area": "$option_tooltip_area",
+                                "$tooltip_two_line_layout": false,
+                                "$tooltip_visible_binding_name": "$option_tooltip_visible_binding_name",
+                                "$tooltip_icon": "$option_tooltip_icon"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "spacer": {
+                    "type": "panel",
+                    "size": [
+                        0,
+                        4
                     ]
                 }
             }
