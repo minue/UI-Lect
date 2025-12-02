@@ -265,6 +265,23 @@
                         0
                     ]
                 }
+            },
+            {
+                "inv_button@hud.hotbar_elipses_panel_right_content": {}
+            },
+            {
+                "prevent": {
+                    "type": "input_panel",
+                    "prevent_touch_input": true,
+                    "size": [
+                        22,
+                        22
+                    ],
+                    "offset": [
+                        0,
+                        0
+                    ]
+                }
             }
         ]
     },

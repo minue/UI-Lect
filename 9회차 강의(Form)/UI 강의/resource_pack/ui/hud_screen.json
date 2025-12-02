@@ -40,19 +40,7 @@
         ]
     },
     "hotbar_panel": {
-        "type": "stack_panel",
-        "orientation": "horizontal",
-        "size": [
-            "100%c",
-            22
-        ],
-        "anchor_from": "center",
-        "anchor_to": "center",
-        "controls": [
-            {
-                "hotbar_elipses_panel_right@hud.hotbar_elipses_panel_right_content": {}
-            }
-        ]
+        "controls": []
     },
     "root_panel": {
         "modifications": [

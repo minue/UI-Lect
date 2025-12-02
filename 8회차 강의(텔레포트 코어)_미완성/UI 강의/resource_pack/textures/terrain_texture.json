@@ -4,6 +4,9 @@
     "padding": 8,
     "num_mip_levels": 4,
     "texture_data": {
+        "space_ore": {
+            "textures": "textures/watts/block/space_ore"
+        },
         "space_block": {
             "textures": "textures/watts/block/space_block"
         }

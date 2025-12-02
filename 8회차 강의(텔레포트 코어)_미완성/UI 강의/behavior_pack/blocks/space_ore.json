@@ -2,9 +2,9 @@
     "format_version": "1.21.90",
     "minecraft:block": {
         "description": {
-            "identifier": "watts:space_block",
+            "identifier": "watts:space_ore",
             "menu_category": {
-                "category": "items"
+                "category": "nature"
             }
         },
         "components": {
@@ -13,8 +13,9 @@
             },
 			"tag:stone": {},
             "watts:teleport_block":{},
-			"minecraft:light_emission": 1.0,
+			"minecraft:light_emission": 0.5,
 			"minecraft:display_name": "space_ore",
+			"minecraft:loot": "loot_tables/space_ore.json",
             "minecraft:geometry": "geometry.space_block",
             "minecraft:material_instances": {
                 "*": {
