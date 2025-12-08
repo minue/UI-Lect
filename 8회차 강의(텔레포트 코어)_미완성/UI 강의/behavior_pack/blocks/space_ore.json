@@ -19,7 +19,7 @@
             "minecraft:geometry": "geometry.space_block",
             "minecraft:material_instances": {
                 "*": {
-                    "texture": "space_block",
+                    "texture": "space_ore",
                     "render_method": "alpha_test"
                 }
             },
