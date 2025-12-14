@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10",
+  "render_controllers": {
+    "controller.render.potal_slash": {
+      "geometry": "Geometry.potal_slash",
+      "materials": [ { "*": "Material.weapon" } ],
+      "textures": [ "Texture.potal_slash" ]
+    },
+    "controller.render.dimensional_rift": {
+      "geometry": "Geometry.dimensional_rift",
+      "materials": [ { "*": "Material.weapon" } ],
+      "textures": [ "Texture.dimensional_rift" ]
+    },
+    "controller.render.potal_invisible": {
+      "geometry": "Geometry.potal_invisible",
+      "materials": [ { "*": "Material.layer" } ],
+      "textures": [ "Texture.potal_invisible" ]
+    }
+  }
+}

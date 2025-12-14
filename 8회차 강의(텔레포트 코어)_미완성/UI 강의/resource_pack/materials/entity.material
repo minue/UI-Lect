@@ -1,0 +1,33 @@
+{
+    "materials":{
+        "version":"1.0.0",
+        "custom_animated:entity_alphatest":{
+            "+defines":[
+                "USE_UV_ANIM"
+            ]
+        },
+        "weapon:entity_alphablend": {
+            "+defines":[
+                "COLOR_BASED",
+                "Point",
+                "DISABLE_TINTING",
+                "USE_MASK"
+            ],
+            "+states": [
+                "Blending",
+                "EnableAlphaToCoverage",
+                "DisableDepthWrite"
+            ],
+            "blendSrc":"SourceAlpha",
+            "blendDst":"OneMinusSrcAlpha"
+        },
+        "layer:entity_alphablend": {
+            "defines":[
+                "USE_COLOR_BLEND"
+            ],
+            "states": [
+                "Blending"
+            ]
+        }
+    }
+}
