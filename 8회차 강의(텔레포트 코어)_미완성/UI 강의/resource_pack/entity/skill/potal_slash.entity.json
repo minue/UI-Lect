@@ -1,30 +1,22 @@
 {
-  "format_version": "1.8.0",
+  "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
       "identifier": "watts:potal_slash",
-      "min_engine_version": "1.8.0",
       "materials": {
-        "layer": "layer",
-        "weapon": "weapon"
+        "default": "entity_alphablend"
       },
       "textures": {
-        "potal_slash": "textures/watts/entity/potal_slash",
-        "dimensional_rift": "textures/watts/entity/dimensional_rift",
-        "potal_invisible": "textures/watts/entity/potal_invisible"
+        "dimensional_rift": "textures/watts/entity/dimensional_rift"
       },
       "geometry": {
-        "potal_slash": "geometry.potal_slash",
-        "dimensional_rift": "geometry.dimensional_rift",
-        "potal_invisible": "geometry.potal_invisible"
+        "default": "geometry.dimensional_rift"
       },
       "render_controllers": [
-        "controller.render.potal_slash",
-        "controller.render.dimensional_rift",
-        "controller.render.potal_invisible"
+        "controller.render.dimensional_rift"
       ],
       "spawn_egg": {
-        "texture": "spawn_egg_spider"
+        "texture": "spawn_egg_agent"
       }
     }
   }

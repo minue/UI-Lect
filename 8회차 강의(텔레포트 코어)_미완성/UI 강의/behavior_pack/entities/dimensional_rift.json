@@ -1,0 +1,33 @@
+{
+    "format_version": "1.19.80",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "watts:dimensional_rift",
+        "is_spawnable": true,
+        "is_summonable": true,
+        "is_experimental": false
+      },
+  
+      "component_groups": {
+      },
+  
+      "components": {
+        "minecraft:is_tamed":{},
+        "minecraft:collision_box": {
+          "width": 1.0,
+          "height": 1.0
+        },
+        "minecraft:physics": {
+          "has_gravity": false,
+          "has_collision": false
+        },
+        "minecraft:pushable": {
+          "is_pushable": false,
+          "is_pushable_by_piston": false
+        }
+      },
+  
+      "events": {
+      }
+    }
+  }

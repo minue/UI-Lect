@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "watts:dimensional_rift",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "entity_alphablend"
+      },
+      "textures": {
+        "dimensional_rift": "textures/watts/entity/dimensional_rift"
+      },
+      "geometry": {
+        "default": "geometry.dimensional_rift"
+      },
+      "render_controllers": [
+        "controller.render.dimensional_rift"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg_spider"
+      }
+    }
+  }
+}
