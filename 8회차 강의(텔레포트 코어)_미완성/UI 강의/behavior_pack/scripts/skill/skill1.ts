@@ -1,5 +1,5 @@
 
 
-function teleportSlash(){
+function riftSlash(){
     
 }

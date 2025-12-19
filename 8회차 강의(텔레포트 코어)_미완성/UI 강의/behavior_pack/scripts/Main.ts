@@ -1,6 +1,6 @@
 import { system, world } from "@minecraft/server";
 import { registerScore } from "./data/scoreboard";
-import { SpaceOre } from "./block/space_block";
+import { spaceOre } from "./block/space_block";
 
 world.afterEvents.worldLoad.subscribe((ev) => {
     registerScore();
@@ -9,6 +9,6 @@ world.afterEvents.worldLoad.subscribe((ev) => {
 system.beforeEvents.startup.subscribe(({ blockComponentRegistry }) => {
     blockComponentRegistry.registerCustomComponent(
         "watts:teleport_block",
-        SpaceOre
+        spaceOre
     );
 });
