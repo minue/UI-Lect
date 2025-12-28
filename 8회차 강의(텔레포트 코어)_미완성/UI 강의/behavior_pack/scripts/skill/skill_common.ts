@@ -1,8 +1,8 @@
-import { Player } from "@minecraft/server";
+import { Player } from "@minecraft/server"
 
 
 class SkillCommon{
-    constructor(player: Player){
+    public static lackEnergy(player: Player, amount: number) {
         
     }
 }

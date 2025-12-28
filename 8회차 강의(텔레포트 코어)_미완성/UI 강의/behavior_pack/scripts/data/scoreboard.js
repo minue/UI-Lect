@@ -1,8 +1,11 @@
 import { world } from "@minecraft/server";
 export const scoreList = [
     "energy",
+    "slaveNum",
+    "maxEnergy",
     "skillType",
-    "channelType"
+    "channelType",
+    "cooltime"
 ];
 export function registerScore() {
     scoreList.forEach(scoreName => {

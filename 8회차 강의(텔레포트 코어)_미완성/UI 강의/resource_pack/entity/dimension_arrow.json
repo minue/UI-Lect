@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "watts:dimension_arrow",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/projectile/dimension_arrow"
+      },
+      "geometry": {
+        "default": "geometry.dimension_arrow"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 52
+      }
+    }
+  }
+}
