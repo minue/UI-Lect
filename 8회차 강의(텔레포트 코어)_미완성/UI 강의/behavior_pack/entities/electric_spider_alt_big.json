@@ -67,8 +67,12 @@
         "entity_types": [
           {
             "filters": {
-              "test": "was_last_hurt_by",
-              "subject": "other"
+              "all_of": [
+                {
+                  "test": "was_last_hurt_by",
+                  "subject": "other"
+                }
+              ]
             },
             "within_default": 10
           }
