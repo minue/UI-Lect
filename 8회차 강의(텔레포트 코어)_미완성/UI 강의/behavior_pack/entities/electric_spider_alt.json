@@ -11,10 +11,13 @@
           "type": "bool",
           "default": false
         },
-        "watts:serial_number":{
-            "type": "int",
-            "range": [0, 2147483647],
-            "default": 0
+        "watts:serial_number": {
+          "type": "int",
+          "range": [
+            0,
+            2147483647
+          ],
+          "default": 0
         }
       }
     },
@@ -31,11 +34,11 @@
       }
     },
     "components": {
-      "minecraft:inventory":{
+      "minecraft:inventory": {
         "additional_slots_per_strength": 5,
         "container_type": "minecart_hopper"
       },
-      "minecraft:item_hopper":{},
+      "minecraft:item_hopper": {},
       "minecraft:health": {
         "value": 16,
         "max": 16
@@ -77,12 +80,8 @@
         "entity_types": [
           {
             "filters": {
-              "all_of": [
-                {
-                  "test": "was_last_hurt_by",
-                  "subject": "other"
-                }
-              ]
+              "test": "was_last_hurt_by",
+              "subject": "other"
             },
             "within_default": 10
           }

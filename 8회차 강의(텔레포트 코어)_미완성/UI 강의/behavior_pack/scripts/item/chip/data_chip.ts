@@ -53,12 +53,6 @@ export class DataChip {
     kidnap(ent: Entity) {
         ent.teleport(this, {dimension: this.dimension})
     }
-    blockLog(block: Block, logChip: LogChip): ItemStack {
-        return logChip.addLog(LogChip.makeBlockLog(block))
-    }
-    entityLog(ent: Entity, logChip: LogChip): ItemStack {
-        return logChip.addLog(LogChip.makeEntityLog(ent))
-    }
     collect(ent: Entity) {
         if(ent.typeId != "minecraft:item") {
             return
