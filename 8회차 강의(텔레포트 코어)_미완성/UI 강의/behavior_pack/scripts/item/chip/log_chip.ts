@@ -1,4 +1,5 @@
 import { Block, Container, Dimension, Entity, ItemStack, Player, world } from "@minecraft/server"
+import { Spider } from "../../entity/spider"
 
 class Log {
     id: string
@@ -26,10 +27,10 @@ export class LogChip {
     chip: ItemStack
     index: number
     log: string[]
-    spider: Entity
+    spider: Spider
     container: Container
 
-    constructor(spider: Entity, container: Container, index: number, item: ItemStack) {
+    constructor(spider: Spider, container: Container, index: number, item: ItemStack) {
         this.spider = spider
         this.container = container
         this.index = index
@@ -67,12 +68,12 @@ export class LogChip {
     }
 
     static makeBlockLog(block: Block): string{
-        const str = `x: ${block.x}/y: ${block.y}/z: ${block.z}/type: ${block.typeId}/dimension: ${block.dimension.id}`
+        const str = `block.log/x: ${block.x}/y: ${block.y}/z: ${block.z}/type: ${block.typeId}/dimension: ${block.dimension.id}`
         return str
     }
 
     static makeEntityLog(ent: Entity): string{
-        const str = `x: ${ent.location.x}/y: ${ent.location.y}/z: ${ent.location.z}/type: ${ent.typeId}/dimension: ${ent.dimension.id}`
+        const str = `ent.log/x: ${ent.location.x}/y: ${ent.location.y}/z: ${ent.location.z}/type: ${ent.typeId}/dimension: ${ent.dimension.id}`
         return str
     }
 

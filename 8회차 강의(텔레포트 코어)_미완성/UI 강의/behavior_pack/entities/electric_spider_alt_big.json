@@ -10,6 +10,11 @@
         "watts:has_target": {
           "type": "bool",
           "default": false
+        },
+        "watts:serial_number":{
+            "type": "int",
+            "range": [0, 2147483647],
+            "default": 0
         }
       }
     },
@@ -26,6 +31,11 @@
       }
     },
     "components": {
+      "minecraft:inventory":{
+        "additional_slots_per_strength": 5,
+        "container_type": "minecart_hopper"
+      },
+      "minecraft:item_hopper":{},
       "minecraft:health": {
         "value": 80,
         "max": 80

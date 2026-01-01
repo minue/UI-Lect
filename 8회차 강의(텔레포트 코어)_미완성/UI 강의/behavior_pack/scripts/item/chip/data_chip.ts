@@ -1,5 +1,7 @@
 import { Block, Dimension, Entity, EntityDamageCause, EntityItemComponent, ItemStack, world } from "@minecraft/server"
 import { LogChip } from "./log_chip"
+import { Spider } from "../../entity/spider"
+import { Miner } from "../../entity/miner"
 
 enum ACT {
     IGNORE = 0,
@@ -21,12 +23,12 @@ export class DataChip {
     y: number
     z: number
     hp: number
-    spider: Entity
+    spider: Spider
     itemList: string[]
     filter: Object
 
-    constructor(ent: Entity, item: ItemStack) {
-        this.spider = ent
+    constructor(spider: Spider, item: ItemStack) {
+        this.spider = spider
         const lore = item.getLore()
         this.act = ACT[lore[0].replace("act: ", "").toUpperCase()]
         if(this.act == ACT.COLLECT){
@@ -42,17 +44,14 @@ export class DataChip {
         }
     }
     attack(ent: Entity) {
-        if(this.spider.getProperty("watts:has_target")){
+        if(this.spider.spider.getProperty("watts:has_target")){
             return;
         }
-        this.spider.applyDamage(0, { cause: EntityDamageCause.entityAttack, damagingEntity: ent })
-        this.spider.triggerEvent("watts:has_target")
+        this.spider.spider.applyDamage(0, { cause: EntityDamageCause.entityAttack, damagingEntity: ent })
+        this.spider.spider.triggerEvent("watts:has_target")
     }
     kidnap(ent: Entity) {
         ent.teleport(this, {dimension: this.dimension})
-    }
-    mine(block: Block) {
-        const cmd: string = `/setblock ${block.x} ${block.y} ${block.z} air destroy`
     }
     blockLog(block: Block, logChip: LogChip): ItemStack {
         return logChip.addLog(LogChip.makeBlockLog(block))
@@ -63,13 +62,6 @@ export class DataChip {
     collect(ent: Entity) {
         if(ent.typeId != "minecraft:item") {
             return
-        }
-        const itemEnt: ItemStack = (ent.getComponent("minecraft:item") as EntityItemComponent).itemStack
-        if(this.itemList.indexOf(itemEnt.typeId) != -1) {
-            const mover= { x: ent.location.x + ((this.spider.location.x - ent.location.x) / 20), 
-                y: ent.location.y + ((this.spider.location.y - ent.location.y) / 20), 
-                z: ent.location.z + ((this.spider.location.z - ent.location.z) / 20) }
-            ent.teleport(mover)
         }
     }
 }

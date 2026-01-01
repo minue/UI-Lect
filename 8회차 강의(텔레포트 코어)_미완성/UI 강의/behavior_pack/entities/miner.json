@@ -1,0 +1,56 @@
+{
+    "format_version": "1.19.80",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "watts:miner",
+        "is_spawnable": true,
+        "is_summonable": true,
+        "is_experimental": false,
+        "properties": {
+          "watts:destroy_mode": {
+            "type": "bool",
+            "default": false
+          },
+          "watts:collet_mode": {
+            "type": "bool",
+            "default": false
+          },
+          "watts:parent_serial_number":{
+            "type": "int",
+            "range": [0, 2147483647],
+            "default": 0
+          },
+          "watts:inv_num":{
+            "type": "int",
+            "range": [0, 500],
+            "default": 0
+          }
+        }
+      },
+  
+      "component_groups": {
+      },
+  
+      "components": {
+        "minecraft:collision_box": {
+          "width": 0.25,
+          "height": 0.25
+        },
+        "minecraft:physics": {
+          "has_collision": false,
+          "has_gravity": false
+        },
+        "minecraft:inventory":{
+          "container_type": "minecart_hopper"
+        },
+        "minecraft:item_hopper":{},
+        "minecraft:pushable": {
+          "is_pushable": false,
+          "is_pushable_by_piston": false
+        }
+      },
+  
+      "events": {
+      }
+    }
+  }
