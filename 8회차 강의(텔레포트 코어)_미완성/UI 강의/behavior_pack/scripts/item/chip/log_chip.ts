@@ -51,12 +51,12 @@ export class LogChip {
         this.container.setItem(this.index, this.chip)
         return this.chip
     }
-    getLog(item: ItemStack): string[] {
-        const log: string[] = item.getLore()
+    getLog(): string[] {
+        const log: string[] = this.chip.getLore()
         this.log = log
         return log
     }
-    canWrite(item: ItemStack): boolean {
+    canWrite(): boolean {
         if (this.log.length >= 50) {
             return false
         }
@@ -66,15 +66,8 @@ export class LogChip {
         const str = `block.log/x: ${block.x}/y: ${block.y}/z: ${block.z}/type: ${block.typeId}/dimension: ${block.dimension.id}`
         return str
     }
-    static makeEntityLog(ent: Entity): string {
-        const str = `ent.log/x: ${ent.location.x}/y: ${ent.location.y}/z: ${ent.location.z}/type: ${ent.typeId}/dimension: ${ent.dimension.id}`
-        return str
-    }
-    blockLog(block: Block, logChip: LogChip): ItemStack {
-        return logChip.addLog(LogChip.makeBlockLog(block))
-    }
-    entityLog(ent: Entity, logChip: LogChip): ItemStack {
-        return logChip.addLog(LogChip.makeEntityLog(ent))
+    blockLog(block: Block): ItemStack {
+        return this.addLog(LogChip.makeBlockLog(block))
     }
     logInterpret(str: string): Log {
         const log: string[] = str.split("/")

@@ -12,6 +12,7 @@
       },
   
       "components": {
+        "minecraft:tick_world":{},
         "minecraft:collision_box": {
           "width": 0.0,
           "height": 0.0

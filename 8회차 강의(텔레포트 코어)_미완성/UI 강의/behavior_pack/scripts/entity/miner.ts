@@ -1,4 +1,4 @@
-import { Block, Dimension, Entity, EntityItemComponent, ItemStack, world } from "@minecraft/server";
+import { Block, Container, Dimension, Entity, EntityInventoryComponent, EntityItemComponent, ItemStack, Vector3, world } from "@minecraft/server";
 import { getSpiders, Spider } from "./spider";
 
 
@@ -20,6 +20,7 @@ export function getMiner(): Entity[] {
 
 export class Miner{
     miner: Entity
+    container: Container
     owner: Spider
     locX: number
     locY: number
@@ -27,10 +28,25 @@ export class Miner{
 
     constructor(miner: Entity, owner: Spider) {
         this.miner = miner
+        this.container = (miner.getComponent("minecraft:inventory") as EntityInventoryComponent).container
         this.setOwner(owner)
+    }
+    public static spawn(spider: Spider, block: Block){
+        const miner = spider.spider.dimension.spawnEntity("watts:miner", spider.spider.location)
+        return new Miner(miner, spider)
     }
     setOwner(spider: Spider) {
         this.owner = spider
+    }
+    move(loc: Vector3) {
+        const distance = Math.sqrt((this.miner.location.x - loc.x) ^ 2 + 
+            (this.miner.location.y - loc.y) ^ 2 + 
+            (this.miner.location.z - loc.z) ^ 2) / 5
+        const vec = {x: (loc.x - this.miner.location.x) / distance,
+            y: (loc.y - this.miner.location.y)  / distance,
+            z: (loc.z - this.miner.location.z)  / distance
+        }
+        this.miner.applyImpulse(vec)
     }
     mine(block: Block) {
         const distance = Math.sqrt((this.miner.location.x - block.x) ^ 2 + 
@@ -39,7 +55,13 @@ export class Miner{
         const cmd: string = `/setblock ${block.x} ${block.y} ${block.z} air destroy`
         if(distance < 2){
             this.miner.runCommand(cmd)
+            const del = this.owner.react.targetBlock.indexOf(block)
+            const before = this.owner.react.targetBlock.slice(0, del - 1)
+            const after = this.owner.react.targetBlock.slice(del - 1)
+            this.owner.react.targetBlock = before.concat(after)
+            return
         }
+        this.move(block)
     }
     collect(ent: Entity, itemName: string) {
         const distance = Math.sqrt((this.miner.location.x - ent.location.x) ^ 2 + 
@@ -53,7 +75,13 @@ export class Miner{
             const mover= { x: ent.location.x + ((this.miner.location.x - ent.location.x) / 20), 
                 y: ent.location.y + ((this.miner.location.y - ent.location.y) / 20), 
                 z: ent.location.z + ((this.miner.location.z - ent.location.z) / 20) }
-            ent.teleport(mover)
+            this.container.addItem(itemEnt)
+            const before = this.owner.react.targeItemEnt.splice(0, this.owner.react.targeItemEnt.indexOf(ent) - 1)
+            const after = this.owner.react.targeItemEnt.splice(this.owner.react.targeItemEnt.indexOf(ent) + 1)
+            this.owner.react.targeItemEnt = before.concat(after)
+            ent.remove()
+            return
         }
+        this.move(ent.location)
     }
 }

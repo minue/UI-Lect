@@ -1,4 +1,4 @@
-import { Container, Dimension, Entity, EntityComponentTypes, EntityHurtAfterEvent, EntityInventoryComponent, EntityTameableComponent, Player, PlayerInteractWithEntityAfterEvent, world } from "@minecraft/server";
+import { Block, Container, Dimension, Entity, EntityComponentTypes, EntityInventoryComponent, EntityTameableComponent, ListBlockVolume, Player, PlayerInteractWithEntityAfterEvent, world } from "@minecraft/server";
 import { DataChip } from "../item/chip/data_chip";
 import { LogChip } from "../item/chip/log_chip";
 import { getMiner, Miner } from "./miner";
@@ -85,11 +85,19 @@ export class Spider{
     spider: Entity
     react: React
     miners: Miner[] = []
+    container: Container
 
     constructor(spider: Entity) {
         this.spider = spider
         this.miners = getSlaveMiner(this)
         this.react = new React(this)
+        this.container = (this.spider.getComponent(EntityComponentTypes.Inventory) as EntityInventoryComponent).container
+
+    }
+    spawnMiner() {
+    }
+    despawnMiner(miner: Miner){
+        miner.miner.remove()
     }
 }
 
@@ -97,6 +105,11 @@ class React {
     spider: Spider
     dataChip: DataChip[] = []
     logChip: LogChip[] = []
+    targetBlock: Block[]
+    targeItemEnt: Entity[]
+    nearEntity: Entity[]
+    nearBlock: ListBlockVolume
+    targetEntity: Entity
 
     constructor(spider: Spider) {
         this.spider = spider
@@ -104,8 +117,12 @@ class React {
         this.loadLogChip()
     }
     act() {
+        this.nearEntity = this.spider.spider.dimension.getEntities({
+            location: this.spider.spider.location,
+            maxDistance: 20
+        })
         this.dataChip.forEach((data) => {
-            
+            data.dataAct(this.nearEntity)
         })
     }
     spawn() {
@@ -121,23 +138,21 @@ class React {
         this.loadLogChip()
     }
     loadDataChip() {
-        const container: Container = (this.spider.spider.getComponent(EntityComponentTypes.Inventory) as EntityInventoryComponent).container
-        for(let index = 0 ; index < container.size; index++){
-            let itemStack = container.getItem(index);
+        for(let index = 0 ; index < this.spider.container.size; index++){
+            let itemStack = this.spider.container.getItem(index);
             if(itemStack?.typeId != "watts:data_chip"){
                 continue
             }
-            this.dataChip.push(new DataChip(this.spider, container.getItem(index)!))
+            this.dataChip.push(new DataChip(this.spider, this.spider.container.getItem(index)!))
         }
     }
     loadLogChip() {
-        const container: Container = (this.spider.spider.getComponent(EntityComponentTypes.Inventory) as EntityInventoryComponent).container
-        for(let index = 0 ; index < container.size; index++){
-            let itemStack = container.getItem(index);
+        for(let index = 0 ; index < this.spider.container.size; index++){
+            let itemStack = this.spider.container.getItem(index);
             if(itemStack?.typeId != "watts:log_chip"){
                 continue
             }
-            this.logChip.push(new LogChip(this.spider, container, index, container.getItem(index)!))
+            this.logChip.push(new LogChip(this.spider, this.spider.container, index, this.spider.container.getItem(index)!))
         }
     }
 }

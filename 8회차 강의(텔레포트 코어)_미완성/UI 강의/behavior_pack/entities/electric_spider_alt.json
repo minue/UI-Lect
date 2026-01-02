@@ -18,6 +18,22 @@
             2147483647
           ],
           "default": 0
+        },
+        "watts:miner": {
+          "type": "int",
+          "range": [
+            0,
+            15
+          ],
+          "default": 5
+        },
+        "watts:max_miner": {
+          "type": "int",
+          "range": [
+            5,
+            15
+          ],
+          "default": 5
         }
       }
     },
@@ -34,6 +50,7 @@
       }
     },
     "components": {
+      "minecraft:tick_world":{},
       "minecraft:inventory": {
         "additional_slots_per_strength": 5,
         "container_type": "minecart_hopper"
