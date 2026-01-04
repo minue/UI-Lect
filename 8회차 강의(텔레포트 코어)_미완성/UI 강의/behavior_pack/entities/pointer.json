@@ -1,0 +1,51 @@
+{
+  "format_version": "1.19.80",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "watts:pointer",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "properties": {
+        "watts:parent_serial_number": {
+          "type": "int",
+          "range": [
+            0,
+            2147483647
+          ],
+          "default": 0
+        }
+      }
+    },
+    "component_groups": {},
+    "components": {
+      "minecraft:tick_world": {},
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "family_types": [
+          "elec_spider_alt_small"
+        ],
+        "seats": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 1.0
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    },
+    "events": {}
+  }
+}

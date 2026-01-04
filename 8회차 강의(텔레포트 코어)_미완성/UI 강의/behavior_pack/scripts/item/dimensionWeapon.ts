@@ -1,6 +1,7 @@
 import { Entity, EntityComponentTypes, EntityEquippableComponent, EntityHealthComponent, ItemStack, Player, world } from "@minecraft/server"
 import { ItemFunction } from "./itemFunction"
 import { dimensionWeaponFormFunc } from "../form/dimensionWeaponForm"
+import { Utills } from "../Utills/Utills"
 
 
 export class DimensionWeapon {
@@ -100,9 +101,8 @@ export class DimensionWeapon {
     public static attack(player: Player, v: Entity){
         const dw = new DimensionWeapon(player)
         const hp = (v.getComponent(EntityComponentTypes.Health) as EntityHealthComponent).currentValue
-        const vx = v.location.x, vy = v.location.y ,vz = v.location.z
         const x = dw.getCoordinate()[0], y = dw.getCoordinate()[1], z = dw.getCoordinate()[2]
-        const distance = Math.sqrt((vx - x) ^ 2 + (vy - y) ^ 2 + (vz - z) ^ 2)
+        const distance = Utills.distance(v.location, {x: x, y: y, z: z})
         const consume = Math.min(100, Math.round(5 + 2 * distance) + Math.round(hp / 5))
         const energy = dw.getEnergy()
         if(energy < consume) {

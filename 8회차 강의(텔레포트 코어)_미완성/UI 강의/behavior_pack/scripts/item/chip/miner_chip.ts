@@ -20,7 +20,7 @@ export class MinerChip {
         this.item.setLore([`ent ${ent.id}`])
     }
     setBlockTarget(block: Block) {
-        this.item.setLore([`block ${block.x} ${block.y} ${block.z}  ${block.dimension.id}`])
+        this.item.setLore([`block ${block.x} ${block.y} ${block.z} ${block.dimension.id}`])
     }
     targetReset() {
         this.item.setLore()

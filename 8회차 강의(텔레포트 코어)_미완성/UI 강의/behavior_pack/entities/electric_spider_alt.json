@@ -11,6 +11,10 @@
           "type": "bool",
           "default": false
         },
+        "watts:bulid_mode": {
+          "type": "bool",
+          "default": false
+        },
         "watts:serial_number": {
           "type": "int",
           "range": [
@@ -38,6 +42,12 @@
       }
     },
     "component_groups": {
+      "watts:bulid_mode": {
+        "minecraft:behavior.find_mount": {
+          "priority": 0,
+          "mount_distance": -1
+        }
+      },
       "watts:kidnap_mode": {
         "minecraft:attack": {
           "damage": 0
@@ -50,7 +60,12 @@
       }
     },
     "components": {
-      "minecraft:tick_world":{},
+      "minecraft:type_family": {
+        "family": [
+          "elec_spider_alt_small"
+        ]
+      },
+      "minecraft:tick_world": {},
       "minecraft:inventory": {
         "additional_slots_per_strength": 5,
         "container_type": "minecart_hopper"
@@ -117,7 +132,8 @@
     "events": {
       "watts:has_target": {
         "set_property": {
-          "watts:has_target": true
+          "watts:has_target": true,
+          "watts:bulid_mode": false
         },
         "add": {
           "component_groups": [
@@ -125,9 +141,21 @@
           ]
         }
       },
+      "watts:bulid_mode": {
+        "set_property": {
+          "watts:has_target": false,
+          "watts:bulid_mode": true
+        },
+        "add": {
+          "component_groups": [
+            "watts:bulid_mode"
+          ]
+        }
+      },
       "watts:kidnap_mode": {
         "set_property": {
-          "watts:has_target": false
+          "watts:has_target": false,
+          "watts:bulid_mode": false
         },
         "add": {
           "component_groups": [

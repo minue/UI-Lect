@@ -1,5 +1,6 @@
 import { Block, Container, Dimension, Entity, EntityInventoryComponent, EntityItemComponent, ItemStack, Vector3, world } from "@minecraft/server";
 import { getSpiders, Spider } from "./spider";
+import { Utills } from "../Utills/Utills";
 
 
 export function getMiner(): Entity[] {
@@ -39,9 +40,7 @@ export class Miner{
         this.owner = spider
     }
     move(loc: Vector3) {
-        const distance = Math.sqrt((this.miner.location.x - loc.x) ^ 2 + 
-            (this.miner.location.y - loc.y) ^ 2 + 
-            (this.miner.location.z - loc.z) ^ 2) / 5
+        const distance = Utills.distance(loc, this.miner.location)
         const vec = {x: (loc.x - this.miner.location.x) / distance,
             y: (loc.y - this.miner.location.y)  / distance,
             z: (loc.z - this.miner.location.z)  / distance
