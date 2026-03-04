@@ -1,5 +1,5 @@
 import { ActionFormData } from "@minecraft/server-ui";
-import { DimensionWeapon } from "../item/dimensionWeapon";
+import { DimensionWeapon } from "../item/weapon/dimensionWeapon";
 
 export const skillSelectFormData = new ActionFormData()
     .button("watts.ui.select.skill.cancel")

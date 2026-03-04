@@ -2,6 +2,18 @@
     "resource_pack_name": "vanilla",
     "texture_name": "atlas.items",
     "texture_data": {
+        "data_chip": {
+            "textures": "textures/watts/items/data_chip"
+        },
+        "miner": {
+            "textures": "textures/watts/items/miner"
+        },
+        "ssd": {
+            "textures": "textures/watts/items/ssd"
+        },
+        "log_chip": {
+            "textures": "textures/watts/items/log_chip"
+        },
         "dimension_sword": {
             "textures": "textures/watts/items/dimension_sword"
         },

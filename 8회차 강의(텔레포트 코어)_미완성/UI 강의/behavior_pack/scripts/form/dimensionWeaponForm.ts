@@ -1,7 +1,7 @@
 import { Player } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { skillSelct } from "./skillSelectForm";
-import { DimensionWeapon } from "../item/dimensionWeapon";
+import { DimensionWeapon } from "../item/weapon/dimensionWeapon";
 
 export const dimensionWeaponFormData = new ActionFormData()
     .button("watts.ui.select.skill")

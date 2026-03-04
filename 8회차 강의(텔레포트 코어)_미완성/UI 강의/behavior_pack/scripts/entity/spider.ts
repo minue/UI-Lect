@@ -86,7 +86,6 @@ export class Spider {
     react: React
     miners: Miner[] = []
     container: Container
-    buildMode: boolean = false
 
     constructor(spider: Entity) {
         this.spider = spider
@@ -151,16 +150,6 @@ class React {
         this.loadLogChip()
     }
     act() {
-        if (this.spider.buildMode) {
-            let build: DataChip
-            this.dataChip.forEach((data) => {
-                if (data.act == ACT.BUILD) {
-                    build = data
-                    build.build()
-                }
-            })
-            return
-        }
         this.nearEntity = this.spider.spider.dimension.getEntities({
             location: this.spider.spider.location,
             maxDistance: 20

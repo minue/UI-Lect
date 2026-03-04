@@ -8,8 +8,7 @@ export enum ACT {
     KIDNAP = 2,
     MINE = 3,
     BLOCK_LOG = 4,
-    COLLECT = 5,
-    BUILD = 6
+    COLLECT = 5
 }
 
 
@@ -46,20 +45,10 @@ export class DataChip {
         this.id = lore[1].replace("id: ", "")
         if (this.act == ACT.KIDNAP) {
             this.dimension = world.getDimension(lore[2].replace("dimension: ", ""))
-            this.x = parseInt(lore[3].replace("x: ", ""))
-            this.y = parseInt(lore[4].replace("y: ", ""))
-            this.z = parseInt(lore[5].replace("z: ", ""))
+            this.x = parseFloat(lore[3].replace("x: ", ""))
+            this.y = parseFloat(lore[4].replace("y: ", ""))
+            this.z = parseFloat(lore[5].replace("z: ", ""))
             this.hp = parseInt(lore[6].replace("hp: ", "") == "None" ? "-1" : lore[7].replace("x: ", ""))
-        }
-        if (this.act == ACT.BUILD) {
-            this.dimension = world.getDimension(lore[2].replace("dimension: ", ""))
-            this.minX = parseInt(lore[3].replace("x: ", "").split("~")[0])
-            this.minY = parseInt(lore[4].replace("y: ", "").split("~")[0])
-            this.minZ = parseInt(lore[5].replace("z: ", "").split("~")[0])
-            this.maxX = parseInt(lore[3].replace("x: ", "").split("~")[1])
-            this.maxY = parseInt(lore[4].replace("y: ", "").split("~")[1])
-            this.maxZ = parseInt(lore[5].replace("z: ", "").split("~")[1])
-            this.pointer = world.getEntity(lore[6])
         }
     }
     findBlock() {
@@ -146,39 +135,5 @@ export class DataChip {
     }
     collect(ent: Entity) {
         this.spider.react.targeItemEnt.push(ent)
-    }
-    build() {
-        this.pointer = world.getEntity(this.item.getLore()[6])
-        const rider = (this.pointer!.getComponent("minecraft:rideable") as EntityRideableComponent).getRiders()[0]
-        if (rider == this.spider.spider && this.spider.removeItem(this.id)) {
-            this.pointer!.remove()
-            const cmd: string = `/setblock ${this.pointer!.location.x} ${this.pointer!.location.y} ${this.pointer!.location.z} ${this.id} destroy`
-        }
-    }
-    setBuildArea() {
-        const area: Vector3[] = []
-        for (let x = this.minX; x < this.maxX; x++) {
-            for (let y = this.minY; y < this.maxY; y++) {
-                for (let z = this.minZ; z < this.maxZ; z++) {
-                    if(this.dimension.getBlock({ x: x, y: y, z: z })?.typeId == this.id) {
-                        continue
-                    }
-                    area.push({ x: x, y: y, z: z })
-                }
-            }
-        }
-        return area
-    }
-    spawnPointer() {
-        const area = this.setBuildArea()
-        let loc = area[0]
-        let distance = Utills.distance(this.spider.spider.location, loc)
-        for(let index = 0;index < area.length;index++){
-            if(distance > Utills.distance(this.spider.spider.location, area[index])) {
-                distance = Utills.distance(this.spider.spider.location, area[index])
-                loc = area[index]
-            }
-        }
-        return this.dimension.spawnEntity("watts:pointer", loc)
     }
 }

@@ -1,5 +1,5 @@
 import { Entity, EntityComponentTypes, EntityHealthComponent, Player, world } from "@minecraft/server";
-import { DimensionWeapon } from "../item/dimensionWeapon";
+import { DimensionWeapon } from "../item/weapon/dimensionWeapon";
 
 class UIManage {
     strArr: string[] = []

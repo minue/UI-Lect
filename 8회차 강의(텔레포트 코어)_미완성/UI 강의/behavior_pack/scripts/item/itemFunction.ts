@@ -1,4 +1,5 @@
 import { EntityEquippableComponent, EquipmentSlot, ItemStack, Player } from "@minecraft/server"
+import { remote1 } from "./active/remote1"
 
 export class ItemFunction {
     public static getHoldItem(player: Player) {
@@ -12,3 +13,7 @@ export class ItemFunction {
         equipComp.setEquipment(EquipmentSlot.Mainhand, itemStack)
     }
 }
+
+export const ItemEvents = [
+    remote1
+]
