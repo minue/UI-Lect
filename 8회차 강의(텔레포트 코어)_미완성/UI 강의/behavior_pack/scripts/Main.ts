@@ -19,3 +19,8 @@ world.afterEvents.itemUse.subscribe((ev) => {
         itemEvent(ev)
     });
 })
+
+world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
+    let str = `i${ev.target.id}|000000100|000000100`
+    ev.player.onScreenDisplay.setActionBar(str)
+})

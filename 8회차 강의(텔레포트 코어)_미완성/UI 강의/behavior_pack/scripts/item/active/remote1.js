@@ -5,10 +5,9 @@ export function remote1(ev) {
     if (itemStack.typeId != "watts:remote1") {
         return;
     }
-    ev.source.sendMessage(`length ${itemStack.getLore().length}`);
     if (itemStack.getLore().length == 0) {
         const { x, y, z } = source.location;
-        itemStack.setLore(["100", "100", `x ${x}`, `y ${y}`, `z ${z}`]);
+        itemStack.setLore(["100", "100", `x ${Math.round(x)}`, `y ${Math.round(y)}`, `z ${Math.round(z)}`]);
         ItemFunction.setHoldItem(source, itemStack);
         return;
     }
@@ -31,7 +30,7 @@ function useRemote1(ev) {
         return;
     }
     const lore = itemStack.getLore();
-    const x = parseFloat(lore[2].replace("x ", "")), y = parseFloat(lore[3].replace("y ", "")), z = parseFloat(lore[4].replace("z ", ""));
+    const x = parseInt(lore[2].replace("x ", "")), y = parseInt(lore[3].replace("y ", "")), z = parseInt(lore[4].replace("z ", ""));
     const distance = Utills.distance(source.location, { x: x, y: y, z: z });
     const consume = Math.min(30, Math.round(3 + distance / 30));
     const energy = parseInt(itemStack.getLore()[1]);

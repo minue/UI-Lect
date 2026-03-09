@@ -20,9 +20,9 @@ export class DataChip {
         this.id = lore[1].replace("id: ", "");
         if (this.act == ACT.KIDNAP) {
             this.dimension = world.getDimension(lore[2].replace("dimension: ", ""));
-            this.x = parseFloat(lore[3].replace("x: ", ""));
-            this.y = parseFloat(lore[4].replace("y: ", ""));
-            this.z = parseFloat(lore[5].replace("z: ", ""));
+            this.x = parseInt(lore[3].replace("x: ", ""));
+            this.y = parseInt(lore[4].replace("y: ", ""));
+            this.z = parseInt(lore[5].replace("z: ", ""));
             this.hp = parseInt(lore[6].replace("hp: ", "") == "None" ? "-1" : lore[7].replace("x: ", ""));
         }
     }

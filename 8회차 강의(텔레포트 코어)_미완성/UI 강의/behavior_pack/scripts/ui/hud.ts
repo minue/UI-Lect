@@ -1,29 +1,41 @@
-import { Entity, EntityComponentTypes, EntityHealthComponent, Player, world } from "@minecraft/server";
+import { Entity, EntityComponentTypes, EntityHealthComponent, Player, Vector3, world } from "@minecraft/server";
 import { DimensionWeapon } from "../item/weapon/dimensionWeapon";
+import { ItemFunction, UI_ITEMS } from "../item/itemFunction";
 
-class UIManage {
+export class UIManage {
     strArr: string[] = []
-    constructor() {
-
+    player: any;
+    energy: number
+    maxEnergy: number
+    cooltime: number
+    v: Vector3
+    constructor(player: Player) {
+        this.player = player
+        const item = ItemFunction.getHoldItem(player)
+        if (item.typeId in UI_ITEMS) {
+            this.energy = parseInt(item.getLore()[0])
+            this.maxEnergy = parseInt(item.getLore()[1])
+            this.v = { x: parseInt(item.getLore()[2]), y: parseInt(item.getLore()[3]), z: parseInt(item.getLore()[4]) }
+        }
     }
-    public static uiMain(player: Player) {
-
+    public uiMain() {
+        this.player.onScreenDisplay.setActionBar(this.strArr.join())
     }
-    private energyUI(dw: DimensionWeapon): string[] {
-        return [this.makeStr(dw.getEnergy()), this.makeStr(dw.getMaxEnergy())]
+    private energyUI(): string[] {
+        return [this.makeStr(this.energy), this.makeStr(this.maxEnergy)]
     }
-    private cooltimeUI(player: Player): string[] {
+    private cooltimeUI(): string[] {
         const objective = world.scoreboard.getObjective("cooltime")
-        const playerIdentity = player.scoreboardIdentity
+        const playerIdentity = this.player.scoreboardIdentity
         const cool = objective?.getScore(playerIdentity!)!
         return [this.makeStr(cool)]
     }
-    private locUI(dw: DimensionWeapon): string[] {
-        return [this.makeStr(dw.getCoordinate()[0]),
-        this.makeStr(dw.getCoordinate()[1]),
-        this.makeStr(dw.getCoordinate()[2])]
+    private locUI(): string[] {
+        return [this.makeStr(this.v.x),
+        this.makeStr(this.v.y),
+        this.makeStr(this.v.z)]
     }
-    private spiderUI(spiderUI: SpiderUI): string[] {
+    private spiderUI(spiders: Entity[]): string[] {
         return []
     }
     private mergeUI(str: string[]): string[] {
@@ -39,6 +51,11 @@ class UIManage {
 class SpiderUI {
     static registerSpider: Entity[] = []
     private spider: Entity
+    private id(): string[] {
+        let str = `|0000000000000000000${this.spider.id}`
+        str = str.substring(str.length - 19)
+        return [str]
+    }
     private hpUI(): string[] {
         const hp = (this.spider.getComponent(EntityComponentTypes.Health) as EntityHealthComponent)
         const current = hp.currentValue, max = hp.defaultValue
@@ -69,12 +86,12 @@ class SpiderUI {
     }
     public makeUI(): string[] {
         const uiElement: string[] = []
-        return uiElement.concat(this.hpUI(), this.energyUI(),this.locUI(),this.makeName())
+        return uiElement.concat(this.hpUI(), this.energyUI(), this.locUI(), this.makeName(), this.id())
     }
     constructor(spider: Entity) {
         this.spider = spider
     }
-    public static getString(){
-
+    public static getString(spider) {
+        return new SpiderUI(spider).makeUI()
     }
 }

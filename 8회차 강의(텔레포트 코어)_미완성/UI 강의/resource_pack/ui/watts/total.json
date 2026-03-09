@@ -1,0 +1,32 @@
+{
+    "namespace": "total_ui",
+    "total_ui": {
+        "type": "panel",
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "factory": {
+            "name": "hud_actionbar_text_factory",
+            "control_ids": {
+                "hud_actionbar_text": "ent_ui@total_ui.blank"
+            }
+        }
+    },
+    "blank": {
+        "size": [
+            "50%",
+            "50%"
+        ],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "type": "image",
+        "$text": "$actionbar_text",
+        "texture": "textures/ui/focus_border_selected.png",
+        "controls": [
+            {
+                "ent_ui@info_ui.total": {}
+            }
+        ]
+    }
+}

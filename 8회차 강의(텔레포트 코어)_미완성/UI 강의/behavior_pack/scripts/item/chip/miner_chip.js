@@ -29,9 +29,9 @@ export class MinerChip {
     }
     getBlockTarget() {
         const loc = this.item.getLore()[0].replace("block ", "").split(" ");
-        const x = parseFloat(loc[0]);
-        const y = parseFloat(loc[1]);
-        const z = parseFloat(loc[2]);
+        const x = parseInt(loc[0]);
+        const y = parseInt(loc[1]);
+        const z = parseInt(loc[2]);
         const dimension = world.getDimension(loc[3]);
         if (dimension.getBlock({ x: x, y: y, z: z }) == undefined) {
             this.targetReset();

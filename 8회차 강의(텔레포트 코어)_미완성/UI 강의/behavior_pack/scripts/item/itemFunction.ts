@@ -1,6 +1,14 @@
 import { EntityEquippableComponent, EquipmentSlot, ItemStack, Player } from "@minecraft/server"
 import { remote1 } from "./active/remote1"
 
+export const UI_ITEMS = [
+    "watts:remote1",
+    "watts:remote2",
+    "watts:remote3",
+    "watts:dimension_knife",
+    "watts:dimension_sword"
+]
+
 export class ItemFunction {
     public static getHoldItem(player: Player) {
         const equipComp = player.getComponent("minecraft:equippable") as EntityEquippableComponent

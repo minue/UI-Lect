@@ -1,0 +1,89 @@
+{
+    "namespace": "ent_info",
+    "entities": {
+        "type": "stack_panel",
+        "anchor_from": "right_middle",
+        "anchor_to": "center",
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "offset": [
+            "10%",
+            "20%"
+        ],
+        "orientation": "vertical",
+        "collection_name": "scoreboard_players",
+        "factory": {
+            "name": "player_list_factory",
+            "control_name": "ent_info.total"
+        },
+        "bindings": [
+            {
+                "binding_name": "#scoreboard_sidebar_size",
+                "binding_type": "global",
+                "binding_name_override": "#collection_length"
+            }
+        ]
+    },
+    "total": {
+        "type": "panel",
+        "size": [
+            30,
+            45
+        ],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "controls": [
+            {
+                "ent_ui@ent_ui": {}
+            }
+        ]
+    },
+    "ent_ui": {
+        "size": [
+            15,
+            15
+        ],
+        "offset": [
+            "0px",
+            "-50%"
+        ],
+        "layer": 1,
+        "type": "custom",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "renderer": "live_horse_renderer",
+        "bindings": [
+            {
+                "binding_name": "#player_name_sidebar",
+                "binding_type": "collection",
+                "binding_collection_name": "scoreboard_players"
+            },
+            {
+                "source_property_name": "#player_name_sidebar",
+                "binding_type": "view",
+                "target_property_name": "#entity_id"
+            }
+        ],
+        "controls": [
+            {
+                "image": {
+                    "size": [
+                        120,
+                        44
+                    ],
+                    "offset": [
+                        -30,
+                        -3
+                    ],
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "type": "image",
+                    "layer": -1,
+                    "texture": "textures/watts/ui/info_ui.png"
+                }
+            }
+        ]
+    }
+}

@@ -71,9 +71,9 @@ export class LogChip {
     }
     logInterpret(str: string): Log {
         const log: string[] = str.split("/")
-        const x = parseFloat(log[0].replace("x: ", ""))
-        const y = parseFloat(log[1].replace("y: ", ""))
-        const z = parseFloat(log[2].replace("z: ", ""))
+        const x = parseInt(log[0].replace("x: ", ""))
+        const y = parseInt(log[1].replace("y: ", ""))
+        const z = parseInt(log[2].replace("z: ", ""))
         const typeid = log[3].replace("type: ", "")
         const dimension = log[4].replace("dimension: ", "")
         return new Log(typeid, x, y, z, dimension)

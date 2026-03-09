@@ -1,0 +1,78 @@
+{
+    "namespace": "info_ui",
+    "total": {
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "size": [
+            100,
+            100
+        ],
+        "variables": [
+            {"requires": "($text > 'i-')","$id1": "§z- "},
+            {
+                "requires": "(not ($text > 'i-'))",
+                "$id1": "§z0 "
+            }
+        ],
+        "$id2": "(('%.7s' * $text) - ('%.2s' * $text))",
+        "$id3": "(('%.12s' * $text) - ('%.7s' * $text))",
+        "$id4": "(('%.17s' * $text) - ('%.12s' * $text))",
+        "controls": [
+            {
+                "hp@hp": {}
+            },
+            {
+                "ent_ui@ent_info.entities": {}
+            }
+        ]
+    },
+    "hp": {
+        "type": "image",
+        "size": [
+            100,
+            100
+        ],
+        "texture": "('textures/watts/ui/energy/energy0' + (($energy * 99) / $max_energy))",
+        "$energy": "($text - ('%.16s' * $text))",
+        "$max_energy": "($text - ('%.26s' * $text))",
+        "controls": [
+            {
+                "text": {
+                    "offset": [
+                        20,
+                        80
+                    ],
+                    "type": "label",
+                    "font_scale_factor": 0.7,
+                    "font_type": "MinecraftTen",
+                    "shadow": true,
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "color": "$tool_tip_text",
+                    "layer": 31,
+                    "text": "((('HP:' + $energy) + '/') + $max_energy)",
+                    "localize": false
+                }
+            },
+            {
+                "id": {
+                    "offset": [
+                        20,
+                        80
+                    ],
+                    "type": "label",
+                    "font_scale_factor": 0.7,
+                    "font_type": "MinecraftTen",
+                    "shadow": true,
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "color": "$tool_tip_text",
+                    "layer": 31,
+                    "text": "((($id1 + $id2) + $id3) + $id4)",
+                    "localize": false
+                }
+            }
+        ]
+    }
+}

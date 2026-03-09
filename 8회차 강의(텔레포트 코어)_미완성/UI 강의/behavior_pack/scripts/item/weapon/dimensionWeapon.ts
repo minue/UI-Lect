@@ -3,7 +3,6 @@ import { ItemFunction } from "../itemFunction"
 import { dimensionWeaponFormFunc } from "../../form/dimensionWeaponForm"
 import { Utills } from "../../Utills/Utills"
 
-
 export class DimensionWeapon {
     private equipComp: EntityEquippableComponent
     private itemStack: ItemStack
@@ -40,10 +39,10 @@ export class DimensionWeapon {
         return sn
     }
     public getCoordinate() {
-        this.coordinate[0] = parseFloat(this.itemStack.getLore()[2].replace("x ", ""))
-        this.coordinate[1] = parseFloat(this.itemStack.getLore()[3].replace("y ", ""))
-        this.coordinate[2] = parseFloat(this.itemStack.getLore()[4].replace("z ", ""))
-        return this.coordinate
+        this.coordinate[0] = parseInt(this.itemStack.getLore()[2].replace("x ", ""))
+        this.coordinate[1] = parseInt(this.itemStack.getLore()[3].replace("y ", ""))
+        this.coordinate[2] = parseInt(this.itemStack.getLore()[4].replace("z ", ""))
+        return {x: this.coordinate[0], y: this.coordinate[1], z: this.coordinate[2]}
     }
     public setEnergy(energy: undefined|number) {
         if(energy != undefined){
@@ -67,9 +66,9 @@ export class DimensionWeapon {
         const item: ItemStack = ItemFunction.getHoldItem(this.player)
         const { x, y, z } = this.player.location
         const lore: string[] = item.getLore();
-        lore[2] = ("x " + x)
-        lore[3] = ("y " + y)
-        lore[4] = ("z " + z)
+        lore[2] = ("x " + Math.round(x))
+        lore[3] = ("y " + Math.round(y))
+        lore[4] = ("z " + Math.round(z))
 
         let index: number
 
