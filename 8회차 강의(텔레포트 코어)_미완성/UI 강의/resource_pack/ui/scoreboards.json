@@ -1,0 +1,36 @@
+{
+    "namespace": "scoreboard",
+    "scoreboard_sidebar/main/lists": {
+        "modifications": [
+            {
+                "control_name": "players",
+                "operation": "remove"
+            },
+            {
+                "array_name": "controls",
+                "operation": "insert_back",
+                "value": [
+                    {
+                        "ui": {
+                            "type": "grid",
+                            "grid_dimensions": [
+                                4,
+                                20
+                            ],
+                            "property_bag": {
+                                "#collection_length": 80
+                            },
+                            "maximum_grid_items": 80,
+                            "grid_item_template": "scoreboard.scoreboard_sidebar_player",
+                            "collection_name": "scoreboard_players",
+                            "size": [
+                                400,
+                                250
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

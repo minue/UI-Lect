@@ -1,6 +1,6 @@
 {
     "namespace": "hud",
-    "root_panel": {
+    /*"root_panel": {
         "modifications": [
             {
                 "array_name": "controls",
@@ -12,5 +12,5 @@
                 ]
             }
         ]
-    }
+    }*/
 }
